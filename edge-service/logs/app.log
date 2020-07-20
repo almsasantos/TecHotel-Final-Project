@@ -1,0 +1,180 @@
+2020-07-19 18:32:31,764 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:32:31,764 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:32:36,421 INFO c.i.e.s.UserService [hystrix-UserService-2] Create a new Basic User
+2020-07-19 18:32:36,421 INFO c.i.e.s.UserService [hystrix-UserService-2] Create a new Basic User
+2020-07-19 18:32:38,940 INFO c.i.e.s.UserService [hystrix-UserService-3] Find All Basic Users
+2020-07-19 18:32:38,940 INFO c.i.e.s.UserService [hystrix-UserService-3] Find All Basic Users
+2020-07-19 18:32:44,052 INFO c.i.e.s.RoomService [hystrix-RoomService-1] Find All Hotel Regular Rooms
+2020-07-19 18:32:44,052 INFO c.i.e.s.RoomService [hystrix-RoomService-1] Find All Hotel Regular Rooms
+2020-07-19 18:32:59,097 INFO c.i.e.s.RoomService [hystrix-RoomService-2] Find All Hotel Regular Rooms
+2020-07-19 18:32:59,097 INFO c.i.e.s.RoomService [hystrix-RoomService-2] Find All Hotel Regular Rooms
+2020-07-19 18:33:08,986 INFO c.i.e.s.UserService [hystrix-UserService-4] Find All Basic Users
+2020-07-19 18:33:08,986 INFO c.i.e.s.UserService [hystrix-UserService-4] Find All Basic Users
+2020-07-19 18:33:22,877 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:33:22,877 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:33:22,877 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:33:22,877 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:33:22,953 WARN c.i.e.s.ActivityService [hystrix-ActivityService-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:33:22,953 WARN c.i.e.s.ActivityService [hystrix-ActivityService-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:33:30,730 INFO c.i.e.s.UserService [hystrix-UserService-5] Find All Basic Users
+2020-07-19 18:33:30,730 INFO c.i.e.s.UserService [hystrix-UserService-5] Find All Basic Users
+2020-07-19 18:33:36,971 INFO c.i.e.s.ActivityService [hystrix-ActivityService-2] Create new Massage Appointment
+2020-07-19 18:33:36,971 INFO c.i.e.s.ActivityService [hystrix-ActivityService-2] Create new Massage Appointment
+2020-07-19 18:33:36,971 INFO c.i.e.s.ActivityService [hystrix-ActivityService-2] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:33:36,971 INFO c.i.e.s.ActivityService [hystrix-ActivityService-2] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:33:36,997 WARN c.i.e.s.ActivityService [hystrix-ActivityService-2] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:33:36,997 WARN c.i.e.s.ActivityService [hystrix-ActivityService-2] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:35:06,394 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:35:06,394 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:35:06,380 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:35:06,380 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:35:07,172 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:35:07,172 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:37:07,620 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:37:07,620 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:37:07,609 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:37:07,609 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:37:08,115 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:37:08,115 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:38:48,088 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:38:48,088 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:38:57,254 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:38:57,254 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:38:57,720 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:38:57,720 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:38:58,192 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:38:58,192 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:39:01,352 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:39:01,352 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:41:07,723 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:41:07,723 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:41:09,721 INFO c.i.e.s.UserService [hystrix-UserService-2] Create a new Basic User
+2020-07-19 18:41:09,721 INFO c.i.e.s.UserService [hystrix-UserService-2] Create a new Basic User
+2020-07-19 18:41:11,314 INFO c.i.e.s.UserService [hystrix-UserService-3] Find All Basic Users
+2020-07-19 18:41:11,314 INFO c.i.e.s.UserService [hystrix-UserService-3] Find All Basic Users
+2020-07-19 18:41:19,740 INFO c.i.e.s.UserService [hystrix-UserService-4] Find All Basic Users
+2020-07-19 18:41:19,740 INFO c.i.e.s.UserService [hystrix-UserService-4] Find All Basic Users
+2020-07-19 18:41:29,640 INFO c.i.e.s.RoomService [hystrix-RoomService-1] Find All Hotel Regular Rooms
+2020-07-19 18:41:29,640 INFO c.i.e.s.RoomService [hystrix-RoomService-1] Find All Hotel Regular Rooms
+2020-07-19 18:41:40,436 INFO c.i.e.s.UserService [hystrix-UserService-5] Find All Basic Users
+2020-07-19 18:41:40,436 INFO c.i.e.s.UserService [hystrix-UserService-5] Find All Basic Users
+2020-07-19 18:41:46,505 INFO c.i.e.s.RoomService [hystrix-RoomService-2] Find All Hotel Regular Rooms
+2020-07-19 18:41:46,505 INFO c.i.e.s.RoomService [hystrix-RoomService-2] Find All Hotel Regular Rooms
+2020-07-19 18:42:17,411 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:42:17,411 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:42:17,411 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:42:17,411 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:42:17,555 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:42:17,555 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:42:17,670 WARN c.i.e.s.ActivityService [hystrix-ActivityService-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:42:17,670 WARN c.i.e.s.ActivityService [hystrix-ActivityService-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:42:20,628 INFO c.i.e.s.UserService [hystrix-UserService-6] Find All Basic Users
+2020-07-19 18:42:20,628 INFO c.i.e.s.UserService [hystrix-UserService-6] Find All Basic Users
+2020-07-19 18:43:36,555 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:43:36,555 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:43:51,329 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:43:51,329 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:43:51,330 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:43:51,330 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:43:51,349 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:43:51,349 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:44:19,251 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:44:19,251 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:44:19,237 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:44:19,237 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:44:20,406 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:44:20,406 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:44:27,455 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:44:27,455 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:46:49,259 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:46:49,259 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:46:52,091 INFO c.i.e.s.UserService [hystrix-UserService-2] Create a new Basic User
+2020-07-19 18:46:52,091 INFO c.i.e.s.UserService [hystrix-UserService-2] Create a new Basic User
+2020-07-19 18:46:53,614 INFO c.i.e.s.UserService [hystrix-UserService-3] Find All Basic Users
+2020-07-19 18:46:53,614 INFO c.i.e.s.UserService [hystrix-UserService-3] Find All Basic Users
+2020-07-19 18:47:11,351 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:47:11,351 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:47:11,782 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:47:11,782 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:47:12,170 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:47:12,170 WARN c.i.e.s.ActivityService [HystrixTimer-1] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 18:47:14,891 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:47:14,891 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:47:22,009 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [END] Update User Service with new Massage Appointment
+2020-07-19 18:47:22,009 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [END] Update User Service with new Massage Appointment
+2020-07-19 18:48:00,980 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:48:00,980 INFO c.i.e.s.UserService [hystrix-UserService-1] Find All Basic Users
+2020-07-19 18:48:04,318 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:48:04,318 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 18:48:04,319 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:48:04,319 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [INIT] Update User Service with new Massage Appointment
+2020-07-19 18:48:04,468 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:48:04,468 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new invoice
+2020-07-19 18:48:04,607 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [END] Update User Service with new Massage Appointment
+2020-07-19 18:48:04,607 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] [END] Update User Service with new Massage Appointment
+2020-07-19 18:48:08,839 INFO c.i.e.s.UserService [hystrix-UserService-2] Find All Basic Users
+2020-07-19 18:48:08,839 INFO c.i.e.s.UserService [hystrix-UserService-2] Find All Basic Users
+2020-07-19 19:03:42,339 INFO c.i.e.s.UserService [hystrix-UserService-3] Find All Basic Users
+2020-07-19 19:03:42,339 INFO c.i.e.s.UserService [hystrix-UserService-3] Find All Basic Users
+2020-07-19 19:03:42,349 WARN c.i.e.s.UserService [hystrix-UserService-3] [WARN] It wasn't possible to find all Basic Users
+2020-07-19 19:03:42,349 WARN c.i.e.s.UserService [hystrix-UserService-3] [WARN] It wasn't possible to find all Basic Users
+2020-07-19 19:03:44,241 INFO c.i.e.s.UserService [hystrix-UserService-4] Create a new Basic User
+2020-07-19 19:03:44,241 INFO c.i.e.s.UserService [hystrix-UserService-4] Create a new Basic User
+2020-07-19 19:03:44,243 WARN c.i.e.s.UserService [hystrix-UserService-4] [WARN] It wasn't possible to create new Basic User
+2020-07-19 19:03:44,243 WARN c.i.e.s.UserService [hystrix-UserService-4] [WARN] It wasn't possible to create new Basic User
+2020-07-19 19:04:06,376 INFO c.i.e.s.ActivityService [hystrix-ActivityService-2] Create new Massage Appointment
+2020-07-19 19:04:06,376 INFO c.i.e.s.ActivityService [hystrix-ActivityService-2] Create new Massage Appointment
+2020-07-19 19:04:06,377 INFO c.i.e.s.ActivityService [hystrix-ActivityService-2] [INIT] Update User Service with new Massage Appointment
+2020-07-19 19:04:06,377 INFO c.i.e.s.ActivityService [hystrix-ActivityService-2] [INIT] Update User Service with new Massage Appointment
+2020-07-19 19:04:06,379 WARN c.i.e.s.ActivityService [hystrix-ActivityService-2] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 19:04:06,379 WARN c.i.e.s.ActivityService [hystrix-ActivityService-2] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 19:04:29,051 INFO c.i.e.s.RoomService [hystrix-RoomService-1] Find All Hotel Regular Rooms
+2020-07-19 19:04:29,051 INFO c.i.e.s.RoomService [hystrix-RoomService-1] Find All Hotel Regular Rooms
+2020-07-19 19:05:12,702 INFO c.i.e.s.RoomService [hystrix-RoomService-2] Find All Hotel Regular Rooms
+2020-07-19 19:05:12,702 INFO c.i.e.s.RoomService [hystrix-RoomService-2] Find All Hotel Regular Rooms
+2020-07-19 19:05:22,308 INFO c.i.e.s.ActivityService [hystrix-ActivityService-3] Create new Massage Appointment
+2020-07-19 19:05:22,308 INFO c.i.e.s.ActivityService [hystrix-ActivityService-3] Create new Massage Appointment
+2020-07-19 19:05:22,309 INFO c.i.e.s.ActivityService [hystrix-ActivityService-3] [INIT] Update User Service with new Massage Appointment
+2020-07-19 19:05:22,309 INFO c.i.e.s.ActivityService [hystrix-ActivityService-3] [INIT] Update User Service with new Massage Appointment
+2020-07-19 19:05:22,398 INFO c.i.e.s.ActivityService [hystrix-ActivityService-3] Create new invoice
+2020-07-19 19:05:22,398 INFO c.i.e.s.ActivityService [hystrix-ActivityService-3] Create new invoice
+2020-07-19 19:05:22,502 WARN c.i.e.s.ActivityService [hystrix-ActivityService-3] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 19:05:22,502 WARN c.i.e.s.ActivityService [hystrix-ActivityService-3] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 19:05:28,946 INFO c.i.e.s.ActivityService [hystrix-ActivityService-4] Create new Massage Appointment
+2020-07-19 19:05:28,946 INFO c.i.e.s.ActivityService [hystrix-ActivityService-4] Create new Massage Appointment
+2020-07-19 19:05:28,946 INFO c.i.e.s.ActivityService [hystrix-ActivityService-4] [INIT] Update User Service with new Massage Appointment
+2020-07-19 19:05:28,946 INFO c.i.e.s.ActivityService [hystrix-ActivityService-4] [INIT] Update User Service with new Massage Appointment
+2020-07-19 19:05:29,059 INFO c.i.e.s.ActivityService [hystrix-ActivityService-4] Create new invoice
+2020-07-19 19:05:29,059 INFO c.i.e.s.ActivityService [hystrix-ActivityService-4] Create new invoice
+2020-07-19 19:05:29,121 WARN c.i.e.s.ActivityService [hystrix-ActivityService-4] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 19:05:29,121 WARN c.i.e.s.ActivityService [hystrix-ActivityService-4] [WARN] It wasn't possible to make a new Massage Appointment
+2020-07-19 19:08:28,577 INFO c.i.e.s.RoomService [hystrix-RoomService-1] Find All Hotel Regular Rooms
+2020-07-19 19:08:28,577 INFO c.i.e.s.RoomService [hystrix-RoomService-1] Find All Hotel Regular Rooms
+2020-07-19 19:09:08,419 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 19:09:08,419 INFO c.i.e.s.ActivityService [hystrix-ActivityService-1] Create new Massage Appointment
+2020-07-19 21:09:46,123 INFO c.i.e.s.UserService [hystrix-UserService-1] Find Basic User with id 1
+2020-07-19 21:09:46,123 INFO c.i.e.s.UserService [hystrix-UserService-1] Find Basic User with id 1
+2020-07-19 21:09:46,569 WARN c.i.e.s.SecurityService [hystrix-UserService-1] [WARN] - Hystrix send failure for Security Microservice
+2020-07-19 21:09:46,569 WARN c.i.e.s.SecurityService [hystrix-UserService-1] [WARN] - Hystrix send failure for Security Microservice
+2020-07-19 21:26:45,731 INFO c.i.e.s.UserService [hystrix-UserService-1] Find Basic User with id 1
+2020-07-19 21:26:45,731 INFO c.i.e.s.UserService [hystrix-UserService-1] Find Basic User with id 1
+2020-07-19 21:26:46,176 WARN c.i.e.s.SecurityService [hystrix-UserService-1] [WARN] - Hystrix send failure for Security Microservice
+2020-07-19 21:26:46,176 WARN c.i.e.s.SecurityService [hystrix-UserService-1] [WARN] - Hystrix send failure for Security Microservice
+2020-07-19 21:30:13,215 INFO c.i.e.s.UserService [hystrix-UserService-1] Create a new Basic User
+2020-07-19 21:30:13,215 INFO c.i.e.s.UserService [hystrix-UserService-1] Create a new Basic User
+2020-07-19 21:30:13,352 WARN c.i.e.s.UserService [hystrix-UserService-1] [WARN] It wasn't possible to create new Basic User
+2020-07-19 21:30:13,352 WARN c.i.e.s.UserService [hystrix-UserService-1] [WARN] It wasn't possible to create new Basic User
+2020-07-19 21:32:05,865 WARN c.i.e.s.UserService [HystrixTimer-1] [WARN] It wasn't possible to create new Basic User
+2020-07-19 21:32:05,865 WARN c.i.e.s.UserService [HystrixTimer-1] [WARN] It wasn't possible to create new Basic User
+2020-07-19 21:32:05,850 INFO c.i.e.s.UserService [hystrix-UserService-1] Create a new Basic User
+2020-07-19 21:32:05,850 INFO c.i.e.s.UserService [hystrix-UserService-1] Create a new Basic User
+2020-07-19 21:34:21,651 WARN c.i.e.s.UserService [HystrixTimer-1] [WARN] It wasn't possible to create new Basic User
+2020-07-19 21:34:21,651 WARN c.i.e.s.UserService [HystrixTimer-1] [WARN] It wasn't possible to create new Basic User
+2020-07-19 21:34:21,638 INFO c.i.e.s.UserService [hystrix-UserService-1] Create a new Basic User
+2020-07-19 21:34:21,638 INFO c.i.e.s.UserService [hystrix-UserService-1] Create a new Basic User
+2020-07-19 21:35:13,734 INFO c.i.e.s.UserService [hystrix-UserService-1] Find Basic User with id 1
+2020-07-19 21:35:13,734 INFO c.i.e.s.UserService [hystrix-UserService-1] Find Basic User with id 1
+2020-07-19 21:37:55,266 INFO c.i.e.s.UserService [hystrix-UserService-1] Create a new Premium User
+2020-07-19 21:37:55,266 INFO c.i.e.s.UserService [hystrix-UserService-1] Create a new Premium User
+2020-07-19 21:39:07,494 INFO c.i.e.s.UserService [hystrix-UserService-2] Find Premium User with id 2
+2020-07-19 21:39:07,494 INFO c.i.e.s.UserService [hystrix-UserService-2] Find Premium User with id 2
