@@ -17,7 +17,7 @@ class PoolRentTest {
     @BeforeEach
     void setUp() {
         poolRent = new PoolRent();
-        poolRent = new PoolRent(1L, 2, 1, 1, LocalDateTime.now());
+        poolRent = new PoolRent(1L, 2, 1, 1);
     }
 
     @AfterEach

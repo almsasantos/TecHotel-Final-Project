@@ -2,6 +2,7 @@ package com.ironhack.edgeservice.service;
 
 import com.ironhack.edgeservice.client.UserClient;
 import com.ironhack.edgeservice.model.entities.security.UserSecurity;
+import com.ironhack.edgeservice.model.entities.users.Admin;
 import com.ironhack.edgeservice.model.entities.users.Basic;
 import com.ironhack.edgeservice.model.entities.users.Premium;
 import com.ironhack.edgeservice.model.enums.Role;
@@ -25,6 +26,18 @@ public class UserService {
     private SecurityService securityService;
 
     private static final Logger LOGGER = LogManager.getLogger(UserService.class);
+
+    @HystrixCommand(fallbackMethod = "createNewAdminFail", ignoreExceptions = ResponseStatusException.class)
+    public Admin createNewAdmin(Admin admin){
+        LOGGER.info("Create new Admin");
+        Admin newAdmin = userClient.createNewAdmin(admin);
+        UserSecurity userSecurity = new UserSecurity();
+        userSecurity.setUsername(newAdmin.getUsername());
+        userSecurity.setPassword(newAdmin.getPassword());
+        userSecurity.setRol(Role.ADMIN);
+        securityService.createAdminUser(userSecurity);
+        return newAdmin;
+    }
 
     // --- BASIC USERS ---
     @HystrixCommand(fallbackMethod = "findAllBasicUserFail", ignoreExceptions = ResponseStatusException.class)
@@ -136,6 +149,43 @@ public class UserService {
         userClient.deletePremiumUser(premiumId);
     }
 
+    @HystrixCommand(fallbackMethod = "findByUsernameFail", ignoreExceptions = ResponseStatusException.class)
+    public Long findPremiumByUsername(String username, String authorizationHeader){
+        LOGGER.info("Find Premium with username " + username);
+        securityService.isUser(authorizationHeader);
+        return userClient.findPremiumByUsername(username);
+    }
+
+    @HystrixCommand(fallbackMethod = "findByUsernameFail", ignoreExceptions = ResponseStatusException.class)
+    public Long findBasicByUsername(String username, String authorizationHeader){
+        LOGGER.info("Find Basic with username " + username);
+        securityService.isUser(authorizationHeader);
+        return userClient.findBasicByUsername(username);
+    }
+
+    /**
+     * Find All Admins
+     * @return a list of Admin
+     */
+    @HystrixCommand(fallbackMethod = "findAllAdminFail", ignoreExceptions = ResponseStatusException.class)
+    public List<Admin> findAllAdmin(String authorizationHeader){
+        LOGGER.info("Find All Admins ");
+        securityService.isUser(authorizationHeader);
+        return userClient.findAllAdmin();
+    }
+
+    /**
+     * Find admin by id
+     * @param adminId receives a long with id from Admin
+     * @return an Admin
+     */
+    @HystrixCommand(fallbackMethod = "findAdminByIdFail", ignoreExceptions = ResponseStatusException.class)
+    public Admin findAdminById(Long adminId, String authorizationHeader){
+        LOGGER.info("Find Admin with id " + adminId);
+        securityService.isUser(authorizationHeader);
+        return userClient.findAdminById(adminId);
+    }
+
     // --- FallBack Methods ---
     public List<Basic> findAllBasicUserFail(String authorizationHeader){
         LOGGER.warn("[WARN] It wasn't possible to find all Basic Users");
@@ -180,6 +230,26 @@ public class UserService {
 
     public Premium createPremiumUserFail(BasicAndPremiumViewModel basicAndPremiumViewModel){
         LOGGER.warn("[WARN] It wasn't possible to create new Premium User");
+        return null;
+    }
+
+    public Admin createNewAdminFail(Admin admin){
+        LOGGER.warn("[WARN] It wasn't possible to create new Admin User");
+        return null;
+    }
+
+    public List<Admin> findAllAdminFail(String authorizationHeader){
+        LOGGER.warn("[WARN] It wasn't possible to find All Admin Users");
+        return null;
+    }
+
+    public Admin findAdminByIdFail(Long adminId, String authorizationHeader){
+        LOGGER.warn("[WARN] It wasn't possible to find Admin by id");
+        return null;
+    }
+
+    public Long findByUsernameFail(String username, String authorizationHeader){
+        LOGGER.warn("[WARN] It wasn't possible to username");
         return null;
     }
 

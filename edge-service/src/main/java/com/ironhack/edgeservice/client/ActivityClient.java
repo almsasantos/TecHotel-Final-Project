@@ -26,6 +26,10 @@ public interface ActivityClient {
     @ResponseStatus(HttpStatus.OK)
     public Massage findMassageById(@PathVariable("id") Long massageId);
 
+    @GetMapping("/activities/massages/filter/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Object[]> filterMassageByUserId(@PathVariable("userId") Long userId);
+
     @PostMapping("/activities/massages")
     @ResponseStatus(HttpStatus.CREATED)
     public Massage createMassageAppointment(@RequestBody @Valid MassageViewModel massageViewModel);
@@ -47,6 +51,10 @@ public interface ActivityClient {
     @GetMapping("/activities/room-food-services/{id}")
     @ResponseStatus(HttpStatus.OK)
     public RoomFood findRoomFoodById(@PathVariable("id") Long roomFoodId);
+
+    @GetMapping("/activities/room-food-services/filter/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Object[]> filterRoomFoodByUserId(@PathVariable("userId") Long userId);
 
     @PostMapping("/activities/room-food-services")
     @ResponseStatus(HttpStatus.CREATED)
@@ -77,6 +85,10 @@ public interface ActivityClient {
     @GetMapping("/activities/pool-rents/{id}")
     @ResponseStatus(HttpStatus.OK)
     public PoolRent findPoolRentById(@PathVariable("id") Long poolRentId);
+
+    @GetMapping("/activities/pool-rents/filter/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Object[]> filterPoolRentByUserId(@PathVariable("userId") Long userId);
 
     @PostMapping("/activities/pool-rents")
     @ResponseStatus(HttpStatus.CREATED)

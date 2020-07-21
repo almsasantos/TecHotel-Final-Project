@@ -32,32 +32,65 @@ import java.time.LocalTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Pool Rent's Service
+ */
 @Service
 public class PoolRentService {
+
+    /**
+     * Autowired of Pool Rent Repository
+     */
     @Autowired
     private PoolRentRepository poolRentRepository;
 
+    /**
+     * Autowired of User Client
+     */
     @Autowired
     private UserClient userClient;
 
+    /**
+     * Autowired of Room Client
+     */
     @Autowired
     private RoomClient roomClient;
 
+    /**
+     * Autowired of Invoice Client
+     */
     @Autowired
     private InvoiceClient invoiceClient;
 
+    /**
+     * Final Variable of Logger
+     */
     private static final Logger LOGGER = LogManager.getLogger(PoolRentService.class);
 
+    /**
+     * Find All Pool Rent
+     * @return a list of PoolRent
+     */
     public List<PoolRent> findAll(){
         LOGGER.info("Find all Pool Rents");
         return poolRentRepository.findAll();
     }
 
+    /**
+     * Find PoolRent By Id
+     * @param poolRentId receives a Long with poolRentId
+     * @return a PoolRent
+     */
     public PoolRent findPoolRentById(Long poolRentId){
         LOGGER.info("Find Pool Rent with id " + poolRentId);
         return poolRentRepository.findById(poolRentId).orElseThrow(() -> new DataNotFoundException("Pool rent id was not found"));
     }
 
+    /**
+     * Create Pool Rent
+     * @param poolRentViewModel receives a PoolRentViewModel
+     * @return a PoolRent
+     */
     @HystrixCommand(fallbackMethod = "createPoolRentFail")
     @Transactional
     public PoolRent createPoolRent(PoolRentViewModel poolRentViewModel){
@@ -78,7 +111,6 @@ public class PoolRentService {
         }
 
         poolRent.setFloatiesNum(poolRentViewModel.getFloatiesNum());
-        poolRent.setBeginOfActivity(poolRentViewModel.getBeginOfActivity());
         poolRent.setRoomId(poolRentViewModel.getRoomId());
         poolRent.setUserId(poolRentViewModel.getUserId());
         poolRent.setTotalPrice(new Money(totalPrice));
@@ -97,6 +129,11 @@ public class PoolRentService {
         return poolRent;
     }
 
+    /**
+     * Update Floaties Number
+     * @param updateFloatiesNumDto receives a UpdateFloatiesNumDto with updateFloatiesNumDto
+     */
+    @HystrixCommand(fallbackMethod = "updateFloatiesNumFail")
     public void updateFloatiesNum(UpdateFloatiesNumDto updateFloatiesNumDto){
         LOGGER.info("[INIT] Update number of floaties to " + updateFloatiesNumDto.getFloatiesNum() + " for pool rent " + updateFloatiesNumDto.getPoolRentId());
 
@@ -122,6 +159,11 @@ public class PoolRentService {
         LOGGER.info("[END] Update number of floaties to " + updateFloatiesNumDto.getFloatiesNum() + " for pool rent " + updateFloatiesNumDto.getPoolRentId());
     }
 
+    /**
+     * Update Towel Number
+     * @param updateTowelNumDto receives a UpdateTowelNumDto
+     */
+    @HystrixCommand(fallbackMethod = "updateTowelNumFail")
     public void updateTowelNum(UpdateTowelNumDto updateTowelNumDto){
         LOGGER.info("[INIT] Update number of towels to " + updateTowelNumDto.getTowelNum() + " for pool rent " + updateTowelNumDto.getPoolRentId());
 
@@ -147,6 +189,11 @@ public class PoolRentService {
         LOGGER.info("[END] Update number of towels to " + updateTowelNumDto.getTowelNum() + " for pool rent " + updateTowelNumDto.getPoolRentId());
     }
 
+    /**
+     * Cancel Pool Rent
+     * @param poolRentId receives a Long with poolRentId
+     * @throws ReservationException an Exception
+     */
     public void cancelPoolRent(Long poolRentId) throws ReservationException {
         LOGGER.info("[INIT] Cancel Pool Rent with id " + poolRentId);
 
@@ -161,6 +208,13 @@ public class PoolRentService {
         LOGGER.info("[END] Cancel Pool Rent with id " + poolRentId);
     }
 
+    /**
+     * Confirm Data
+     * @param userId receives a Long with userId
+     * @param roomId receives a Integer with roomId
+     * @param amount receives a Money with amount
+     * @throws ReservationException an Exception
+     */
     @HystrixCommand(fallbackMethod = "confirmDataFail")
     public void confirmData(Long userId, Integer roomId, Money amount) throws ReservationException {
         LOGGER.info("[INIT] Confirm data from user id " + userId + " with room " + roomId);
@@ -190,6 +244,12 @@ public class PoolRentService {
         LOGGER.info("[END] Confirm data from user id " + userId + " with room " + roomId);
     }
 
+    /**
+     * Check Enough Balance
+     * @param userId receives a Long with userId
+     * @param typeOfUser receives a TypeOfUser with typeOfUser
+     * @param price receives a Money with price
+     */
     @HystrixCommand(fallbackMethod = "checkEnoughBalanceFail")
     public void checkEnoughBalance(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.info("[INIT] Check if user " + userId + " has enough balance to make appointment");
@@ -209,6 +269,11 @@ public class PoolRentService {
         LOGGER.info("[END] Check if user " + userId + " has enough balance to make appointment");
     }
 
+    /**
+     * Reset Money
+     * @param userId receives a Long with userId
+     * @param amount receives a BigDecimal with amount
+     */
     @HystrixCommand(fallbackMethod = "resetMoneyFail")
     public void resetMoney(Long userId, BigDecimal amount){
         LOGGER.info("[INIT] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
@@ -232,20 +297,69 @@ public class PoolRentService {
         LOGGER.info("[END] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
     }
 
+    /**
+     * Filter Pool Rent By User Id
+     * @param userId receives a Long with userId
+     * @returnq list of objects
+     */
+    public List<Object[]> filterPoolRentByUserId(Long userId){
+        LOGGER.info("Filter Pool Rent Reservation from user with id " + userId);
+        return poolRentRepository.filterPoolRentByUserId(userId);
+    }
+
+    /**
+     * Confirm Data Fail
+     * @param userId receives a Long with userId
+     * @param roomId receives a Integer with roomId
+     * @param amount receives a Money with amount
+     * @throws ReservationException an Exception
+     */
     public void confirmDataFail(Long userId, Integer roomId, Money amount) throws ReservationException {
         LOGGER.warn("[WARN] It wasn't possible to confirm the data");
     }
 
+    /**
+     * Reset Money Fail
+     * @param userId receives a Long with userId
+     * @param amount receives a BigDecimal with amount
+     */
     public void resetMoneyFail(Long userId, BigDecimal amount) {
         LOGGER.warn("[WARN] It wasn't to give user's money back");
     }
 
+    /**
+     * Check Enough Balance Fail
+     * @param userId receives a Long with userId
+     * @param typeOfUser receives a TypeOfUser with typeOfUser
+     * @param price receives a Money with price
+     */
     public void checkEnoughBalanceFail(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.warn("[WARN] It wasn't possible to check user's balance");
     }
 
+    /**
+     * Create Pool Rent Fail
+     * @param poolRentViewModel receives a PoolRentViewModel with poolRentViewModel
+     * @return a null value;
+     */
     public PoolRent createPoolRentFail(PoolRentViewModel poolRentViewModel){
         LOGGER.warn("[WARN] It wasn't possible to make a new Pool Rent");
         return null;
+    }
+
+    /**
+     * Update Floatie Number Fail
+     * @param updateFloatiesNumDto receives a UpdateFloatiesNumDto with updateFloatiesNumDto
+     */
+    public void updateFloatiesNumFail(UpdateFloatiesNumDto updateFloatiesNumDto){
+        LOGGER.warn("[WARN] It wasn't possible to update floaties number");
+    }
+
+    /**
+     * Update Towel Number Fail
+     * @param updateTowelNumDto receives a UpdateTowelNumDto with updateTowelNumDto
+     */
+    public void updateTowelNumFail(UpdateTowelNumDto updateTowelNumDto){
+        LOGGER.warn("[WARN] It wasn't possible to update towels number");
     }
 }

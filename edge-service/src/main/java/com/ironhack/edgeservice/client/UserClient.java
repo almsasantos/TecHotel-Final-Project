@@ -1,5 +1,6 @@
 package com.ironhack.edgeservice.client;
 
+import com.ironhack.edgeservice.model.entities.users.Admin;
 import com.ironhack.edgeservice.model.entities.users.Basic;
 import com.ironhack.edgeservice.model.entities.users.Premium;
 import com.ironhack.edgeservice.model.viewModel.BasicAndPremiumViewModel;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @FeignClient(name = "user-service")
 public interface UserClient {
+
     // --- BASIC USERS ---
     @GetMapping("/users/basics")
     @ResponseStatus(HttpStatus.OK)
@@ -46,6 +48,11 @@ public interface UserClient {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateBasic(@RequestBody Basic basicUpdated);
 
+    @GetMapping("/users/basics-username/{username}")
+    @ResponseStatus(HttpStatus.OK)
+    public Long findBasicByUsername(@PathVariable("username") String username);
+
+
     // --- PREMIUM USERS ---
     @GetMapping("/users/premiums")
     @ResponseStatus(HttpStatus.OK)
@@ -74,4 +81,45 @@ public interface UserClient {
     @DeleteMapping("/users/premiums/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deletePremiumUser(@PathVariable("id") Long premiumId);
+
+    @GetMapping("/users/premiums-username/{username}")
+    @ResponseStatus(HttpStatus.OK)
+    public Long findPremiumByUsername(@PathVariable("username") String username);
+
+    // --- ADMIN USER ---
+
+    /**
+     * Find All Admins
+     * @return a list of Admin
+     */
+    @GetMapping("/users/admins")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Admin> findAllAdmin();
+
+    /**
+     * Find admin by id
+     * @param adminId receives a long with id from Admin
+     * @return an Admin
+     */
+    @GetMapping("/users/admins/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Admin findAdminById(@PathVariable("id") Long adminId);
+
+    /**
+     * Create new Admin
+     * @param admin receives a class Admin
+     * @return an Admin created
+     */
+    @PostMapping("/users/admins")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Admin createNewAdmin(@RequestBody @Valid Admin admin);
+
+    /**
+     * Delete an Admin
+     * @param adminId receives a long with id from Admin
+     */
+    @DeleteMapping("/users/admins/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteAdmin(@PathVariable("id") Long adminId);
+
 }

@@ -21,6 +21,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -28,32 +29,64 @@ import java.math.RoundingMode;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Room Food's Service
+ */
 @Service
 public class RoomFoodService {
+    /**
+     * Autowired of Room Food Repository
+     */
     @Autowired
     private RoomFoodRepository roomFoodRepository;
 
+    /**
+     * Autowired of User Client
+     */
     @Autowired
     private UserClient userClient;
 
+    /**
+     * Autowired of Room Client
+     */
     @Autowired
     private RoomClient roomClient;
 
+    /**
+     * Autowired of Invoice Client
+     */
     @Autowired
     private InvoiceClient invoiceClient;
 
+    /**
+     * Final Variable of Logger
+     */
     private static final Logger LOGGER = LogManager.getLogger(RoomFoodService.class);
 
+    /**
+     * Find All Room Foods
+     * @return a list of RoomFood
+     */
     public List<RoomFood> findAll(){
         LOGGER.info("Find all Room Food Requests");
         return roomFoodRepository.findAll();
     }
 
+    /**
+     * Find RoomFood by id
+     * @param roomFoodId receives a Long with roomFoodId
+     * @return a RoomFood
+     */
     public RoomFood findRoomFoodById(Long roomFoodId){
         LOGGER.info("Find Room Food Request with id " + roomFoodId);
         return roomFoodRepository.findById(roomFoodId).orElseThrow(() -> new DataNotFoundException("Room food request id not found"));
     }
 
+    /**
+     * Create new Room Food Request
+     * @param roomFoodViewModel receives a RoomFoodViewModel
+     * @return a RoomFood
+     */
     @HystrixCommand(fallbackMethod = "createRoomFoodRequestFail")
     public RoomFood createRoomFoodRequest(RoomFoodViewModel roomFoodViewModel){
         LOGGER.info("[INIT] Create new Room Food Request for user id " + roomFoodViewModel.getUserId() + " in room " + roomFoodViewModel.getRoomId());
@@ -84,6 +117,11 @@ public class RoomFoodService {
         return roomFood;
     }
 
+    /**
+     * Update Food Menu
+     * @param updateRoomFoodMenuDto receives a UpdateRoomFoodMenuDto
+     */
+    @HystrixCommand(fallbackMethod = "updateFoodMenuFail")
     public void updateFoodMenu(UpdateRoomFoodMenuDto updateRoomFoodMenuDto){
         LOGGER.info("[INIT] Update Food Menu of Room Food Request with id " + updateRoomFoodMenuDto.getRoomFoodId());
 
@@ -109,6 +147,11 @@ public class RoomFoodService {
         LOGGER.info("[END] Update Food Menu of Room Food Request with id " + updateRoomFoodMenuDto.getRoomFoodId());
     }
 
+    /**
+     * Update Drink Menu
+     * @param updateDrinkMenuDto receives an UpdateDrinkMenuDto
+     */
+    @HystrixCommand(fallbackMethod = "updateDrinkMenuFail")
     public void updateDrinkMenu(UpdateDrinkMenuDto updateDrinkMenuDto){
         LOGGER.info("[INIT] Update Drink Menu of Room Food Request with id " + updateDrinkMenuDto.getRoomFoodId());
 
@@ -134,6 +177,10 @@ public class RoomFoodService {
         LOGGER.info("[END] Update Drink Menu of Room Food Request with id " + updateDrinkMenuDto.getRoomFoodId());
     }
 
+    /**
+     * Deliver Room Food
+     * @param roomFoodId receives a Long with roomFoodId
+     */
     public void deliverRoomFood(Long roomFoodId){
         LOGGER.info("Deliver Room Food Service to room " + roomFoodId);
         RoomFood roomFood = findRoomFoodById(roomFoodId);
@@ -141,6 +188,11 @@ public class RoomFoodService {
         roomFoodRepository.save(roomFood);
     }
 
+    /**
+     * Cancel Room Food Request
+     * @param roomFoodId receives a Long with roomFoodId
+     * @throws ReservationException an Exception
+     */
     public void cancelRoomFoodRequest(Long roomFoodId) throws ReservationException {
         LOGGER.info("[INIT] Cancel Room Food Request with id " + roomFoodId);
         RoomFood roomFood = findRoomFoodById(roomFoodId);
@@ -153,6 +205,13 @@ public class RoomFoodService {
         LOGGER.info("[END] Cancel Room Food Request with id " + roomFoodId);
     }
 
+    /**
+     * Confirm Data
+     * @param userId receives a Long with roomFoodId
+     * @param roomId receives a Integer with roomId
+     * @param amount receives a Money with amount
+     * @throws ReservationException an Exception
+     */
     @HystrixCommand(fallbackMethod = "confirmDataFail")
     public void confirmData(Long userId, Integer roomId, Money amount) throws ReservationException {
         LOGGER.info("[INIT] Confirm data from user id " + userId + " with room " + roomId);
@@ -182,6 +241,12 @@ public class RoomFoodService {
         LOGGER.info("[END] Confirm data from user id " + userId + " with room " + roomId);
     }
 
+    /**
+     * Check Enough Balance
+     * @param userId receives a Long with userId
+     * @param typeOfUser receives a TypeOfUser with typeOfUser
+     * @param price receives a Money with price
+     */
     @HystrixCommand(fallbackMethod = "checkEnoughBalanceFail")
     public void checkEnoughBalance(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.info("[INIT] Check if user " + userId + " has enough balance to make appointment");
@@ -201,6 +266,11 @@ public class RoomFoodService {
         LOGGER.info("[END] Check if user " + userId + " has enough balance to make appointment");
     }
 
+    /**
+     * Reset Money
+     * @param userId receives a Long with userId
+     * @param amount receives a BigDecimal with amount
+     */
     @HystrixCommand(fallbackMethod = "resetMoneyFail")
     public void resetMoney(Long userId, BigDecimal amount){
         LOGGER.info("[INIT] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
@@ -224,20 +294,68 @@ public class RoomFoodService {
         LOGGER.info("[END] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
     }
 
+    /**
+     * Filter Room Food By User Id
+     * @param userId receives a Long with userId
+     * @return a list of objects
+     */
+    public List<Object[]> filterRoomFoodByUserId(@Param("userId") Long userId){
+        return roomFoodRepository.filterRoomFoodByUserId(userId);
+    }
+
+    /**
+     * Confirm Data Fails
+     * @param userId receives a Long with userId
+     * @param roomId receives a Integer with roomId
+     * @param amount receives a Money with amount
+     * @throws ReservationException an Exception
+     */
     public void confirmDataFail(Long userId, Integer roomId, Money amount) throws ReservationException {
         LOGGER.warn("[WARN] It wasn't possible to confirm the data");
     }
 
+    /**
+     * Reset Money Fail
+     * @param userId receives a Long with userId
+     * @param amount receives a BigDecimal with amount
+     */
     public void resetMoneyFail(Long userId, BigDecimal amount) {
         LOGGER.warn("[WARN] It wasn't to give user's money back");
     }
 
+    /**
+     * Check Enough Balance Fail
+     * @param userId receives a Long with userId
+     * @param typeOfUser receives a TypeOfUser with typeOfUser
+     * @param price receives a Money with price
+     */
     public void checkEnoughBalanceFail(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.warn("[WARN] It wasn't possible to check user's balance");
     }
 
+    /**
+     * Create Room Food Request Fail
+     * @param roomFoodViewModel receives a RoomFoodViewModel with roomFoodViewModel
+     * @return a Room Food
+     */
     public RoomFood createRoomFoodRequestFail(RoomFoodViewModel roomFoodViewModel){
         LOGGER.warn("[WARN] It wasn't possible to make a new Room Food Request");
         return null;
+    }
+
+    /**
+     * Update Room Menu Fail
+     * @param updateRoomFoodMenuDto receives a UpdateRoomFoodMenuDto with updateRoomFoodMenuDto
+     */
+    public void updateFoodMenuFail(UpdateRoomFoodMenuDto updateRoomFoodMenuDto){
+        LOGGER.warn("[WARN] It wasn't possible to update Food Menu");
+    }
+
+    /**
+     * Update Drink Menu Fail
+     * @param updateDrinkMenuDto receives a UpdateDrinkMenuDto with updateDrinkMenuDto
+     */
+    public void updateDrinkMenuFail(UpdateDrinkMenuDto updateDrinkMenuDto){
+        LOGGER.warn("[WARN] It wasn't possible to update Drink Menu");
     }
 }

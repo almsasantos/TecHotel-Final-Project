@@ -1,0 +1,9 @@
+com.ironhack.bookservice
+com.ironhack.bookservice.controller.Impl
+com.ironhack.bookservice.controller.Interfaces
+com.ironhack.bookservice.enums
+com.ironhack.bookservice.exception
+com.ironhack.bookservice.handler
+com.ironhack.bookservice.model
+com.ironhack.bookservice.repository
+com.ironhack.bookservice.service

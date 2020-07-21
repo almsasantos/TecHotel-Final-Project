@@ -1,0 +1,8 @@
+com.ironhack.securityservice
+com.ironhack.securityservice.controller.impl
+com.ironhack.securityservice.controller.interfaces
+com.ironhack.securityservice.enums
+com.ironhack.securityservice.model
+com.ironhack.securityservice.repository
+com.ironhack.securityservice.security
+com.ironhack.securityservice.service

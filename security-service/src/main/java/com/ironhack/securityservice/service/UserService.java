@@ -133,4 +133,18 @@ public class UserService implements UserDetailsService, Serializable {
         premium.setRol(Role.PREMIUM);
         return createUser(premium);
     }
+
+    /**
+     * Create a new admin
+     * @param admin User admin
+     * @return User admin
+     */
+    public User createAdminUser(User admin) {
+        admin.setRol(Role.ADMIN);
+        return createUser(admin);
+    }
+
+    public boolean login(User user) {
+        return userRepository.findById(user.getId()).isPresent();
+    }
 }

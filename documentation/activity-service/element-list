@@ -1,0 +1,16 @@
+com.ironhack.activityservice
+com.ironhack.activityservice.client
+com.ironhack.activityservice.controller.impl
+com.ironhack.activityservice.controller.interfaces
+com.ironhack.activityservice.dto
+com.ironhack.activityservice.exception
+com.ironhack.activityservice.handler
+com.ironhack.activityservice.model.classes
+com.ironhack.activityservice.model.entities
+com.ironhack.activityservice.model.enums
+com.ironhack.activityservice.model.invoices
+com.ironhack.activityservice.model.rooms
+com.ironhack.activityservice.model.users
+com.ironhack.activityservice.model.viewModel
+com.ironhack.activityservice.repository
+com.ironhack.activityservice.service

@@ -33,6 +33,12 @@ public class ActivityController {
         return activityService.findMassageById(massageId, authorizationHeader);
     }
 
+    @GetMapping("/activities/massages/filter/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Object[]> filterMassageByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader){
+        return activityService.filterMassageByUserId(userId, authorizationHeader);
+    }
+
     @PostMapping("/activities/massages")
     @ResponseStatus(HttpStatus.CREATED)
     public Massage createMassageAppointment(@RequestBody @Valid MassageViewModel massageViewModel, @RequestHeader(value = "Authorization") String authorizationHeader){
@@ -63,6 +69,12 @@ public class ActivityController {
     @ResponseStatus(HttpStatus.OK)
     public RoomFood findRoomFoodById(@PathVariable("id") Long roomFoodId, @RequestHeader(value = "Authorization") String authorizationHeader){
         return activityService.findRoomFoodById(roomFoodId, authorizationHeader);
+    }
+
+    @GetMapping("/activities/room-food-services/filter/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Object[]> filterRoomFoodByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader){
+        return activityService.filterRoomFoodByUserId(userId, authorizationHeader);
     }
 
     @PostMapping("/activities/room-food-services")
@@ -107,6 +119,12 @@ public class ActivityController {
     @ResponseStatus(HttpStatus.OK)
     public PoolRent findPoolRentById(@PathVariable("id") Long poolRentId, @RequestHeader(value = "Authorization") String authorizationHeader){
         return activityService.findPoolRentById(poolRentId, authorizationHeader);
+    }
+
+    @GetMapping("/activities/pool-rents/filter/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Object[]> filterPoolRentByUserId(@PathVariable("userId") Long userId,  @RequestHeader(value = "Authorization") String authorizationHeader){
+        return activityService.filterPoolRentByUserId(userId, authorizationHeader);
     }
 
     @PostMapping("/activities/pool-rents")

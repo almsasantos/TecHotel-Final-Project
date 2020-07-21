@@ -7,7 +7,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -71,14 +70,6 @@ class PremiumTest {
         premium.setBankAccount(account);
 
         assertEquals(account, premium.getBankAccount());
-    }
-
-    @Test
-    void getRegistrationDate() {
-        LocalDateTime now = LocalDateTime.now();
-        premium.setRegistrationDate(now);
-
-        assertEquals(now, premium.getRegistrationDate());
     }
 
     @Test

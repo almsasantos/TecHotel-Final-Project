@@ -1,13 +1,11 @@
 package com.ironhack.edgeservice.model.viewModel;
 
 import com.ironhack.edgeservice.model.enums.MassageType;
-import java.time.LocalDateTime;
 
 public class MassageViewModel {
     private Long userId;
     private Integer roomId;
     private MassageType massageType;
-    private LocalDateTime beginOfActivity;
 
     public Long getUserId() {
         return userId;
@@ -31,13 +29,5 @@ public class MassageViewModel {
 
     public void setMassageType(MassageType massageType) {
         this.massageType = massageType;
-    }
-
-    public LocalDateTime getBeginOfActivity() {
-        return beginOfActivity;
-    }
-
-    public void setBeginOfActivity(LocalDateTime beginOfActivity) {
-        this.beginOfActivity = beginOfActivity;
     }
 }

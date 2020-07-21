@@ -23,6 +23,12 @@ public class GlobalHandler {
         response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage());
     }
 
+    /**
+     * Exception Handler to handle exceptions.
+     * @param e Receives an Exception.
+     * @param response Receives an HTTP Response.
+     * @throws IOException
+     */
     @ExceptionHandler(UsernameExistsException.class)
     public void handleUsernameExistsException(UsernameExistsException e, HttpServletResponse response) throws IOException{
 

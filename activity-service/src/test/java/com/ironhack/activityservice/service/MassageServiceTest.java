@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -29,7 +28,7 @@ class MassageServiceTest {
 
     @BeforeEach
     void setUp() {
-        massage = new Massage(1L, 2, MassageType.AROMATHERAPY, LocalDateTime.now());
+        massage = new Massage(1L, 2, MassageType.AROMATHERAPY);
         massageRepository.save(massage);
     }
 
@@ -60,7 +59,6 @@ class MassageServiceTest {
         MassageViewModel massageViewModel = new MassageViewModel();
         massageViewModel.setUserId(1L);
         massageViewModel.setRoomId(1);
-        massageViewModel.setBeginOfActivity(LocalDateTime.now());
         massageViewModel.setMassageType(MassageType.COUPLES);
         Massage newMassage = massageService.createMassageAppointment(massageViewModel);
         assertEquals(null, newMassage);

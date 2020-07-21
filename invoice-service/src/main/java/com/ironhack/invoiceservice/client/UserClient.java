@@ -2,12 +2,12 @@ package com.ironhack.invoiceservice.client;
 
 import com.ironhack.invoiceservice.model.users.Basic;
 import com.ironhack.invoiceservice.model.users.Premium;
+import com.ironhack.invoiceservice.model.viewmodel.BasicAndPremiumViewModel;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @FeignClient(name = "user-service")
@@ -24,6 +24,15 @@ public interface UserClient {
     @ResponseStatus(HttpStatus.OK)
     public Boolean basicUserIdMatchesName(@PathVariable("basicId") Long basicId, @PathVariable("name") String name);
 
+    /**
+     * Create new Basic User
+     * @param basicAndPremiumViewModel receives a basic view model with information necessary
+     * @return a Basic User
+     */
+    @PostMapping("/users/basics")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Basic createBasicUser(@RequestBody @Valid BasicAndPremiumViewModel basicAndPremiumViewModel);
+
     @GetMapping("/users/premiums")
     @ResponseStatus(HttpStatus.OK)
     public List<Premium> findAllPremiumUsers();
@@ -35,4 +44,14 @@ public interface UserClient {
     @GetMapping("/users/premiums/check-name/{premiumId}/{name}")
     @ResponseStatus(HttpStatus.OK)
     public Boolean premiumUserIdMatchesName(@PathVariable("premiumId") Long premiumId, @PathVariable("name") String name);
+
+    /**
+     * Create Premium User
+     * @param basicAndPremiumViewModel receives a premium view model with information necessary
+     * @return a Premium User Created
+     */
+    @PostMapping("/users/premiums")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Premium createPremiumUser(@RequestBody @Valid BasicAndPremiumViewModel basicAndPremiumViewModel);
 }
+

@@ -32,6 +32,24 @@ public class SecurityService {
     @Autowired
     private SecurityClient securityClient;
 
+    public boolean login(String authorizationHeader) {
+        try {
+            isUser(authorizationHeader);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean admin(String authorizationHeader) {
+        try {
+            isAdmin(authorizationHeader);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
     /**
      * Is User
      * @param authorizationHeader Authorization header
@@ -93,11 +111,20 @@ public class SecurityService {
 
     /**
      * Create Premium User
-     * @param premium User basic
+     * @param premium User premium
      * @return User
      */
     public UserSecurity createPremiumUser(@RequestBody UserSecurity premium){
         return securityClient.createPremiumUser(premium);
+    }
+
+    /**
+     * Create Admin User
+     * @param admin User admin
+     * @return User
+     */
+    public UserSecurity createAdminUser(@RequestBody UserSecurity admin){
+        return securityClient.createAdminUser(admin);
     }
 
     /**

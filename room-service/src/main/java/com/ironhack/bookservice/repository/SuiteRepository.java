@@ -4,6 +4,9 @@ import com.ironhack.bookservice.model.SuiteRoom;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+/**
+ * Repository of Suite Room
+ */
 @Repository
 public interface SuiteRepository extends JpaRepository<SuiteRoom, Integer> {
 }

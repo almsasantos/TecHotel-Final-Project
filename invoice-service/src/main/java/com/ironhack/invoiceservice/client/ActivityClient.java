@@ -24,4 +24,5 @@ public interface ActivityClient {
     @GetMapping("/activities/room-food-services")
     @ResponseStatus(HttpStatus.OK)
     public List<RoomFood> findAllRoomFood();
+
 }

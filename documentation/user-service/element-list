@@ -1,0 +1,11 @@
+com.ironhack.userservice
+com.ironhack.userservice.controller.impl
+com.ironhack.userservice.controller.interfaces
+com.ironhack.userservice.exception
+com.ironhack.userservice.handler
+com.ironhack.userservice.model.classes
+com.ironhack.userservice.model.entities
+com.ironhack.userservice.model.enums
+com.ironhack.userservice.model.viewModel
+com.ironhack.userservice.repository
+com.ironhack.userservice.service

@@ -83,7 +83,7 @@ class BasicControllerTest {
     void createBasicUser() throws Exception {
         BasicAndPremiumViewModel basicAndPremiumViewModel = new BasicAndPremiumViewModel();
         basicAndPremiumViewModel.setName("Ana Santos");
-        basicAndPremiumViewModel.setUsername("almsasantos");
+        basicAndPremiumViewModel.setUsername("almsss");
         basicAndPremiumViewModel.setPassword("password");
         basicAndPremiumViewModel.setPhoneNumber("987654323");
         basicAndPremiumViewModel.setEmail("almsalmas@gmail.com");

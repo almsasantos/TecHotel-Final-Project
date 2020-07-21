@@ -87,12 +87,29 @@ public class UserControllerImpl implements UserController {
 
     /**
      * Create Premium User
-     * @param premium User basic
+     * @param premium User premium
      * @return User
      */
     @PostMapping("/users/premium-users")
     @ResponseStatus(HttpStatus.CREATED)
     public User createPremiumUser(@RequestBody User premium) {
         return userService.createPremiumUser(premium);
+    }
+
+    /**
+     * Create Admin User
+     * @param admin User admin
+     * @return User
+     */
+    @PostMapping("/users/admin-users")
+    @ResponseStatus(HttpStatus.CREATED)
+    public User createAdminUser(@RequestBody User admin) {
+        return userService.createAdminUser(admin);
+    }
+
+    @PostMapping("/users/login")
+    @ResponseStatus(HttpStatus.OK)
+    public boolean login(@AuthenticationPrincipal User user) {
+        return userService.login(user);
     }
 }

@@ -15,6 +15,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
@@ -48,12 +49,15 @@ public class ActivityService {
         LOGGER.info("[INIT] Find Massage Appointment with id " + massageId);
         securityService.isUser(authorizationHeader);
         Massage massage = activityClient.findMassageById(massageId);
-        if (massage == null){
-            LOGGER.warn("[WARN] - Massage not found with id " + massageId);
-            throw new NullPointerException("There's no massage with id " + massageId);
-        }
         LOGGER.info("[END] Find Massage Appointment with id " + massageId);
         return massage;
+    }
+
+    @HystrixCommand(fallbackMethod = "filterByUserIdFail", ignoreExceptions = ResponseStatusException.class)
+    public List<Object[]> filterMassageByUserId(Long userId, String authorizationHeader){
+        LOGGER.info("Filter Massage Reservation from user with id " + userId);
+        securityService.isUser(authorizationHeader);
+        return activityClient.filterMassageByUserId(userId);
     }
 
     @HystrixCommand(fallbackMethod = "createMassageAppointmentFail", ignoreExceptions = ResponseStatusException.class)
@@ -68,10 +72,6 @@ public class ActivityService {
         LOGGER.info("Update Massage Appointment " + updateMassageTypeDto.getMassageId() + " type of massage to " + updateMassageTypeDto.getMassageType());
         securityService.isUser(authorizationHeader);
         Massage massage = activityClient.findMassageById(updateMassageTypeDto.getMassageId());
-        if (massage == null){
-            LOGGER.warn("[WARN] - Massage not found with id " + updateMassageTypeDto.getMassageId());
-            throw new NullPointerException("There's no massage with id " + updateMassageTypeDto.getMassageId());
-        }
         activityClient.changeMassageType(updateMassageTypeDto);
     }
 
@@ -80,10 +80,6 @@ public class ActivityService {
         LOGGER.info("Cancel Massage Appointment with id "+ massageId);
         securityService.isUser(authorizationHeader);
         Massage massage = activityClient.findMassageById(massageId);
-        if (massage == null){
-            LOGGER.warn("[WARN] - Massage not found with id " + massageId);
-            throw new NullPointerException("There's no massage with id " + massageId);
-        }
         activityClient.deleteMassageAppointment(massageId);
     }
 
@@ -99,12 +95,13 @@ public class ActivityService {
     public RoomFood findRoomFoodById(Long roomFoodId, String authorizationHeader){
         LOGGER.info("Find Room Food Request with id " + roomFoodId);
         securityService.isUser(authorizationHeader);
-        RoomFood roomFood = activityClient.findRoomFoodById(roomFoodId);
-        if (roomFood == null){
-            LOGGER.warn("[WARN] - Room Food not found with id " + roomFoodId);
-            throw new NullPointerException("There's no Room Food with id " + roomFoodId);
-        }
-        return roomFood;
+        return activityClient.findRoomFoodById(roomFoodId);
+    }
+    @HystrixCommand(fallbackMethod = "filterByUserIdFail", ignoreExceptions = ResponseStatusException.class)
+    public List<Object[]> filterRoomFoodByUserId(Long userId, String authorizationHeader){
+        LOGGER.info("Filter Room Food Request from user with id " + userId);
+        securityService.isUser(authorizationHeader);
+        return activityClient.filterRoomFoodByUserId(userId);
     }
 
     @HystrixCommand(fallbackMethod = "createRoomFoodRequestFail", ignoreExceptions = ResponseStatusException.class)
@@ -119,10 +116,6 @@ public class ActivityService {
         LOGGER.info("Deliver Room Food Request " + roomFoodId);
         securityService.isUser(authorizationHeader);
         RoomFood roomFood = activityClient.findRoomFoodById(roomFoodId);
-        if (roomFood == null){
-            LOGGER.warn("[WARN] - Room Food not found with id " + roomFoodId);
-            throw new NullPointerException("There's no Room Food with id " + roomFoodId);
-        }
         activityClient.deliverRoomFood(roomFoodId);
     }
 
@@ -131,10 +124,6 @@ public class ActivityService {
         LOGGER.info("Update Food of Room Food Request " + updateRoomFoodMenuDto.getRoomFoodId());
         securityService.isUser(authorizationHeader);
         RoomFood roomFood = activityClient.findRoomFoodById(updateRoomFoodMenuDto.getRoomFoodId());
-        if (roomFood == null){
-            LOGGER.warn("[WARN] - Room Food not found with id " + updateRoomFoodMenuDto.getRoomFoodId());
-            throw new NullPointerException("There's no Room Food with id " + updateRoomFoodMenuDto.getRoomFoodId());
-        }
         activityClient.updateFoodMenu(updateRoomFoodMenuDto);
     }
 
@@ -143,10 +132,10 @@ public class ActivityService {
         LOGGER.info("Update Drink of Room Food Request " + updateDrinkMenuDto.getRoomFoodId());
         securityService.isUser(authorizationHeader);
         RoomFood roomFood = activityClient.findRoomFoodById(updateDrinkMenuDto.getRoomFoodId());
-        if (roomFood == null){
+        /*if (roomFood == null){
             LOGGER.warn("[WARN] - Room Food not found with id " + updateDrinkMenuDto.getRoomFoodId());
             throw new NullPointerException("There's no Room Food with id " + updateDrinkMenuDto.getRoomFoodId());
-        }
+             }*/
         activityClient.updateDrinkMenu(updateDrinkMenuDto);
     }
 
@@ -155,10 +144,10 @@ public class ActivityService {
         LOGGER.info("Cancel Room Food Request with id "+ roomFoodId);
         securityService.isUser(authorizationHeader);
         RoomFood roomFood = activityClient.findRoomFoodById(roomFoodId);
-        if (roomFood == null){
+        /*if (roomFood == null){
             LOGGER.warn("[WARN] - Room Food not found with id " + roomFoodId);
             throw new NullPointerException("There's no Room Food with id " + roomFoodId);
-        }
+        } */
         activityClient.removeRoomFoodRequest(roomFoodId);
     }
 
@@ -176,11 +165,14 @@ public class ActivityService {
         LOGGER.info("Find Pool Rent with id " + poolRentId);
         securityService.isUser(authorizationHeader);
         PoolRent poolRent = activityClient.findPoolRentById(poolRentId);
-        if (poolRent == null){
-            LOGGER.warn("[WARN] - Pool Rent not found with id " + poolRentId);
-            throw new NullPointerException("There's no Pool Rent with id " + poolRentId);
-        }
         return activityClient.findPoolRentById(poolRentId);
+    }
+
+    @HystrixCommand(fallbackMethod = "filterByUserIdFail", ignoreExceptions = ResponseStatusException.class)
+    public List<Object[]> filterPoolRentByUserId(@PathVariable("userId") Long userId,  String authorizationHeader){
+        LOGGER.info("Filter Pool Rent Request from user with id " + userId);
+        securityService.isUser(authorizationHeader);
+        return activityClient.filterPoolRentByUserId(userId);
     }
 
     @HystrixCommand(fallbackMethod = "createPoolRentFail", ignoreExceptions = ResponseStatusException.class)
@@ -220,6 +212,11 @@ public class ActivityService {
 
     public Massage findMassageByIdFail(Long massageId, String authorizationHeader){
         LOGGER.warn("[WARN] It wasn't possible to find Massage with id " + massageId);
+        return null;
+    }
+
+    public List<Object[]> filterByUserIdFail(Long userId, String authorizationHeader){
+        LOGGER.warn("[WARN] It wasn't possible to filter activity by user");
         return null;
     }
 

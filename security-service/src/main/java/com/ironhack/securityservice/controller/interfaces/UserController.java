@@ -51,9 +51,16 @@ public interface UserController {
 
     /**
      * Create Premium User
-     * @param premium User basic
+     * @param premium User premium
      * @return User
      */
     public User createPremiumUser(@RequestBody User premium);
+
+    /**
+     * Create Admin User
+     * @param admin User admin
+     * @return User
+     */
+    public User createAdminUser(@RequestBody User admin);
 
 }

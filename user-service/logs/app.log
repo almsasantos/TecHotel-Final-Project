@@ -4462,3 +4462,1287 @@
 2020-07-19 22:18:03,580 INFO c.i.u.s.AdminService [main] Find all Admins
 2020-07-19 22:18:03,609 INFO c.i.u.s.AdminService [main] Find Admin with id 6
 2020-07-19 22:18:03,609 INFO c.i.u.s.AdminService [main] Find Admin with id 6
+2020-07-20 13:23:35,701 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-20 13:23:35,701 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-20 13:23:35,704 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 13:23:35,704 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 13:23:35,704 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms is available to new basic user
+2020-07-20 13:23:35,704 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms is available to new basic user
+2020-07-20 13:23:35,849 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-20 13:23:35,849 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-20 13:23:52,875 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 13:23:52,875 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 13:23:52,900 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 13:23:52,900 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 13:23:52,912 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 1
+2020-07-20 13:23:52,912 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 1
+2020-07-20 13:23:52,927 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure basic user 1 matches name Ana Santos
+2020-07-20 13:23:52,927 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure basic user 1 matches name Ana Santos
+2020-07-20 13:23:52,931 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure user 1 exists and has a reservation in the hotel
+2020-07-20 13:23:52,931 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure user 1 exists and has a reservation in the hotel
+2020-07-20 13:23:52,931 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-20 13:23:52,931 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-20 13:23:53,102 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Update Basic client 1 to room 15
+2020-07-20 13:23:53,102 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Update Basic client 1 to room 15
+2020-07-20 13:23:53,102 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 1
+2020-07-20 13:23:53,102 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 1
+2020-07-20 13:23:53,116 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 1
+2020-07-20 13:23:53,116 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 1
+2020-07-20 13:23:53,124 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Update Basic client 1 with balance 910.01
+2020-07-20 13:23:53,124 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Update Basic client 1 with balance 910.01
+2020-07-20 13:23:53,125 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 1
+2020-07-20 13:23:53,125 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 1
+2020-07-20 13:23:53,140 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 1 with number 1 of stays
+2020-07-20 13:23:53,140 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 1 with number 1 of stays
+2020-07-20 13:23:53,140 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 13:23:53,140 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 13:23:53,476 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 13:23:53,476 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 13:23:53,496 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 13:23:53,496 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 13:23:53,513 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-20 13:23:53,513 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-20 13:23:53,560 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 13:23:53,560 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 13:23:53,569 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 13:23:53,569 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 13:23:53,581 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-20 13:23:53,581 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-20 13:25:46,026 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 13:25:46,026 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 13:26:22,716 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 13:26:22,716 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 13:26:22,735 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 13:26:22,735 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 13:26:22,744 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-20 13:26:22,744 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-20 13:26:22,751 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 1
+2020-07-20 13:26:22,751 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 1
+2020-07-20 13:26:22,760 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Update Basic client 1 with balance 820.02
+2020-07-20 13:26:22,760 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Update Basic client 1 with balance 820.02
+2020-07-20 13:26:22,760 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 1
+2020-07-20 13:26:22,760 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 1
+2020-07-20 13:26:22,915 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 13:26:22,915 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 13:26:22,921 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 13:26:22,921 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 13:26:22,927 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 1
+2020-07-20 13:26:22,927 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 1
+2020-07-20 13:26:22,937 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 13:26:22,937 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 13:26:22,942 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 13:26:22,942 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 13:26:22,948 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 1
+2020-07-20 13:26:22,948 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 1
+2020-07-20 13:36:40,119 INFO c.i.u.s.AdminService [http-nio-8082-exec-6] Create new Admin
+2020-07-20 13:36:40,119 INFO c.i.u.s.AdminService [http-nio-8082-exec-6] Create new Admin
+2020-07-20 13:36:40,120 INFO c.i.u.s.AdminService [http-nio-8082-exec-6] Check if username already exists
+2020-07-20 13:36:40,120 INFO c.i.u.s.AdminService [http-nio-8082-exec-6] Check if username already exists
+2020-07-20 13:36:40,120 INFO c.i.u.s.AdminService [http-nio-8082-exec-6] Make sure username admin is available to new admin
+2020-07-20 13:36:40,120 INFO c.i.u.s.AdminService [http-nio-8082-exec-6] Make sure username admin is available to new admin
+2020-07-20 13:39:43,426 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Create new Admin
+2020-07-20 13:39:43,426 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Create new Admin
+2020-07-20 13:39:43,427 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Check if username already exists
+2020-07-20 13:39:43,427 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Check if username already exists
+2020-07-20 13:39:43,427 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Make sure username admin is available to new admin
+2020-07-20 13:39:43,427 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Make sure username admin is available to new admin
+2020-07-20 13:39:49,381 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Create new Admin
+2020-07-20 13:39:49,381 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Create new Admin
+2020-07-20 13:39:49,381 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Check if username already exists
+2020-07-20 13:39:49,381 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Check if username already exists
+2020-07-20 13:39:49,382 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Make sure username admin1 is available to new admin
+2020-07-20 13:39:49,382 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Make sure username admin1 is available to new admin
+2020-07-20 13:41:41,095 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-20 13:41:41,095 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-20 13:41:41,096 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 13:41:41,096 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin2 is available to new admin
+2020-07-20 13:41:41,096 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 13:41:41,096 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin2 is available to new admin
+2020-07-20 13:47:12,959 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 13:47:12,959 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 13:47:12,960 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 13:47:12,960 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 13:47:12,961 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-20 13:47:12,961 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-20 13:47:21,976 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 13:47:21,976 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 13:47:32,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [INIT] Create new Basic Client
+2020-07-20 13:47:32,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [INIT] Create new Basic Client
+2020-07-20 13:47:32,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Check if username already exists
+2020-07-20 13:47:32,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Check if username already exists
+2020-07-20 13:47:32,570 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Make sure username alms is available to new basic user
+2020-07-20 13:47:32,570 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Make sure username alms is available to new basic user
+2020-07-20 13:47:32,599 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [END] Create new Basic Client
+2020-07-20 13:47:32,599 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [END] Create new Basic Client
+2020-07-20 13:47:53,050 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 13:47:53,050 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 13:47:53,065 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 13:47:53,065 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 13:48:00,821 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 13:48:00,821 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 13:48:05,461 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 13:48:05,461 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 13:48:05,473 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 13:48:05,473 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 13:48:07,617 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 13:48:07,617 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 13:48:10,674 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 13:48:10,674 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 13:48:10,684 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 13:48:10,684 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 13:48:11,581 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 13:48:11,581 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 13:48:11,591 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 13:48:11,591 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 13:48:12,381 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 13:48:12,381 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 13:48:12,388 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 13:48:12,388 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 13:48:13,165 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 13:48:13,165 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 13:48:13,176 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 13:48:13,176 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 13:48:13,818 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 13:48:13,818 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 13:48:13,825 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 13:48:13,825 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 13:48:14,373 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 13:48:14,373 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 13:48:14,379 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 13:48:14,379 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 13:48:17,641 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 13:48:17,641 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 13:48:22,435 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 13:48:22,435 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 13:48:22,454 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 13:48:22,454 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 13:48:22,468 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 13:48:22,468 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 13:48:22,495 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure basic user 2 matches name Ana Santos
+2020-07-20 13:48:22,495 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure basic user 2 matches name Ana Santos
+2020-07-20 13:48:22,501 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-20 13:48:22,501 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-20 13:48:22,501 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 13:48:22,501 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 13:48:22,523 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 2 to room 14
+2020-07-20 13:48:22,523 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 2 to room 14
+2020-07-20 13:48:22,523 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 13:48:22,523 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 13:48:22,539 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 13:48:22,539 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 13:48:22,545 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 2 with balance 910.01
+2020-07-20 13:48:22,545 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 2 with balance 910.01
+2020-07-20 13:48:22,545 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 13:48:22,545 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 13:48:22,560 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Update Basic client 2 with number 1 of stays
+2020-07-20 13:48:22,560 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Update Basic client 2 with number 1 of stays
+2020-07-20 13:48:22,560 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 13:48:22,560 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 13:48:22,595 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 13:48:22,595 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 13:48:22,611 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 13:48:22,611 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 13:48:22,620 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 13:48:22,620 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 13:48:22,631 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 13:48:22,631 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 13:48:22,638 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 13:48:22,638 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 13:48:22,643 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 13:48:22,643 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 13:48:27,827 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 13:48:27,827 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 13:54:07,610 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-20 13:54:07,610 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-20 13:54:07,610 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 13:54:07,610 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 13:54:07,610 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms1 is available to new basic user
+2020-07-20 13:54:07,610 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms1 is available to new basic user
+2020-07-20 13:54:07,675 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-20 13:54:07,675 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-20 13:58:39,731 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Find all Admins
+2020-07-20 13:58:39,731 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Find all Admins
+2020-07-20 13:58:51,216 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Create new Admin
+2020-07-20 13:58:51,216 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Create new Admin
+2020-07-20 13:58:51,217 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 13:58:51,217 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 13:58:51,217 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Make sure username admin1 is available to new admin
+2020-07-20 13:58:51,217 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Make sure username admin1 is available to new admin
+2020-07-20 14:05:53,594 INFO c.i.u.s.AdminService [http-nio-8082-exec-8] Create new Admin
+2020-07-20 14:05:53,594 INFO c.i.u.s.AdminService [http-nio-8082-exec-8] Create new Admin
+2020-07-20 14:05:53,594 INFO c.i.u.s.AdminService [http-nio-8082-exec-8] Check if username already exists
+2020-07-20 14:05:53,594 INFO c.i.u.s.AdminService [http-nio-8082-exec-8] Make sure username admin1 is available to new admin
+2020-07-20 14:05:53,594 INFO c.i.u.s.AdminService [http-nio-8082-exec-8] Check if username already exists
+2020-07-20 14:05:53,594 INFO c.i.u.s.AdminService [http-nio-8082-exec-8] Make sure username admin1 is available to new admin
+2020-07-20 14:06:03,001 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Create new Admin
+2020-07-20 14:06:03,001 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Create new Admin
+2020-07-20 14:06:03,001 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Check if username already exists
+2020-07-20 14:06:03,001 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Make sure username admin22 is available to new admin
+2020-07-20 14:06:03,001 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Check if username already exists
+2020-07-20 14:06:03,001 INFO c.i.u.s.AdminService [http-nio-8082-exec-9] Make sure username admin22 is available to new admin
+2020-07-20 14:06:25,792 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Create new Admin
+2020-07-20 14:06:25,792 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Create new Admin
+2020-07-20 14:06:25,792 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Check if username already exists
+2020-07-20 14:06:25,792 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Check if username already exists
+2020-07-20 14:06:25,792 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Make sure username admin22 is available to new admin
+2020-07-20 14:06:25,792 INFO c.i.u.s.AdminService [http-nio-8082-exec-10] Make sure username admin22 is available to new admin
+2020-07-20 14:06:31,036 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 14:06:31,036 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 14:06:31,037 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 14:06:31,037 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 14:06:31,037 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin22 is available to new admin
+2020-07-20 14:06:31,037 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin22 is available to new admin
+2020-07-20 14:06:31,834 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-20 14:06:31,834 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-20 14:06:31,834 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 14:06:31,834 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 14:06:31,834 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin22 is available to new admin
+2020-07-20 14:06:31,834 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin22 is available to new admin
+2020-07-20 14:06:32,465 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Create new Admin
+2020-07-20 14:06:32,465 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Create new Admin
+2020-07-20 14:06:32,465 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Check if username already exists
+2020-07-20 14:06:32,465 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Check if username already exists
+2020-07-20 14:06:32,465 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Make sure username admin22 is available to new admin
+2020-07-20 14:06:32,465 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Make sure username admin22 is available to new admin
+2020-07-20 14:06:33,174 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Create new Admin
+2020-07-20 14:06:33,174 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Create new Admin
+2020-07-20 14:06:33,174 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Check if username already exists
+2020-07-20 14:06:33,174 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Check if username already exists
+2020-07-20 14:06:33,174 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Make sure username admin22 is available to new admin
+2020-07-20 14:06:33,174 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Make sure username admin22 is available to new admin
+2020-07-20 14:06:33,843 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Create new Admin
+2020-07-20 14:06:33,843 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Create new Admin
+2020-07-20 14:06:33,843 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 14:06:33,843 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 14:06:33,843 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Make sure username admin22 is available to new admin
+2020-07-20 14:06:33,843 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Make sure username admin22 is available to new admin
+2020-07-20 14:08:14,598 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 14:08:14,598 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 14:08:14,599 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 14:08:14,599 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 14:08:14,600 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin22 is available to new admin
+2020-07-20 14:08:14,600 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin22 is available to new admin
+2020-07-20 14:08:23,205 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-20 14:08:23,205 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-20 14:08:23,206 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 14:08:23,206 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 14:08:23,206 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin is available to new admin
+2020-07-20 14:08:23,206 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin is available to new admin
+2020-07-20 14:40:34,175 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-20 14:40:34,175 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-20 14:40:34,177 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 14:40:34,177 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 14:40:34,177 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms1 is available to new basic user
+2020-07-20 14:40:34,177 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms1 is available to new basic user
+2020-07-20 14:40:34,323 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-20 14:40:34,323 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-20 14:40:51,105 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 14:40:51,105 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 14:40:51,131 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 14:40:51,131 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 14:40:51,144 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 1
+2020-07-20 14:40:51,144 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 1
+2020-07-20 14:40:51,160 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure basic user 1 matches name Ana Santos
+2020-07-20 14:40:51,160 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure basic user 1 matches name Ana Santos
+2020-07-20 14:40:51,163 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure user 1 exists and has a reservation in the hotel
+2020-07-20 14:40:51,163 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure user 1 exists and has a reservation in the hotel
+2020-07-20 14:40:51,163 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-20 14:40:51,163 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-20 14:40:51,300 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Update Basic client 1 to room 3
+2020-07-20 14:40:51,300 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Update Basic client 1 to room 3
+2020-07-20 14:40:51,300 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 1
+2020-07-20 14:40:51,300 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 1
+2020-07-20 14:40:51,317 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 1
+2020-07-20 14:40:51,317 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 1
+2020-07-20 14:40:51,341 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Update Basic client 1 with balance 950.01
+2020-07-20 14:40:51,341 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Update Basic client 1 with balance 950.01
+2020-07-20 14:40:51,341 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 1
+2020-07-20 14:40:51,341 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 1
+2020-07-20 14:40:51,368 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 1 with number 1 of stays
+2020-07-20 14:40:51,368 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 1 with number 1 of stays
+2020-07-20 14:40:51,368 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 14:40:51,368 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 14:40:51,664 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 14:40:51,664 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 14:40:51,686 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 14:40:51,686 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 14:40:51,695 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-20 14:40:51,695 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-20 14:40:51,734 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 14:40:51,734 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 14:40:51,741 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 14:40:51,741 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 14:40:51,747 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-20 14:40:51,747 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-20 14:41:14,095 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 14:41:14,095 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 14:41:14,114 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 14:41:14,114 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 14:41:14,121 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 1
+2020-07-20 14:41:14,121 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 1
+2020-07-20 14:41:14,129 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 14:41:14,129 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 14:41:14,136 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Update Basic client 1 with balance 860.02
+2020-07-20 14:41:14,136 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Update Basic client 1 with balance 860.02
+2020-07-20 14:41:14,136 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 1
+2020-07-20 14:41:14,136 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 1
+2020-07-20 14:42:04,341 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 14:42:04,341 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 14:42:04,360 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 14:42:04,360 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 14:42:04,368 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 1
+2020-07-20 14:42:04,368 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 1
+2020-07-20 14:42:04,374 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 1
+2020-07-20 14:42:04,374 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 1
+2020-07-20 14:42:04,380 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 1 with balance 770.03
+2020-07-20 14:42:04,380 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 1 with balance 770.03
+2020-07-20 14:42:04,380 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 14:42:04,380 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-20 14:51:45,761 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 14:51:45,761 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 14:51:45,763 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 14:51:45,763 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 14:51:45,763 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-20 14:51:45,763 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-20 14:51:49,350 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [INIT] Create new Basic Client
+2020-07-20 14:51:49,350 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [INIT] Create new Basic Client
+2020-07-20 14:51:49,350 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 14:51:49,350 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 14:51:49,350 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure username alms1 is available to new basic user
+2020-07-20 14:51:49,350 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure username alms1 is available to new basic user
+2020-07-20 14:51:49,384 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [END] Create new Basic Client
+2020-07-20 14:51:49,384 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [END] Create new Basic Client
+2020-07-20 14:51:56,418 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 14:51:56,418 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 14:51:56,442 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 14:51:56,442 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 14:51:56,455 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 14:51:56,455 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 14:51:56,471 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure basic user 2 matches name Ana Santos
+2020-07-20 14:51:56,471 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure basic user 2 matches name Ana Santos
+2020-07-20 14:51:56,476 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-20 14:51:56,476 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-20 14:51:56,476 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 14:51:56,476 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 14:51:56,610 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 2 to room 3
+2020-07-20 14:51:56,610 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 2 to room 3
+2020-07-20 14:51:56,611 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 14:51:56,611 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 14:51:56,630 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 14:51:56,630 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 14:51:56,643 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 2 with balance 950.01
+2020-07-20 14:51:56,643 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 2 with balance 950.01
+2020-07-20 14:51:56,644 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 14:51:56,644 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 14:51:56,663 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Update Basic client 2 with number 1 of stays
+2020-07-20 14:51:56,663 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Update Basic client 2 with number 1 of stays
+2020-07-20 14:51:56,663 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 14:51:56,663 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 14:51:56,983 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 14:51:56,983 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 14:51:57,002 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 14:51:57,002 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 14:51:57,010 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 14:51:57,010 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 14:51:57,050 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 14:51:57,050 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 14:51:57,056 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 14:51:57,056 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 14:51:57,063 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 14:51:57,063 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 14:52:21,520 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 14:52:21,520 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 14:52:21,542 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 14:52:21,542 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 14:52:21,550 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 14:52:21,550 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 14:52:21,557 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 14:52:21,557 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 14:52:21,564 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Update Basic client 2 with balance 860.02
+2020-07-20 14:52:21,564 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Update Basic client 2 with balance 860.02
+2020-07-20 14:52:21,564 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 2
+2020-07-20 14:52:21,564 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 2
+2020-07-20 14:52:21,694 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 14:52:21,694 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 14:52:21,700 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 14:52:21,700 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 14:52:21,705 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 2
+2020-07-20 14:52:21,705 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 2
+2020-07-20 14:52:21,716 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 14:52:21,716 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 14:52:21,721 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 14:52:21,721 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 14:52:21,726 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 14:52:21,726 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 15:11:27,386 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [INIT] Create new Basic Client
+2020-07-20 15:11:27,386 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [INIT] Create new Basic Client
+2020-07-20 15:11:27,387 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 15:11:27,387 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 15:11:27,387 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure username alms is available to new basic user
+2020-07-20 15:11:27,387 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure username alms is available to new basic user
+2020-07-20 15:11:27,403 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [END] Create new Basic Client
+2020-07-20 15:11:27,403 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [END] Create new Basic Client
+2020-07-20 15:14:09,114 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Create new Admin
+2020-07-20 15:14:09,114 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Create new Admin
+2020-07-20 15:14:09,114 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Check if username already exists
+2020-07-20 15:14:09,114 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Check if username already exists
+2020-07-20 15:14:09,114 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Make sure username admin is available to new admin
+2020-07-20 15:14:09,114 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Make sure username admin is available to new admin
+2020-07-20 15:15:14,757 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 15:15:14,757 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 15:15:14,764 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 15:15:14,764 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 15:15:14,768 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 3
+2020-07-20 15:15:14,768 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 3
+2020-07-20 15:15:14,774 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Make sure basic user 3 matches name Ana Santos
+2020-07-20 15:15:14,774 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Make sure basic user 3 matches name Ana Santos
+2020-07-20 15:15:14,777 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Make sure user 3 exists and has a reservation in the hotel
+2020-07-20 15:15:14,777 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Make sure user 3 exists and has a reservation in the hotel
+2020-07-20 15:15:14,777 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 3
+2020-07-20 15:15:14,777 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 3
+2020-07-20 15:15:14,795 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Update Basic client 3 to room 6
+2020-07-20 15:15:14,795 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Update Basic client 3 to room 6
+2020-07-20 15:15:14,795 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 3
+2020-07-20 15:15:14,795 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 3
+2020-07-20 15:15:14,807 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 3
+2020-07-20 15:15:14,807 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 3
+2020-07-20 15:15:14,813 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Update Basic client 3 with balance 940.01
+2020-07-20 15:15:14,813 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Update Basic client 3 with balance 940.01
+2020-07-20 15:15:14,814 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 3
+2020-07-20 15:15:14,814 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 3
+2020-07-20 15:15:14,826 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Update Basic client 3 with number 1 of stays
+2020-07-20 15:15:14,826 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Update Basic client 3 with number 1 of stays
+2020-07-20 15:15:14,826 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 3
+2020-07-20 15:15:14,826 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 3
+2020-07-20 15:15:14,850 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 15:15:14,850 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 15:15:14,856 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 15:15:14,856 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 15:15:14,861 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 3
+2020-07-20 15:15:14,861 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 3
+2020-07-20 15:15:14,868 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 15:15:14,868 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 15:15:14,874 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 15:15:14,874 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 15:15:14,878 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 3
+2020-07-20 15:15:14,878 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 3
+2020-07-20 15:16:07,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-20 15:16:07,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-20 15:16:07,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 15:16:07,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 15:16:07,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username almsaa is available to new basic user
+2020-07-20 15:16:07,568 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username almsaa is available to new basic user
+2020-07-20 15:16:07,588 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-20 15:16:07,588 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-20 15:22:40,892 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 15:22:40,892 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 15:22:40,901 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 15:22:40,901 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 15:22:40,905 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 15:22:40,905 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 15:22:40,911 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 15:22:40,911 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 15:22:40,919 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Update Basic client 2 with balance 770.03
+2020-07-20 15:22:40,919 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Update Basic client 2 with balance 770.03
+2020-07-20 15:22:40,920 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 15:22:40,920 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 15:22:40,964 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 15:22:40,964 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 15:22:40,970 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 15:22:40,970 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 15:22:40,975 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 15:22:40,975 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 15:22:40,983 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 15:22:40,983 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 15:22:40,993 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 15:22:40,993 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 15:22:40,998 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 2
+2020-07-20 15:22:40,998 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 2
+2020-07-20 16:13:44,944 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 16:13:44,944 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 16:13:44,951 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 16:13:44,951 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 16:13:44,956 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 2
+2020-07-20 16:13:44,956 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 2
+2020-07-20 16:13:44,962 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 16:13:44,962 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 16:13:44,968 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Update Basic client 2 with balance 758.05
+2020-07-20 16:13:44,968 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Update Basic client 2 with balance 758.05
+2020-07-20 16:13:44,968 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 2
+2020-07-20 16:13:44,968 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 2
+2020-07-20 16:13:44,999 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 16:13:44,999 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 16:13:45,006 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 16:13:45,006 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 16:13:45,011 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 16:13:45,011 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 16:13:45,018 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 16:13:45,018 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 16:13:45,024 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 16:13:45,024 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 16:13:45,029 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 16:13:45,029 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 17:07:30,408 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 17:07:30,408 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 17:07:30,423 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 17:07:30,423 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 17:07:30,429 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 2
+2020-07-20 17:07:30,429 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 2
+2020-07-20 17:07:30,438 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 17:07:30,438 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 17:07:30,443 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Update Basic client 2 with balance 734.07
+2020-07-20 17:07:30,443 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Update Basic client 2 with balance 734.07
+2020-07-20 17:07:30,443 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 17:07:30,443 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 17:07:30,540 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 17:07:30,540 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 17:07:30,568 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 17:07:30,568 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 17:07:30,575 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 17:07:30,575 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 17:07:30,586 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 17:07:30,586 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 17:07:30,595 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 17:07:30,595 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 17:07:30,601 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 2
+2020-07-20 17:07:30,601 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 2
+2020-07-20 19:07:13,287 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 19:07:13,287 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 19:07:13,288 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 19:07:13,288 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 19:07:13,289 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-20 19:07:13,289 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-20 19:07:22,299 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-20 19:07:22,299 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-20 19:07:22,299 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 19:07:22,299 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 19:07:22,299 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin is available to new admin
+2020-07-20 19:07:22,299 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin is available to new admin
+2020-07-20 19:08:51,475 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Create new Admin
+2020-07-20 19:08:51,475 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Create new Admin
+2020-07-20 19:08:51,476 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Check if username already exists
+2020-07-20 19:08:51,476 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Check if username already exists
+2020-07-20 19:08:51,476 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Make sure username admin is available to new admin
+2020-07-20 19:08:51,476 INFO c.i.u.s.AdminService [http-nio-8082-exec-4] Make sure username admin is available to new admin
+2020-07-20 19:08:59,276 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Create new Admin
+2020-07-20 19:08:59,276 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Create new Admin
+2020-07-20 19:08:59,276 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 19:08:59,276 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 19:08:59,276 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Make sure username admin is available to new admin
+2020-07-20 19:08:59,276 INFO c.i.u.s.AdminService [http-nio-8082-exec-5] Make sure username admin is available to new admin
+2020-07-20 19:09:12,262 INFO c.i.u.s.AdminService [http-nio-8082-exec-8] Find all Admins
+2020-07-20 19:09:12,262 INFO c.i.u.s.AdminService [http-nio-8082-exec-8] Find all Admins
+2020-07-20 19:10:07,688 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 19:10:07,688 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-20 19:10:07,690 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 19:10:07,690 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-20 19:10:07,690 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-20 19:10:07,690 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-20 19:46:16,651 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [INIT] Create new Basic Client
+2020-07-20 19:46:16,651 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [INIT] Create new Basic Client
+2020-07-20 19:46:16,651 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Check if username already exists
+2020-07-20 19:46:16,651 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Check if username already exists
+2020-07-20 19:46:16,651 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Make sure username alms is available to new basic user
+2020-07-20 19:46:16,651 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Make sure username alms is available to new basic user
+2020-07-20 19:46:16,751 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [END] Create new Basic Client
+2020-07-20 19:46:16,751 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [END] Create new Basic Client
+2020-07-20 19:46:35,174 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 19:46:35,174 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 19:47:34,465 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] [INIT] Create new Premium Client
+2020-07-20 19:47:34,465 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] [INIT] Create new Premium Client
+2020-07-20 19:47:34,466 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 19:47:34,466 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 19:47:34,466 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Make sure username marta is available to new premium user
+2020-07-20 19:47:34,466 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Make sure username marta is available to new premium user
+2020-07-20 19:47:39,168 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 19:47:39,168 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 19:47:51,167 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 19:47:51,167 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 19:49:11,168 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 19:49:11,168 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 19:50:09,862 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [INIT] Create new Basic Client
+2020-07-20 19:50:09,862 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] [INIT] Create new Basic Client
+2020-07-20 19:50:09,862 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 19:50:09,862 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 19:50:09,863 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure username martita is available to new basic user
+2020-07-20 19:50:09,863 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure username martita is available to new basic user
+2020-07-20 19:50:23,769 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 19:50:23,769 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 19:52:22,123 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] [INIT] Create new Basic Client
+2020-07-20 19:52:22,123 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] [INIT] Create new Basic Client
+2020-07-20 19:52:22,123 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 19:52:22,123 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Check if username already exists
+2020-07-20 19:52:22,123 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure username martita1 is available to new basic user
+2020-07-20 19:52:22,123 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Make sure username martita1 is available to new basic user
+2020-07-20 19:53:29,969 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 19:53:29,969 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 19:54:05,827 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 19:54:05,827 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 19:54:58,817 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] [INIT] Create new Basic Client
+2020-07-20 19:54:58,817 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] [INIT] Create new Basic Client
+2020-07-20 19:54:58,817 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Check if username already exists
+2020-07-20 19:54:58,817 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Check if username already exists
+2020-07-20 19:54:58,817 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Make sure username martita is available to new basic user
+2020-07-20 19:54:58,817 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Make sure username martita is available to new basic user
+2020-07-20 19:54:58,837 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] [END] Create new Basic Client
+2020-07-20 19:54:58,837 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] [END] Create new Basic Client
+2020-07-20 19:55:08,445 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 19:55:08,445 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 19:55:57,751 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 19:55:57,751 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 19:57:09,278 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] [INIT] Create new Premium Client
+2020-07-20 19:57:09,278 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] [INIT] Create new Premium Client
+2020-07-20 19:57:09,278 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 19:57:09,278 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Check if username already exists
+2020-07-20 19:57:09,278 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Make sure username martita2 is available to new premium user
+2020-07-20 19:57:09,278 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Make sure username martita2 is available to new premium user
+2020-07-20 19:57:09,299 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] [END] Create new Premium Client
+2020-07-20 19:57:09,299 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] [END] Create new Premium Client
+2020-07-20 19:57:13,752 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 19:57:13,752 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 19:57:23,334 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 19:57:23,334 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 20:04:57,540 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 20:04:57,540 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 20:05:17,708 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 20:05:17,708 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 20:09:13,709 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 20:09:13,709 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 20:23:51,120 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 20:23:51,120 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 20:24:55,064 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 20:24:55,064 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 20:24:55,075 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 20:24:55,075 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 20:24:55,093 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 20:24:55,093 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 20:24:55,126 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure basic user 2 matches name Ana Martins
+2020-07-20 20:24:55,126 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure basic user 2 matches name Ana Martins
+2020-07-20 20:24:55,130 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-20 20:24:55,130 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-20 20:24:55,130 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 20:24:55,130 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 20:24:55,150 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 2 to room 11
+2020-07-20 20:24:55,150 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 2 to room 11
+2020-07-20 20:24:55,150 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 20:24:55,150 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 20:24:55,178 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 20:24:55,178 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 2
+2020-07-20 20:24:55,183 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 2 with balance 920.01
+2020-07-20 20:24:55,183 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 2 with balance 920.01
+2020-07-20 20:24:55,183 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 20:24:55,183 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 20:24:55,198 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Update Basic client 2 with number 1 of stays
+2020-07-20 20:24:55,198 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Update Basic client 2 with number 1 of stays
+2020-07-20 20:24:55,198 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 20:24:55,198 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 20:24:55,227 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 20:24:55,227 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 20:24:55,233 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 20:24:55,233 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 20:24:55,240 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 20:24:55,240 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 20:24:55,249 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 20:24:55,249 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 20:24:55,254 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 20:24:55,254 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 20:24:55,259 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 20:24:55,259 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 20:36:00,677 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 20:36:00,677 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 20:36:00,685 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 20:36:00,685 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 20:36:00,690 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 2
+2020-07-20 20:36:00,690 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 2
+2020-07-20 20:36:00,696 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 2
+2020-07-20 20:36:00,696 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 2
+2020-07-20 20:36:00,702 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Update Basic client 2 with balance 830.02
+2020-07-20 20:36:00,702 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Update Basic client 2 with balance 830.02
+2020-07-20 20:36:00,702 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 20:36:00,702 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 20:36:00,761 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 20:36:00,761 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 20:36:00,777 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 20:36:00,777 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 20:36:00,793 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 20:36:00,793 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 20:36:00,808 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 20:36:00,808 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 20:36:00,816 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 20:36:00,816 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 20:36:00,822 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 20:36:00,822 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 20:49:08,024 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 20:49:08,024 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 20:49:08,053 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 20:49:08,053 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 20:49:08,059 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 20:49:08,059 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 2
+2020-07-20 20:49:08,067 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 20:49:08,067 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 2
+2020-07-20 20:49:08,072 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 2 with balance 770.03
+2020-07-20 20:49:08,072 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 2 with balance 770.03
+2020-07-20 20:49:08,072 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 20:49:08,072 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 20:49:08,126 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 20:49:08,126 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 20:49:08,145 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 20:49:08,145 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 20:49:08,151 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 20:49:08,151 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 20:49:08,159 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 20:49:08,159 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 20:49:08,167 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 20:49:08,167 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 20:49:08,179 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 20:49:08,179 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 2
+2020-07-20 20:50:23,254 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 20:50:23,254 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-20 20:50:23,272 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 20:50:23,272 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 20:50:23,283 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 20:50:23,283 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 2
+2020-07-20 20:50:23,291 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 20:50:23,291 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 2
+2020-07-20 20:50:23,297 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Update Basic client 2 with balance 730.04
+2020-07-20 20:50:23,297 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Update Basic client 2 with balance 730.04
+2020-07-20 20:50:23,297 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 2
+2020-07-20 20:50:23,297 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 2
+2020-07-20 20:50:23,340 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 20:50:23,340 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 20:50:23,346 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 20:50:23,346 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 20:50:23,352 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 2
+2020-07-20 20:50:23,352 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 2
+2020-07-20 20:50:23,360 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 20:50:23,360 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 20:50:23,366 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 20:50:23,366 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 20:50:23,372 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 20:50:23,372 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 2
+2020-07-20 20:59:49,985 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 20:59:49,985 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 21:06:59,277 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 21:06:59,277 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 21:08:55,141 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 21:08:55,141 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 21:08:55,159 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 21:08:55,159 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 21:08:55,167 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:08:55,167 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:08:55,172 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Make sure basic user 6 matches name Ana Martins
+2020-07-20 21:08:55,172 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Make sure basic user 6 matches name Ana Martins
+2020-07-20 21:08:55,175 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Make sure user 6 exists and has a reservation in the hotel
+2020-07-20 21:08:55,175 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Make sure user 6 exists and has a reservation in the hotel
+2020-07-20 21:08:55,175 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 6
+2020-07-20 21:08:55,175 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 6
+2020-07-20 21:08:55,228 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 6 to room 12
+2020-07-20 21:08:55,228 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 6 to room 12
+2020-07-20 21:08:55,228 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 6
+2020-07-20 21:08:55,228 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 6
+2020-07-20 21:08:55,251 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 6
+2020-07-20 21:08:55,251 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 6
+2020-07-20 21:08:55,256 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Update Basic client 6 with balance 920.01
+2020-07-20 21:08:55,256 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Update Basic client 6 with balance 920.01
+2020-07-20 21:08:55,257 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 6
+2020-07-20 21:08:55,257 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 6
+2020-07-20 21:08:55,269 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Update Basic client 6 with number 1 of stays
+2020-07-20 21:08:55,269 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Update Basic client 6 with number 1 of stays
+2020-07-20 21:08:55,269 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 6
+2020-07-20 21:08:55,269 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 6
+2020-07-20 21:08:55,295 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 21:08:55,295 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 21:08:55,300 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 21:08:55,300 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 21:08:55,307 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 6
+2020-07-20 21:08:55,307 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 6
+2020-07-20 21:08:55,314 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 21:08:55,314 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 21:08:55,319 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 21:08:55,319 INFO c.i.u.s.PremiumService [http-nio-8082-exec-7] Find All Premium Clients
+2020-07-20 21:08:55,324 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 6
+2020-07-20 21:08:55,324 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 6
+2020-07-20 21:09:00,371 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 21:09:00,371 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 21:10:26,489 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 21:10:26,489 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 21:10:26,495 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 21:10:26,495 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 21:10:26,499 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 6
+2020-07-20 21:10:26,499 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 6
+2020-07-20 21:10:26,503 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 6
+2020-07-20 21:10:26,503 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 6
+2020-07-20 21:10:26,508 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 6 with balance 908.03
+2020-07-20 21:10:26,508 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Update Basic client 6 with balance 908.03
+2020-07-20 21:10:26,508 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:10:26,508 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:10:26,547 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 21:10:26,547 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-20 21:10:26,561 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 21:10:26,561 INFO c.i.u.s.PremiumService [http-nio-8082-exec-9] Find All Premium Clients
+2020-07-20 21:10:26,574 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 6
+2020-07-20 21:10:26,574 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic Client with id 6
+2020-07-20 21:10:26,590 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 21:10:26,590 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find All Basic Clients
+2020-07-20 21:10:26,598 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 21:10:26,598 INFO c.i.u.s.PremiumService [http-nio-8082-exec-2] Find All Premium Clients
+2020-07-20 21:10:26,604 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 6
+2020-07-20 21:10:26,604 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 6
+2020-07-20 21:11:23,011 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 21:11:23,011 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 21:11:23,016 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 21:11:23,016 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 21:11:23,021 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 6
+2020-07-20 21:11:23,021 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 6
+2020-07-20 21:11:23,026 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:11:23,026 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:11:23,031 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Update Basic client 6 with balance 884.07
+2020-07-20 21:11:23,031 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Update Basic client 6 with balance 884.07
+2020-07-20 21:11:23,031 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 6
+2020-07-20 21:11:23,031 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 6
+2020-07-20 21:11:23,060 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 21:11:23,060 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 21:11:23,065 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 21:11:23,065 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 21:11:23,070 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 6
+2020-07-20 21:11:23,070 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 6
+2020-07-20 21:11:23,079 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 21:11:23,079 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find All Basic Clients
+2020-07-20 21:11:23,084 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 21:11:23,084 INFO c.i.u.s.PremiumService [http-nio-8082-exec-3] Find All Premium Clients
+2020-07-20 21:11:23,088 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 6
+2020-07-20 21:11:23,088 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 6
+2020-07-20 21:11:40,435 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 21:11:40,435 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find All Basic Clients
+2020-07-20 21:11:40,440 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 21:11:40,440 INFO c.i.u.s.PremiumService [http-nio-8082-exec-6] Find All Premium Clients
+2020-07-20 21:11:40,445 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:11:40,445 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:11:40,449 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 6
+2020-07-20 21:11:40,449 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic Client with id 6
+2020-07-20 21:11:40,454 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 6 with balance 866.10
+2020-07-20 21:11:40,454 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Update Basic client 6 with balance 866.10
+2020-07-20 21:11:40,454 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 6
+2020-07-20 21:11:40,454 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 6
+2020-07-20 21:11:40,485 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 21:11:40,485 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-20 21:11:40,489 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 21:11:40,489 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-20 21:11:40,494 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 6
+2020-07-20 21:11:40,494 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 6
+2020-07-20 21:11:40,503 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 21:11:40,503 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-20 21:11:40,507 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 21:11:40,507 INFO c.i.u.s.PremiumService [http-nio-8082-exec-4] Find All Premium Clients
+2020-07-20 21:11:40,513 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 6
+2020-07-20 21:11:40,513 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 6
+2020-07-20 21:13:36,208 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 21:13:36,208 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-20 21:13:36,213 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 21:13:36,213 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-20 21:13:36,218 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 6
+2020-07-20 21:13:36,218 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 6
+2020-07-20 21:13:36,223 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 6
+2020-07-20 21:13:36,223 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 6
+2020-07-20 21:13:36,228 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Update Basic client 6 with balance 839.12
+2020-07-20 21:13:36,228 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Update Basic client 6 with balance 839.12
+2020-07-20 21:13:36,228 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 6
+2020-07-20 21:13:36,228 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 6
+2020-07-20 21:13:36,255 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 21:13:36,255 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find All Basic Clients
+2020-07-20 21:13:36,259 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 21:13:36,259 INFO c.i.u.s.PremiumService [http-nio-8082-exec-5] Find All Premium Clients
+2020-07-20 21:13:36,264 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:13:36,264 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic Client with id 6
+2020-07-20 21:13:36,270 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 21:13:36,270 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find All Basic Clients
+2020-07-20 21:13:36,275 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 21:13:36,275 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-20 21:13:36,280 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 6
+2020-07-20 21:13:36,280 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 6
+2020-07-20 22:29:36,698 INFO c.i.u.s.BasicService [main] [INIT] Create new Basic Client
+2020-07-20 22:29:36,698 INFO c.i.u.s.BasicService [main] [INIT] Create new Basic Client
+2020-07-20 22:29:36,700 INFO c.i.u.s.BasicService [main] Check if username already exists
+2020-07-20 22:29:36,700 INFO c.i.u.s.BasicService [main] Check if username already exists
+2020-07-20 22:29:36,700 INFO c.i.u.s.BasicService [main] Make sure username alms is available to new basic user
+2020-07-20 22:29:36,700 INFO c.i.u.s.BasicService [main] Make sure username alms is available to new basic user
+2020-07-20 22:29:36,943 INFO c.i.u.s.BasicService [main] Delete Basic Client with id 2
+2020-07-20 22:29:36,943 INFO c.i.u.s.BasicService [main] Delete Basic Client with id 2
+2020-07-20 22:29:36,943 INFO c.i.u.s.BasicService [main] Find Basic Client with id 2
+2020-07-20 22:29:36,943 INFO c.i.u.s.BasicService [main] Find Basic Client with id 2
+2020-07-20 22:29:36,963 INFO c.i.u.s.BasicService [main] Make sure basic user 2 matches name Ana Martins
+2020-07-20 22:29:36,963 INFO c.i.u.s.BasicService [main] Make sure basic user 2 matches name Ana Martins
+2020-07-20 22:29:36,967 INFO c.i.u.s.BasicService [main] Make sure user 2 exists and has a reservation in the hotel
+2020-07-20 22:29:36,967 INFO c.i.u.s.BasicService [main] Make sure user 2 exists and has a reservation in the hotel
+2020-07-20 22:29:36,993 INFO c.i.u.s.BasicService [main] Update Basic client 3 with number 2 of stays
+2020-07-20 22:29:36,993 INFO c.i.u.s.BasicService [main] Update Basic client 3 with number 2 of stays
+2020-07-20 22:29:36,993 INFO c.i.u.s.BasicService [main] Find Basic Client with id 3
+2020-07-20 22:29:36,993 INFO c.i.u.s.BasicService [main] Find Basic Client with id 3
+2020-07-20 22:29:37,009 INFO c.i.u.s.BasicService [main] Find Basic Client with id 3
+2020-07-20 22:29:37,009 INFO c.i.u.s.BasicService [main] Find Basic Client with id 3
+2020-07-20 22:29:37,058 INFO c.i.u.s.BasicService [main] Update Basic client 4 to room 1
+2020-07-20 22:29:37,058 INFO c.i.u.s.BasicService [main] Update Basic client 4 to room 1
+2020-07-20 22:29:37,058 INFO c.i.u.s.BasicService [main] Find Basic Client with id 4
+2020-07-20 22:29:37,058 INFO c.i.u.s.BasicService [main] Find Basic Client with id 4
+2020-07-20 22:29:37,076 INFO c.i.u.s.BasicService [main] Find Basic Client with id 4
+2020-07-20 22:29:37,076 INFO c.i.u.s.BasicService [main] Find Basic Client with id 4
+2020-07-20 22:29:37,113 INFO c.i.u.s.BasicService [main] Delete Basic Client with id 5
+2020-07-20 22:29:37,113 INFO c.i.u.s.BasicService [main] Delete Basic Client with id 5
+2020-07-20 22:29:37,113 INFO c.i.u.s.BasicService [main] Find Basic Client with id 5
+2020-07-20 22:29:37,113 INFO c.i.u.s.BasicService [main] Find Basic Client with id 5
+2020-07-20 22:29:37,139 INFO c.i.u.s.BasicService [main] Find All Basic Clients
+2020-07-20 22:29:37,139 INFO c.i.u.s.BasicService [main] Find All Basic Clients
+2020-07-20 22:29:37,175 INFO c.i.u.s.BasicService [main] Find All Basic Clients
+2020-07-20 22:29:37,175 INFO c.i.u.s.BasicService [main] Find All Basic Clients
+2020-07-20 22:29:37,227 INFO c.i.u.s.BasicService [main] Find Basic Client with id 7
+2020-07-20 22:29:37,227 INFO c.i.u.s.BasicService [main] Find Basic Client with id 7
+2020-07-20 22:29:37,284 INFO c.i.u.s.BasicService [main] Make sure basic user 8 matches name Marta Santos
+2020-07-20 22:29:37,284 INFO c.i.u.s.BasicService [main] Make sure basic user 8 matches name Marta Santos
+2020-07-20 22:29:37,289 INFO c.i.u.s.BasicService [main] Make sure user 8 exists and has a reservation in the hotel
+2020-07-20 22:29:37,289 INFO c.i.u.s.BasicService [main] Make sure user 8 exists and has a reservation in the hotel
+2020-07-20 22:29:37,289 INFO c.i.u.s.BasicService [main] Find Basic Client with id 8
+2020-07-20 22:29:37,289 INFO c.i.u.s.BasicService [main] Find Basic Client with id 8
+2020-07-20 22:29:37,324 INFO c.i.u.s.BasicService [main] Update Basic client 9 with balance 2000
+2020-07-20 22:29:37,324 INFO c.i.u.s.BasicService [main] Update Basic client 9 with balance 2000
+2020-07-20 22:29:37,325 INFO c.i.u.s.BasicService [main] Find Basic Client with id 9
+2020-07-20 22:29:37,325 INFO c.i.u.s.BasicService [main] Find Basic Client with id 9
+2020-07-20 22:29:37,340 INFO c.i.u.s.BasicService [main] Find Basic Client with id 9
+2020-07-20 22:29:37,340 INFO c.i.u.s.BasicService [main] Find Basic Client with id 9
+2020-07-20 22:29:37,384 INFO c.i.u.s.BasicService [main] [INIT] Create new Basic Client
+2020-07-20 22:29:37,384 INFO c.i.u.s.BasicService [main] [INIT] Create new Basic Client
+2020-07-20 22:29:37,384 INFO c.i.u.s.BasicService [main] Check if username already exists
+2020-07-20 22:29:37,384 INFO c.i.u.s.BasicService [main] Check if username already exists
+2020-07-20 22:29:37,385 INFO c.i.u.s.BasicService [main] Make sure username almsasantos is available to new basic user
+2020-07-20 22:29:37,385 INFO c.i.u.s.BasicService [main] Make sure username almsasantos is available to new basic user
+2020-07-20 22:29:37,404 INFO c.i.u.s.BasicService [main] [END] Create new Basic Client
+2020-07-20 22:29:37,404 INFO c.i.u.s.BasicService [main] [END] Create new Basic Client
+2020-07-20 22:29:37,404 INFO c.i.u.s.BasicService [main] Find All Basic Clients
+2020-07-20 22:29:37,404 INFO c.i.u.s.BasicService [main] Find All Basic Clients
+2020-07-20 22:29:44,708 INFO c.i.u.s.PremiumService [main] [INIT] Create new Premium Client
+2020-07-20 22:29:44,708 INFO c.i.u.s.PremiumService [main] [INIT] Create new Premium Client
+2020-07-20 22:29:44,709 INFO c.i.u.s.PremiumService [main] Check if username already exists
+2020-07-20 22:29:44,709 INFO c.i.u.s.PremiumService [main] Check if username already exists
+2020-07-20 22:29:44,709 INFO c.i.u.s.PremiumService [main] Make sure username alms is available to new premium user
+2020-07-20 22:29:44,709 INFO c.i.u.s.PremiumService [main] Make sure username alms is available to new premium user
+2020-07-20 22:29:44,760 INFO c.i.u.s.PremiumService [main] Update Premium client 2 with balance 2500
+2020-07-20 22:29:44,760 INFO c.i.u.s.PremiumService [main] Update Premium client 2 with balance 2500
+2020-07-20 22:29:44,760 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 2
+2020-07-20 22:29:44,760 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 2
+2020-07-20 22:29:44,778 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 2
+2020-07-20 22:29:44,778 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 2
+2020-07-20 22:29:44,817 INFO c.i.u.s.PremiumService [main] Update Premium client 3 with number 2 of stays
+2020-07-20 22:29:44,817 INFO c.i.u.s.PremiumService [main] Update Premium client 3 with number 2 of stays
+2020-07-20 22:29:44,817 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 3
+2020-07-20 22:29:44,817 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 3
+2020-07-20 22:29:44,834 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 3
+2020-07-20 22:29:44,834 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 3
+2020-07-20 22:29:44,869 INFO c.i.u.s.PremiumService [main] Update Premium client 4 to room 2
+2020-07-20 22:29:44,869 INFO c.i.u.s.PremiumService [main] Update Premium client 4 to room 2
+2020-07-20 22:29:44,869 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 4
+2020-07-20 22:29:44,869 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 4
+2020-07-20 22:29:44,882 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 4
+2020-07-20 22:29:44,882 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 4
+2020-07-20 22:29:45,012 INFO c.i.u.s.PremiumService [main] Delete Premium Client with id 7
+2020-07-20 22:29:45,012 INFO c.i.u.s.PremiumService [main] Delete Premium Client with id 7
+2020-07-20 22:29:45,013 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 7
+2020-07-20 22:29:45,013 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 7
+2020-07-20 22:29:45,031 INFO c.i.u.s.PremiumService [main] Make sure premium user 7 matches name Ana Martins
+2020-07-20 22:29:45,031 INFO c.i.u.s.PremiumService [main] Make sure premium user 7 matches name Ana Martins
+2020-07-20 22:29:45,031 INFO c.i.u.s.PremiumService [main] Find All Premium Clients
+2020-07-20 22:29:45,031 INFO c.i.u.s.PremiumService [main] Find All Premium Clients
+2020-07-20 22:29:45,035 INFO c.i.u.s.PremiumService [main] Make sure user 7 exists and has a reservation in the hotel
+2020-07-20 22:29:45,035 INFO c.i.u.s.PremiumService [main] Make sure user 7 exists and has a reservation in the hotel
+2020-07-20 22:29:45,056 INFO c.i.u.s.PremiumService [main] Make sure premium user 8 matches name Marta Santos
+2020-07-20 22:29:45,056 INFO c.i.u.s.PremiumService [main] Make sure premium user 8 matches name Marta Santos
+2020-07-20 22:29:45,056 INFO c.i.u.s.PremiumService [main] Find All Premium Clients
+2020-07-20 22:29:45,056 INFO c.i.u.s.PremiumService [main] Find All Premium Clients
+2020-07-20 22:29:45,060 INFO c.i.u.s.PremiumService [main] Make sure user 8 exists and has a reservation in the hotel
+2020-07-20 22:29:45,060 INFO c.i.u.s.PremiumService [main] Make sure user 8 exists and has a reservation in the hotel
+2020-07-20 22:29:45,060 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 8
+2020-07-20 22:29:45,060 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 8
+2020-07-20 22:29:45,091 INFO c.i.u.s.PremiumService [main] Delete Premium Client with id 9
+2020-07-20 22:29:45,091 INFO c.i.u.s.PremiumService [main] Delete Premium Client with id 9
+2020-07-20 22:29:45,092 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 9
+2020-07-20 22:29:45,092 INFO c.i.u.s.PremiumService [main] Find Premium Client with id 9
+2020-07-20 22:29:45,105 INFO c.i.u.s.PremiumService [main] Find All Premium Clients
+2020-07-20 22:29:45,105 INFO c.i.u.s.PremiumService [main] Find All Premium Clients
+2020-07-20 22:29:45,143 INFO c.i.u.s.PremiumService [main] [INIT] Create new Premium Client
+2020-07-20 22:29:45,143 INFO c.i.u.s.PremiumService [main] [INIT] Create new Premium Client
+2020-07-20 22:29:45,143 INFO c.i.u.s.PremiumService [main] Check if username already exists
+2020-07-20 22:29:45,143 INFO c.i.u.s.PremiumService [main] Check if username already exists
+2020-07-20 22:29:45,144 INFO c.i.u.s.PremiumService [main] Make sure username almsasantos is available to new premium user
+2020-07-20 22:29:45,144 INFO c.i.u.s.PremiumService [main] Make sure username almsasantos is available to new premium user
+2020-07-20 22:29:45,163 INFO c.i.u.s.PremiumService [main] [END] Create new Premium Client
+2020-07-20 22:29:45,163 INFO c.i.u.s.PremiumService [main] [END] Create new Premium Client
+2020-07-20 22:29:45,163 INFO c.i.u.s.PremiumService [main] Find All Premium Clients
+2020-07-20 22:29:45,163 INFO c.i.u.s.PremiumService [main] Find All Premium Clients
+2020-07-20 22:29:46,860 INFO c.i.u.s.AdminService [main] Create new Admin
+2020-07-20 22:29:46,860 INFO c.i.u.s.AdminService [main] Create new Admin
+2020-07-20 22:29:46,861 INFO c.i.u.s.AdminService [main] Check if username already exists
+2020-07-20 22:29:46,861 INFO c.i.u.s.AdminService [main] Check if username already exists
+2020-07-20 22:29:46,861 INFO c.i.u.s.AdminService [main] Make sure username almsasantos is available to new admin
+2020-07-20 22:29:46,861 INFO c.i.u.s.AdminService [main] Make sure username almsasantos is available to new admin
+2020-07-20 22:29:46,883 INFO c.i.u.s.AdminService [main] Find all Admins
+2020-07-20 22:29:46,883 INFO c.i.u.s.AdminService [main] Find all Admins
+2020-07-20 22:29:46,916 INFO c.i.u.s.AdminService [main] Create new Admin
+2020-07-20 22:29:46,916 INFO c.i.u.s.AdminService [main] Create new Admin
+2020-07-20 22:29:46,916 INFO c.i.u.s.AdminService [main] Check if username already exists
+2020-07-20 22:29:46,916 INFO c.i.u.s.AdminService [main] Check if username already exists
+2020-07-20 22:29:46,916 INFO c.i.u.s.AdminService [main] Make sure username alms is available to new admin
+2020-07-20 22:29:46,916 INFO c.i.u.s.AdminService [main] Make sure username alms is available to new admin
+2020-07-20 22:29:46,948 INFO c.i.u.s.AdminService [main] Delete Admin with id 4
+2020-07-20 22:29:46,948 INFO c.i.u.s.AdminService [main] Delete Admin with id 4
+2020-07-20 22:29:46,948 INFO c.i.u.s.AdminService [main] Find Admin with id 4
+2020-07-20 22:29:46,948 INFO c.i.u.s.AdminService [main] Find Admin with id 4
+2020-07-20 22:29:46,962 INFO c.i.u.s.AdminService [main] Find all Admins
+2020-07-20 22:29:46,962 INFO c.i.u.s.AdminService [main] Find all Admins
+2020-07-20 22:29:46,989 INFO c.i.u.s.AdminService [main] Find all Admins
+2020-07-20 22:29:46,989 INFO c.i.u.s.AdminService [main] Find all Admins
+2020-07-20 22:29:47,036 INFO c.i.u.s.AdminService [main] Find Admin with id 6
+2020-07-20 22:29:47,036 INFO c.i.u.s.AdminService [main] Find Admin with id 6
+2020-07-21 10:59:55,717 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-21 10:59:55,717 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-21 10:59:55,718 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 10:59:55,718 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 10:59:55,719 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-21 10:59:55,719 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-21 12:58:02,404 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-21 12:58:02,404 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-21 12:58:02,405 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 12:58:02,405 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 12:58:02,406 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms is available to new basic user
+2020-07-21 12:58:02,406 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms is available to new basic user
+2020-07-21 12:58:02,528 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-21 12:58:02,528 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-21 13:00:00,054 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Create new Admin
+2020-07-21 13:00:00,054 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Create new Admin
+2020-07-21 13:00:00,054 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Check if username already exists
+2020-07-21 13:00:00,054 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Check if username already exists
+2020-07-21 13:00:00,054 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Make sure username admin is available to new admin
+2020-07-21 13:00:00,054 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Make sure username admin is available to new admin
+2020-07-21 13:01:18,883 INFO c.i.u.s.AdminService [http-nio-8082-exec-6] Find all Admins
+2020-07-21 13:01:18,883 INFO c.i.u.s.AdminService [http-nio-8082-exec-6] Find all Admins
+2020-07-21 13:08:06,465 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-21 13:08:06,465 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find All Basic Clients
+2020-07-21 13:08:17,000 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-21 13:08:17,000 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find All Basic Clients
+2020-07-21 13:08:17,023 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-21 13:08:17,023 INFO c.i.u.s.PremiumService [http-nio-8082-exec-10] Find All Premium Clients
+2020-07-21 13:08:17,035 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 1
+2020-07-21 13:08:17,035 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic Client with id 1
+2020-07-21 13:08:17,051 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure basic user 1 matches name Ana Martins
+2020-07-21 13:08:17,051 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure basic user 1 matches name Ana Martins
+2020-07-21 13:08:17,054 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 13:08:17,054 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 13:08:17,054 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-21 13:08:17,054 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-21 13:08:17,201 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Update Basic client 1 to room 1
+2020-07-21 13:08:17,201 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Update Basic client 1 to room 1
+2020-07-21 13:08:17,201 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 1
+2020-07-21 13:08:17,201 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic Client with id 1
+2020-07-21 13:08:17,217 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 1
+2020-07-21 13:08:17,217 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic Client with id 1
+2020-07-21 13:08:17,225 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Update Basic client 1 with balance 910.01
+2020-07-21 13:08:17,225 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Update Basic client 1 with balance 910.01
+2020-07-21 13:08:17,225 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-21 13:08:17,225 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic Client with id 1
+2020-07-21 13:08:17,241 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Update Basic client 1 with number 1 of stays
+2020-07-21 13:08:17,241 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Update Basic client 1 with number 1 of stays
+2020-07-21 13:08:17,242 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 1
+2020-07-21 13:08:17,242 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic Client with id 1
+2020-07-21 13:08:17,583 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-21 13:08:17,583 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find All Basic Clients
+2020-07-21 13:08:17,604 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-21 13:08:17,604 INFO c.i.u.s.PremiumService [http-nio-8082-exec-8] Find All Premium Clients
+2020-07-21 13:08:17,612 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-21 13:08:17,612 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic Client with id 1
+2020-07-21 13:08:17,652 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-21 13:08:17,652 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find All Basic Clients
+2020-07-21 13:08:17,658 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-21 13:08:17,658 INFO c.i.u.s.PremiumService [http-nio-8082-exec-1] Find All Premium Clients
+2020-07-21 13:08:17,665 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-21 13:08:17,665 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic Client with id 1
+2020-07-21 13:08:20,402 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-21 13:08:20,402 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find All Basic Clients
+2020-07-21 15:37:41,533 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-21 15:37:41,534 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-21 15:37:41,533 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Create new Admin
+2020-07-21 15:37:41,534 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Check if username already exists
+2020-07-21 15:37:41,535 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin is available to new admin
+2020-07-21 15:37:41,535 INFO c.i.u.s.AdminService [http-nio-8082-exec-2] Make sure username admin is available to new admin
+2020-07-21 15:37:59,771 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Create new Admin
+2020-07-21 15:37:59,771 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Create new Admin
+2020-07-21 15:37:59,771 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Check if username already exists
+2020-07-21 15:37:59,771 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Check if username already exists
+2020-07-21 15:37:59,771 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Make sure username admin is available to new admin
+2020-07-21 15:37:59,771 INFO c.i.u.s.AdminService [http-nio-8082-exec-3] Make sure username admin is available to new admin
+2020-07-21 15:38:47,321 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-21 15:38:47,322 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 15:38:47,321 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-21 15:38:47,322 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 15:38:47,323 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-21 15:38:47,323 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-21 15:52:29,133 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-21 15:52:29,133 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Create new Admin
+2020-07-21 15:52:29,134 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 15:52:29,134 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 15:52:29,134 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-21 15:52:29,134 INFO c.i.u.s.AdminService [http-nio-8082-exec-1] Make sure username admin is available to new admin
+2020-07-21 15:55:42,176 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 15:55:42,176 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 15:56:40,007 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] [INIT] Create new Basic Client
+2020-07-21 15:56:40,007 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] [INIT] Create new Basic Client
+2020-07-21 15:56:40,007 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Check if username already exists
+2020-07-21 15:56:40,007 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Check if username already exists
+2020-07-21 15:56:40,008 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Make sure username alms is available to new basic user
+2020-07-21 15:56:40,008 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Make sure username alms is available to new basic user
+2020-07-21 15:56:40,062 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] [END] Create new Basic Client
+2020-07-21 15:56:40,062 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] [END] Create new Basic Client
+2020-07-21 15:56:51,961 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username alms
+2020-07-21 15:56:51,961 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username alms
+2020-07-21 15:58:02,563 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username Basic Approval is required!
+2020-07-21 15:58:02,563 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username Basic Approval is required!
+2020-07-21 15:58:21,796 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username alms
+2020-07-21 15:58:21,796 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username alms
+2020-07-21 15:59:12,670 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 15:59:12,670 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 15:59:16,025 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic with username Basic Approval is required!
+2020-07-21 15:59:16,025 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic with username Basic Approval is required!
+2020-07-21 15:59:20,863 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username Basic Approval is required!
+2020-07-21 15:59:20,863 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username Basic Approval is required!
+2020-07-21 15:59:35,255 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username alms
+2020-07-21 15:59:35,255 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username alms
+2020-07-21 15:59:58,926 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 15:59:58,926 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 16:00:06,412 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username Basic Approval is required!
+2020-07-21 16:00:06,412 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username Basic Approval is required!
+2020-07-21 16:00:15,713 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username alms
+2020-07-21 16:00:15,713 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username alms
+2020-07-21 16:02:17,101 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username alms
+2020-07-21 16:02:17,101 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username alms
+2020-07-21 16:03:01,881 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username alms
+2020-07-21 16:03:01,881 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username alms
+2020-07-21 16:06:29,718 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-21 16:06:29,718 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-21 16:06:29,719 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 16:06:29,719 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 16:06:29,720 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms is available to new basic user
+2020-07-21 16:06:29,720 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms is available to new basic user
+2020-07-21 16:06:29,846 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-21 16:06:29,846 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-21 16:06:40,410 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username alms
+2020-07-21 16:06:40,410 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username alms
+2020-07-21 16:07:08,737 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 16:07:08,737 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 16:07:18,167 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username alms
+2020-07-21 16:07:18,167 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username alms
+2020-07-21 16:08:39,720 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-21 16:08:39,720 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-21 16:08:39,721 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 16:08:39,721 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 16:08:39,721 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username almsa is available to new basic user
+2020-07-21 16:08:39,721 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username almsa is available to new basic user
+2020-07-21 16:08:39,837 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-21 16:08:39,837 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-21 16:08:44,537 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username almsa
+2020-07-21 16:08:44,537 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username almsa
+2020-07-21 16:09:24,658 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username almsa
+2020-07-21 16:09:24,658 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username almsa
+2020-07-21 16:10:30,844 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username almsa
+2020-07-21 16:10:30,844 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username almsa
+2020-07-21 16:10:34,910 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [INIT] Create new Basic Client
+2020-07-21 16:10:34,910 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [INIT] Create new Basic Client
+2020-07-21 16:10:34,910 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Check if username already exists
+2020-07-21 16:10:34,910 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Check if username already exists
+2020-07-21 16:10:34,910 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Make sure username almsa is available to new basic user
+2020-07-21 16:10:34,910 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Make sure username almsa is available to new basic user
+2020-07-21 16:10:35,012 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [END] Create new Basic Client
+2020-07-21 16:10:35,012 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] [END] Create new Basic Client
+2020-07-21 16:10:37,176 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username almsa
+2020-07-21 16:10:37,176 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username almsa
+2020-07-21 16:13:06,380 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-21 16:13:06,380 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [INIT] Create new Basic Client
+2020-07-21 16:13:06,382 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 16:13:06,382 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Check if username already exists
+2020-07-21 16:13:06,383 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms is available to new basic user
+2020-07-21 16:13:06,383 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Make sure username alms is available to new basic user
+2020-07-21 16:13:06,491 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-21 16:13:06,491 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] [END] Create new Basic Client
+2020-07-21 16:15:06,955 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 16:15:06,955 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 16:15:21,937 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username alms
+2020-07-21 16:15:21,937 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username alms
+2020-07-21 16:17:14,658 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic with username alms
+2020-07-21 16:17:14,658 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic with username alms
+2020-07-21 16:17:39,153 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username Basic Approval is required!
+2020-07-21 16:17:39,153 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username Basic Approval is required!
+2020-07-21 16:19:48,414 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 16:19:48,414 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 16:19:58,492 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic with username Basic Approval is required!
+2020-07-21 16:19:58,492 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic with username Basic Approval is required!
+2020-07-21 16:20:36,130 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username Basic Approval is required!
+2020-07-21 16:20:36,130 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username Basic Approval is required!
+2020-07-21 16:20:47,331 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username alms
+2020-07-21 16:20:47,331 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username alms
+2020-07-21 16:23:04,304 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username Basic Approval is required!
+2020-07-21 16:23:04,304 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username Basic Approval is required!
+2020-07-21 16:23:11,099 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username Basic Approval is required!
+2020-07-21 16:23:11,099 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username Basic Approval is required!
+2020-07-21 16:23:18,919 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic with username alms
+2020-07-21 16:23:18,919 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic with username alms
+2020-07-21 16:24:14,950 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username Basic Approval is required!
+2020-07-21 16:24:14,950 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username Basic Approval is required!
+2020-07-21 16:24:29,675 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username Basic Approval is required!
+2020-07-21 16:24:29,675 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username Basic Approval is required!
+2020-07-21 16:25:00,845 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 16:25:00,845 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 16:25:10,058 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic with username alms
+2020-07-21 16:25:10,058 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic with username alms
+2020-07-21 16:26:33,261 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username almsa
+2020-07-21 16:26:33,261 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username almsa
+2020-07-21 16:26:35,895 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username alms
+2020-07-21 16:26:35,895 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username alms
+2020-07-21 16:26:42,008 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username alms
+2020-07-21 16:26:42,008 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username alms
+2020-07-21 16:27:53,939 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username Basic Approval is required!
+2020-07-21 16:27:53,939 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username Basic Approval is required!
+2020-07-21 16:28:05,041 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username alms
+2020-07-21 16:28:05,041 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username alms
+2020-07-21 16:28:19,068 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 16:28:19,068 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 16:29:55,013 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username Basic Approval is required!
+2020-07-21 16:29:55,013 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username Basic Approval is required!
+2020-07-21 16:30:08,427 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username alms
+2020-07-21 16:30:08,427 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username alms
+2020-07-21 16:32:56,467 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username Basic Approval is required!
+2020-07-21 16:32:56,467 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username Basic Approval is required!
+2020-07-21 16:33:08,935 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username Basic Approval is required!
+2020-07-21 16:33:08,935 INFO c.i.u.s.BasicService [http-nio-8082-exec-5] Find Basic with username Basic Approval is required!
+2020-07-21 16:33:25,426 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic with username alms
+2020-07-21 16:33:25,426 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic with username alms
+2020-07-21 16:35:54,581 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username Basic Approval is required!
+2020-07-21 16:35:54,581 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username Basic Approval is required!
+2020-07-21 16:36:22,345 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 16:36:22,345 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username Basic Approval is required!
+2020-07-21 16:45:27,805 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username undefined
+2020-07-21 16:45:27,805 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username undefined
+2020-07-21 16:46:02,393 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username Basic Approval is required!
+2020-07-21 16:46:02,393 INFO c.i.u.s.BasicService [http-nio-8082-exec-2] Find Basic with username Basic Approval is required!
+2020-07-21 16:46:31,344 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 16:46:31,344 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username Basic Approval is required!
+2020-07-21 16:46:40,485 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username alms
+2020-07-21 16:46:40,485 INFO c.i.u.s.BasicService [http-nio-8082-exec-4] Find Basic with username alms
+2020-07-21 16:47:54,148 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic with username Basic Approval is required!
+2020-07-21 16:47:54,148 INFO c.i.u.s.BasicService [http-nio-8082-exec-6] Find Basic with username Basic Approval is required!
+2020-07-21 16:48:03,984 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username alms
+2020-07-21 16:48:03,984 INFO c.i.u.s.BasicService [http-nio-8082-exec-7] Find Basic with username alms
+2020-07-21 16:48:35,702 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username Basic Approval is required!
+2020-07-21 16:48:35,702 INFO c.i.u.s.BasicService [http-nio-8082-exec-8] Find Basic with username Basic Approval is required!
+2020-07-21 16:48:42,075 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username alms
+2020-07-21 16:48:42,075 INFO c.i.u.s.BasicService [http-nio-8082-exec-9] Find Basic with username alms
+2020-07-21 16:49:24,502 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic with username Basic Approval is required!
+2020-07-21 16:49:24,502 INFO c.i.u.s.BasicService [http-nio-8082-exec-10] Find Basic with username Basic Approval is required!
+2020-07-21 16:49:36,362 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username alms
+2020-07-21 16:49:36,362 INFO c.i.u.s.BasicService [http-nio-8082-exec-1] Find Basic with username alms
+2020-07-21 16:52:40,825 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username alms
+2020-07-21 16:52:40,825 INFO c.i.u.s.BasicService [http-nio-8082-exec-3] Find Basic with username alms

@@ -13,13 +13,14 @@ public class Massage extends Activity {
     private LocalDateTime endOfActivity;
 
     public Massage() {
+        this.beginOfActivity = LocalDateTime.now();
         this.duration = LocalTime.of(1, 00);
     }
 
-    public Massage(Long userId, Integer roomId, MassageType massageType, LocalDateTime beginOfActivity) {
+    public Massage(Long userId, Integer roomId, MassageType massageType) {
         super(userId, roomId);
         this.massageType = massageType;
-        this.beginOfActivity = beginOfActivity;
+        this.beginOfActivity = LocalDateTime.now();
         this.duration = LocalTime.of(1, 00);
         this.endOfActivity = beginOfActivity.plus(Duration.ofHours(duration.getHour()));
     }

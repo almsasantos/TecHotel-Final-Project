@@ -17,23 +17,47 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Service of Premium User
+ */
 @Service
 public class PremiumService {
+
+    /**
+     * Autowired of Premium Repository
+     */
     @Autowired
     private PremiumRepository premiumRepository;
 
+    /**
+     * Final variable of Logger
+     */
     private static final Logger LOGGER = LogManager.getLogger(PremiumService.class);
 
+    /**
+     * Find All Premium Users
+     * @return a list of Premium
+     */
     public List<Premium> findAll(){
         LOGGER.info("Find All Premium Clients");
         return premiumRepository.findAll();
     }
 
+    /**
+     * Find Premium by id
+     * @param id receives a Long with Premium's Id
+     * @return a Premium User
+     */
     public Premium findById(Long id){
         LOGGER.info("Find Premium Client with id " + id);
         return premiumRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Premium user id not found"));
     }
 
+    /**
+     * Create a new Premium User
+     * @param basicAndPremiumViewModel receives a premium view model with information necessary
+     * @return a Premium User
+     */
     public Premium createPremiumUser(BasicAndPremiumViewModel basicAndPremiumViewModel){
         LOGGER.info("[INIT] Create new Premium Client");
 
@@ -61,6 +85,11 @@ public class PremiumService {
         return premium;
     }
 
+    /**
+     * Update Room Id
+     * @param premiumId receives a Long with Premium's Id
+     * @param roomId receives a Integer with Room's Id
+     */
     public void updateRoomId(Long premiumId, Integer roomId){
         LOGGER.info("Update Premium client " + premiumId + " to room " + roomId);
         Premium premium = findById(premiumId);
@@ -68,6 +97,11 @@ public class PremiumService {
         premiumRepository.save(premium);
     }
 
+    /**
+     * Update number of stays
+     * @param premiumId receives a Long with Premium's Id
+     * @param numberOfStays receives a Integer with number of stays
+     */
     public void updateNumberOfStays(Long premiumId, Integer numberOfStays){
         LOGGER.info("Update Premium client " + premiumId + " with number " + numberOfStays + " of stays");
         Premium premium = findById(premiumId);
@@ -75,6 +109,11 @@ public class PremiumService {
         premiumRepository.save(premium);
     }
 
+    /**
+     * Update Premium balance
+     * @param premiumId receives a Long with Premium's Id
+     * @param updatedBalance receives a BigDecimal
+     */
     public void updatePremiumBalance(Long premiumId, BigDecimal updatedBalance){
         LOGGER.info("Update Premium client " + premiumId + " with balance " + updatedBalance);
         Premium premium = findById(premiumId);
@@ -82,12 +121,21 @@ public class PremiumService {
         premiumRepository.save(premium);
     }
 
+    /**
+     * Delete Premium User
+     * @param premiumId receives a Long with Premium's Id
+     */
     public void deletePremiumUser(Long premiumId){
         LOGGER.info("Delete Premium Client with id " + premiumId);
         Premium premium = findById(premiumId);
         premiumRepository.delete(premium);
     }
 
+    /**
+     * Restrict Username
+     * @param username receives a String with username
+     * @throws UsernameExistsException an Exception
+     */
     public void restrictUsername(String username) throws UsernameExistsException {
         LOGGER.info("Make sure username " + username + " is available to new premium user" );
         List<Premium> premiumList = premiumRepository.findAll().stream().filter(premium -> premium.getUsername().equals(username)).collect(Collectors.toList());
@@ -96,6 +144,17 @@ public class PremiumService {
 
     }
 
+    public Long findPremiumByUsername(String username){
+        LOGGER.info("Find Premium with username " + username);
+        return premiumRepository.findPremiumByUsername(username);
+    }
+
+    /**
+     * Check if id matches name
+     * @param premiumId receives a Long with Premium's Id
+     * @param name receives a String with name
+     * @return a Boolean
+     */
     public Boolean premiumUserIdMatchesName(Long premiumId, String name){
         LOGGER.info("Make sure premium user " + premiumId + " matches name " + name);
         List<Premium> premiumUsers = findAll().stream().filter(user -> user.getId().equals(premiumId)).collect(Collectors.toList());

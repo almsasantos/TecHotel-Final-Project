@@ -31,32 +31,63 @@ import java.time.LocalTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Massage's Service
+ */
 @Service
 public class MassageService {
+    /**
+     * Autowired of Massage Repository
+     */
     @Autowired
     private MassageRepository massageRepository;
 
+    /**
+     * Autowired of User Client
+     */
     @Autowired
     private UserClient userClient;
 
+    /**
+     * Autowired of Room Client
+     */
     @Autowired
     private RoomClient roomClient;
 
+    /**
+     * Autowired of Invoice Client
+     */
     @Autowired
     private InvoiceClient invoiceClient;
 
+    /**
+     * Final variable of Logger
+     */
     private static final Logger LOGGER = LogManager.getLogger(MassageService.class);
 
+    /**
+     * Find All Massages
+     * @return a list of massages
+     */
     public List<Massage> findAll(){
         LOGGER.info("Find all Massage Appointments");
         return massageRepository.findAll();
     }
 
+    /**
+     * Find Massage by id
+     * @param massageId receives a long with massageId
+     * @return a Massage
+     */
     public Massage findMassageById(Long massageId){
         LOGGER.info("Find Massage Appointment with id " + massageId);
         return massageRepository.findById(massageId).orElseThrow(() -> new DataNotFoundException("Massage id not found"));
     }
 
+    /**
+     * Change Massage Type
+     * @param changeMassageTypeDto receives an UpdateMassageTypeDto
+     */
     @HystrixCommand(fallbackMethod = "changeMassageTypeFail")
     public void changeMassageType(UpdateMassageTypeDto changeMassageTypeDto){
         LOGGER.info("[INIT] Change Massage type for " + changeMassageTypeDto.getMassageType() + " in appointment " + changeMassageTypeDto.getMassageId());
@@ -78,6 +109,11 @@ public class MassageService {
         massageRepository.save(massage);
     }
 
+    /**
+     * Create Massage Appointment
+     * @param massageViewModel receives a Massage View Model
+     * @return a Massage created
+     */
     @HystrixCommand(fallbackMethod = "createMassageAppointmentFail")
     public Massage createMassageAppointment(MassageViewModel massageViewModel){
         LOGGER.info("[INIT] Create new Massage Appointment for user id " + massageViewModel.getUserId() + " with room " + massageViewModel.getRoomId());
@@ -85,7 +121,6 @@ public class MassageService {
         confirmData(massageViewModel.getUserId(), massageViewModel.getRoomId(), new Money(massageViewModel.getMassageType().getPrice()));
         Massage massage = new Massage();
         massage.setMassageType(massageViewModel.getMassageType());
-        massage.setBeginOfActivity(massageViewModel.getBeginOfActivity());
         massage.setRoomId(massageViewModel.getRoomId());
         massage.setUserId(massageViewModel.getUserId());
         massage.setTotalPrice(new Money(massageViewModel.getMassageType().getPrice()));
@@ -104,6 +139,11 @@ public class MassageService {
         return massage;
     }
 
+    /**
+     * Cancel Massage Appointment
+     * @param massageId receives a long with massageId
+     * @throws ReservationException an Exception
+     */
     public void cancelMassageAppointment(Long massageId) throws ReservationException{
         LOGGER.info("[INIT] Cancel Massage Appointment with id " + massageId);
         Massage massage = findMassageById(massageId);
@@ -116,6 +156,13 @@ public class MassageService {
         LOGGER.info("[END] Cancel Massage Appointment with id " + massageId);
     }
 
+    /**
+     * Confirm data
+     * @param userId receives a Long with userId
+     * @param roomId receives an Integer with roomId
+     * @param amount receives an Money with amount
+     * @throws ReservationException an Exception
+     */
     @HystrixCommand(fallbackMethod = "confirmDataFail")
     public void confirmData(Long userId, Integer roomId, Money amount) throws ReservationException {
         LOGGER.info("[INIT] Confirm data from user id " + userId + " with room " + roomId);
@@ -145,6 +192,12 @@ public class MassageService {
         LOGGER.info("[END] Confirm data from user id " + userId + " with room " + roomId);
     }
 
+    /**
+     * Check Enough Balance
+     * @param userId receives a Long with userId
+     * @param typeOfUser receives a TypeOfUser with typeOfUser
+     * @param price receives a Money with price
+     */
     @HystrixCommand(fallbackMethod = "checkEnoughBalanceFail")
     public void checkEnoughBalance(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.info("[INIT] Check if user " + userId + " has enough balance to make appointment");
@@ -164,6 +217,11 @@ public class MassageService {
         LOGGER.info("[END] Check if user " + userId + " has enough balance to make appointment");
     }
 
+    /**
+     * Reset Money
+     * @param userId receives an Long with userId
+     * @param amount receives an Money with amount
+     */
     @HystrixCommand(fallbackMethod = "resetMoneyFail")
     public void resetMoney(Long userId, BigDecimal amount){
         LOGGER.info("[INIT] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
@@ -187,27 +245,69 @@ public class MassageService {
         LOGGER.info("[END] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
     }
 
+    /**
+     * Filter Massage By User Id
+     * @param userId receives an Long with userId
+     * @return a list of object
+     */
+    public List<Object[]> filterMassageByUserId(Long userId){
+        LOGGER.info("Filter Massage Reservation from user with id " + userId);
+        return massageRepository.filterMassageByUserId(userId);
+    }
+
+    /**
+     * Confirm Data Fail
+     * @param userId receives a Long with userId
+     * @param roomId receives an Integer with roomId
+     * @param amount receives a Money with amount
+     */
     public void confirmDataFail(Long userId, Integer roomId, Money amount) {
         LOGGER.warn("[WARN] It wasn't possible to confirm the data");
     }
 
+    /**
+     * Reset Money Fail
+     * @param userId receives a Long with userId
+     * @param amount receives a Money with amount
+     */
     public void resetMoneyFail(Long userId, BigDecimal amount) {
         LOGGER.warn("[WARN] It wasn't to give user's money back");
     }
 
+    /**
+     * Check Enough Balance Fail
+     * @param userId receives a Long with userId
+     * @param typeOfUser receives a TypeOfUser with typeOfUser
+     * @param price receives a Money with price
+     */
     public void checkEnoughBalanceFail(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.warn("[WARN] It wasn't possible to check user's balance");
     }
 
+    /**
+     * Create Massage Appointment Fail
+     * @param massageViewModel receives a MassageViewModel with massageViewModel
+     * @return a Massage
+     */
     public Massage createMassageAppointmentFail(MassageViewModel massageViewModel){
         LOGGER.warn("[WARN] It wasn't possible to make a new Massage appointment");
         return null;
     }
 
+    /**
+     * Update User Massage Fail
+     * @param massage receives a Massage with massage
+     * @param invoice receives a Invoice with invoice
+     * @param userId receives a Long with userId
+     */
     public void updateUserMassageFail(Massage massage, Invoice invoice, Long userId){
         LOGGER.warn("[WARN] It wasn't possible to update user with new Massage information");
     }
 
+    /**
+     * Change Massage Type Fail
+     * @param changeMassageTypeDto receives UpdateMassageTypeDto with changeMassageTypeDto
+     */
     public void changeMassageTypeFail(UpdateMassageTypeDto changeMassageTypeDto){
         LOGGER.warn("[WARN] It wasn't possible to change type of Massage");
     }

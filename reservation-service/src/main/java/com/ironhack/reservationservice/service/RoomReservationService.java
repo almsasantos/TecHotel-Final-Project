@@ -184,7 +184,7 @@ public class RoomReservationService {
         return roomReservationRepository.save(roomReservation);
     }
 
-    @HystrixCommand(fallbackMethod = "RoomAvailabilityFail")
+    @HystrixCommand(fallbackMethod = "roomAvailabilityFail")
     public void findIfRoomAvailable(Integer roomId, RoomType roomType) {
         LOGGER.info("[INIT] Check if room " + roomId + " is available");
         RegularRoom regularRoom = null;
@@ -314,15 +314,18 @@ public class RoomReservationService {
         return null;
     }
 
-    public void RoomAvailabilityFail() {
+    public void roomAvailabilityFail(Integer roomId, RoomType roomType) {
         LOGGER.warn("[WARN] It wasn't possible to check room's availability");
+        throw new ReservationException("It wasn't possible to check room's availability");
     }
 
     public void removeRoomReservationFail(Long roomReservationId) {
         LOGGER.warn("[WARN] It wasn't possible to remove Room Reservation");
+        throw new ReservationException("It wasn't possible to remove Room Reservation");
     }
 
     public void checkEnoughBalanceFail(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.warn("[WARN] It wasn't possible to check user's balance");
+        throw new ReservationException("It wasn't possible to remove Room Reservation");
     }
 }

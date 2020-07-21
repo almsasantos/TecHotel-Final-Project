@@ -72,4 +72,17 @@ public interface SecurityClient {
     @PostMapping("/users/premium-users")
     @ResponseStatus(HttpStatus.CREATED)
     public UserSecurity createPremiumUser(@RequestBody UserSecurity premium);
+
+    /**
+     * Create Admin User
+     * @param admin User admin
+     * @return User
+     */
+    @PostMapping("/users/admin-users")
+    @ResponseStatus(HttpStatus.CREATED)
+    public UserSecurity createAdminUser(@RequestBody UserSecurity admin);
+
+    @PostMapping("/users/login")
+    @ResponseStatus(HttpStatus.OK)
+    public boolean login(@RequestHeader(value = "Authorization") String authorizationHeader);
 }

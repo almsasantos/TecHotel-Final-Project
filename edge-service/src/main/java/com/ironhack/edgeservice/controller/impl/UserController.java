@@ -1,5 +1,6 @@
 package com.ironhack.edgeservice.controller.impl;
 
+import com.ironhack.edgeservice.model.entities.users.Admin;
 import com.ironhack.edgeservice.model.entities.users.Basic;
 import com.ironhack.edgeservice.model.entities.users.Premium;
 import com.ironhack.edgeservice.model.viewModel.BasicAndPremiumViewModel;
@@ -16,6 +17,12 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @PostMapping("/users/admins")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Admin createNewAdmin(@RequestBody @Valid Admin admin){
+        return userService.createNewAdmin(admin);
+    }
 
     // --- BASIC USERS ---
     @GetMapping("/users/basics")
@@ -102,4 +109,38 @@ public class UserController {
     public void deletePremiumUser(@PathVariable("id") Long premiumId, @RequestHeader(value = "Authorization") String authorizationHeader){
         userService.deletePremiumUser(premiumId, authorizationHeader);
     }
+
+    /**
+     * Find admin by id
+     * @param adminId receives a long with id from Admin
+     * @return an Admin
+     */
+    @GetMapping("/users/admins/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Admin findAdminById(@PathVariable("id") Long adminId, @RequestHeader(value = "Authorization") String authorizationHeader){
+        return userService.findAdminById(adminId, authorizationHeader);
+    }
+
+    /**
+     * Find All Admins
+     * @return a list of Admin
+     */
+    @GetMapping("/users/admins")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Admin> findAllAdmin(@RequestHeader(value = "Authorization") String authorizationHeader){
+        return userService.findAllAdmin(authorizationHeader);
+    }
+
+    @GetMapping("/users/basics-username/{username}")
+    @ResponseStatus(HttpStatus.OK)
+    public Long findBasicByUsername(@PathVariable("username") String username, @RequestHeader(value = "Authorization") String authorizationHeader){
+        return userService.findBasicByUsername(username, authorizationHeader);
+    }
+
+    @GetMapping("/users/premiums-username/{username}")
+    @ResponseStatus(HttpStatus.OK)
+    public Long findPremiumByUsername(@PathVariable("username") String username, @RequestHeader(value = "Authorization") String authorizationHeader){
+        return userService.findPremiumByUsername(username, authorizationHeader);
+    }
+
 }
