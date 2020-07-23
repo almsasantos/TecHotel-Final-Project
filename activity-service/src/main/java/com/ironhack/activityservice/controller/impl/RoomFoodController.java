@@ -3,6 +3,7 @@ package com.ironhack.activityservice.controller.impl;
 import com.ironhack.activityservice.controller.interfaces.IRoomFoodController;
 import com.ironhack.activityservice.dto.UpdateDrinkMenuDto;
 import com.ironhack.activityservice.dto.UpdateRoomFoodMenuDto;
+import com.ironhack.activityservice.exception.ReservationException;
 import com.ironhack.activityservice.model.entities.RoomFood;
 import com.ironhack.activityservice.model.viewModel.RoomFoodViewModel;
 import com.ironhack.activityservice.service.RoomFoodService;

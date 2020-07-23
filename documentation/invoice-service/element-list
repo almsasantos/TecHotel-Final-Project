@@ -1,0 +1,16 @@
+com.ironhack.invoiceservice
+com.ironhack.invoiceservice.client
+com.ironhack.invoiceservice.controller.impl
+com.ironhack.invoiceservice.controller.interfaces
+com.ironhack.invoiceservice.enums
+com.ironhack.invoiceservice.exception
+com.ironhack.invoiceservice.handler
+com.ironhack.invoiceservice.model.activities
+com.ironhack.invoiceservice.model.classes
+com.ironhack.invoiceservice.model.entities
+com.ironhack.invoiceservice.model.roomreservations
+com.ironhack.invoiceservice.model.rooms
+com.ironhack.invoiceservice.model.users
+com.ironhack.invoiceservice.model.viewmodel
+com.ironhack.invoiceservice.repository
+com.ironhack.invoiceservice.service

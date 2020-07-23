@@ -62,7 +62,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         httpSecurity.authorizeRequests()
                 // --- USER SERVICE ---
                 .mvcMatchers(HttpMethod.GET, "/users/basics").hasAnyAuthority("ADMIN")
-                .mvcMatchers(HttpMethod.GET,"/users/basics/{id}").hasAnyAuthority("ADMIN")
+                .mvcMatchers(HttpMethod.GET,"/users/basics/{id}").hasAnyAuthority("ADMIN", "BASIC")
                 .mvcMatchers(HttpMethod.PATCH,"/users/basics/update-room/{id}/{roomId}").hasAnyAuthority("ADMIN")
                 .mvcMatchers(HttpMethod.PATCH, "/users/basics/update-balance/{id}/{balance}").hasAnyAuthority("ADMIN")
                 .mvcMatchers(HttpMethod.PATCH, "/users/basics/update-stays/{id}/{numberOfStays}").hasAnyAuthority("ADMIN")

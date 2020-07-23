@@ -2,6 +2,7 @@ package com.ironhack.activityservice.model.viewModel;
 
 import com.ironhack.activityservice.model.enums.InvoiceType;
 
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
@@ -13,11 +14,13 @@ public class InvoiceViewModel {
      * Attribute userId of type Long
      */
     @NotNull(message = "User id cannot be null")
+    @Min(value = 1 , message = "User id cannot be less than one")
     private Long userId;
     /**
      * Attribute roomId of type Integer
      */
     @NotNull(message = "Room id cannot be null")
+    @Min(value = 1 , message = "Room id cannot be less than one")
     private Integer roomId;
     /**
      * Attribute invoiceType of type InvoiceType

@@ -20,7 +20,6 @@ public class GlobalHandler {
      */
     @ExceptionHandler(SecurityMicroserviceFail.class)
     public void handleSecurityMicroserviceFail(SecurityMicroserviceFail e, HttpServletResponse response) throws IOException {
-        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.getMessage());
-    }
+        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, e.getMessage()); }
 
 }

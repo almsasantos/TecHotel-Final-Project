@@ -23,30 +23,56 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Invoice Service
+ */
 @Service
 public class InvoiceService {
+    /**
+     * Autowired of InvoiceRepository
+     */
     @Autowired
     private InvoiceRepository invoiceRepository;
-
+    /**
+     * Autowired of UserClient
+     */
     @Autowired
     private UserClient userClient;
-
+    /**
+     * Autowired of ActivityClient
+     */
     @Autowired
     private ActivityClient activityClient;
-
+    /**
+     * Autowired of RoomClient
+     */
     @Autowired
     private RoomClient roomClient;
-
+    /**
+     * Autowired of ReservationClient
+     */
     @Autowired
     private ReservationClient reservationClient;
 
+    /**
+     * Final variable of Logger
+     */
     private static final Logger LOGGER = LogManager.getLogger(InvoiceService.class);
 
+    /**
+     * Find All Invoices
+     * @return a list of invoices
+     */
     public List<Invoice> findAll(){
         LOGGER.info("Find all Invoices");
         return invoiceRepository.findAll();
     }
 
+    /**
+     * Check information
+     * @param invoiceViewModel receives a Invoice View Model
+     * @return a String
+     */
     public String checkInformation(InvoiceViewModel invoiceViewModel){
         List<Basic> basicUsers = userClient.findAllBasicUser().stream().filter(user -> user.getId().equals(invoiceViewModel.getUserId())).collect(Collectors.toList());
         List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(invoiceViewModel.getUserId())).collect(Collectors.toList());
@@ -78,6 +104,11 @@ public class InvoiceService {
         return null;
     }
 
+    /**
+     * Create a Invoice based on Activity
+     * @param invoiceViewModel receives an Invoice View Model
+     * @return an Invoice
+     */
     public Invoice createInvoiceActivity(InvoiceViewModel invoiceViewModel){
         LOGGER.info("[INIT] Create new Invoice for user " + invoiceViewModel.getUserId() + " of activity " + invoiceViewModel.getInvoiceType());
 

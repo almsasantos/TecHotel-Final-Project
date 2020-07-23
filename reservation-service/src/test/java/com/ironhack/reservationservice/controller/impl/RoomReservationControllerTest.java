@@ -113,12 +113,6 @@ class RoomReservationControllerTest {
     }
 
     @Test
-    void removeRoomReservation() throws Exception {
-        mockMvc.perform(delete("/reservations/rooms/"+1))
-                .andExpect(status().isNoContent());
-    }
-
-    @Test
     void userIdMatchesRoom() throws Exception {
         mockMvc.perform(get("/reservations/user-matches-room/"+1+"/"+1))
                 .andExpect(status().isOk());

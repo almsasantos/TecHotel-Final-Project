@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -16,7 +17,7 @@ class ActivityTest {
     @BeforeEach
     void setUp() {
         massage = new Massage();
-        massage = new Massage(1L, 2, MassageType.AROMATHERAPY);
+        massage = new Massage(1L, 2, MassageType.AROMATHERAPY, LocalDateTime.now());
     }
 
     @AfterEach

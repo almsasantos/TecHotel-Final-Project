@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -52,6 +53,12 @@ class BasicTest {
     void getAddress() {
         basic.setAddress(address);
         assertEquals(address, basic.getAddress());
+    }
+
+    @Test
+    void getRegistrationDate() {
+        LocalDateTime now = LocalDateTime.now();
+        basic.getRegistrationDate();
     }
 
     @Test

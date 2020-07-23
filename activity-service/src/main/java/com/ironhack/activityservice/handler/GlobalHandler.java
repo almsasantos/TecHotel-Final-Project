@@ -20,16 +20,13 @@ public class GlobalHandler {
      */
     @ExceptionHandler(DataNotFoundException.class)
     public void handleDataIdNotFoundException(DataNotFoundException e, HttpServletResponse response) throws IOException{
-        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage());
-    }
+        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage()); }
 
     @ExceptionHandler(NotEnoughBalanceException.class)
     public void handleNotEnoughBalanceException(NotEnoughBalanceException e, HttpServletResponse response) throws IOException{
-        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage());
-    }
+        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage()); }
 
     @ExceptionHandler(ReservationException.class)
     public void handleReservationException(ReservationException e, HttpServletResponse response) throws IOException{
-        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage());
-    }
+        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage()); }
 }

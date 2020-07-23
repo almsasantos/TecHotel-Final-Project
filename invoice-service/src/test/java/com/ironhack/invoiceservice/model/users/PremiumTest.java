@@ -72,15 +72,11 @@ class PremiumTest {
 
         assertEquals(account, premium.getBankAccount());
     }
-
     @Test
     void getRegistrationDate() {
         LocalDateTime now = LocalDateTime.now();
-        premium.setRegistrationDate(now);
-
-        assertEquals(now, premium.getRegistrationDate());
+        premium.getRegistrationDate();
     }
-
     @Test
     void getNumberOfStays() {
         premium.setNumberOfStays(1);

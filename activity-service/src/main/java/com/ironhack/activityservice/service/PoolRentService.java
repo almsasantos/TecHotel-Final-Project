@@ -73,8 +73,7 @@ public class PoolRentService {
      */
     public List<PoolRent> findAll(){
         LOGGER.info("Find all Pool Rents");
-        return poolRentRepository.findAll();
-    }
+        return poolRentRepository.findAll(); }
 
     /**
      * Find PoolRent By Id
@@ -83,8 +82,7 @@ public class PoolRentService {
      */
     public PoolRent findPoolRentById(Long poolRentId){
         LOGGER.info("Find Pool Rent with id " + poolRentId);
-        return poolRentRepository.findById(poolRentId).orElseThrow(() -> new DataNotFoundException("Pool rent id was not found"));
-    }
+        return poolRentRepository.findById(poolRentId).orElseThrow(() -> new DataNotFoundException("Pool rent id was not found")); }
 
     /**
      * Create Pool Rent
@@ -101,33 +99,18 @@ public class PoolRentService {
 
         confirmData(poolRentViewModel.getUserId(), poolRentViewModel.getRoomId(), new Money(totalPrice));
 
-        PoolRent poolRent = new PoolRent();
-        poolRent.setTowelNum(poolRentViewModel.getTowelNum());
-        if(poolRentViewModel.getFloatiesNum().equals(null)){
-            poolRent.setFloatiesNum(0);
-        }
-        if(poolRentViewModel.getTowelNum().equals(null)){
-            poolRent.setTowelNum(0);
-        }
+        PoolRent poolRent = new PoolRent(); poolRent.setTowelNum(poolRentViewModel.getTowelNum());
+        if(poolRentViewModel.getFloatiesNum().equals(null)){ poolRent.setFloatiesNum(0); }
+        if(poolRentViewModel.getTowelNum().equals(null)){ poolRent.setTowelNum(0); }
 
-        poolRent.setFloatiesNum(poolRentViewModel.getFloatiesNum());
-        poolRent.setRoomId(poolRentViewModel.getRoomId());
-        poolRent.setUserId(poolRentViewModel.getUserId());
-        poolRent.setTotalPrice(new Money(totalPrice));
-        poolRent.setEndOfActivity(poolRent.getBeginOfActivity().plus(Duration.ofHours(LocalTime.of(1, 00).getHour())));
-        poolRentRepository.save(poolRent);
+        poolRent.setFloatiesNum(poolRentViewModel.getFloatiesNum()); poolRent.setRoomId(poolRentViewModel.getRoomId()); poolRent.setUserId(poolRentViewModel.getUserId()); poolRent.setTotalPrice(new Money(totalPrice));
+        poolRent.setEndOfActivity(poolRent.getBeginOfActivity().plus(Duration.ofHours(LocalTime.of(1, 00).getHour()))); poolRentRepository.save(poolRent);
 
         LOGGER.info("Create new invoice");
-        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-        invoiceViewModel.setUserId(poolRentViewModel.getUserId());
-        invoiceViewModel.setRoomId(poolRentViewModel.getRoomId());
-        invoiceViewModel.setPriceOwed(poolRent.getTotalPrice().getAmount());
-        invoiceViewModel.setInvoiceType(InvoiceType.POOL_RENT);
+        InvoiceViewModel invoiceViewModel = new InvoiceViewModel(); invoiceViewModel.setUserId(poolRentViewModel.getUserId()); invoiceViewModel.setRoomId(poolRentViewModel.getRoomId()); invoiceViewModel.setPriceOwed(poolRent.getTotalPrice().getAmount()); invoiceViewModel.setInvoiceType(InvoiceType.POOL_RENT);
         invoiceClient.createInvoiceActivity(invoiceViewModel);
 
-        LOGGER.info("[INIT] Create new Pool Rent for user id " + poolRentViewModel.getUserId() + " with room " + poolRentViewModel.getRoomId());
-        return poolRent;
-    }
+        LOGGER.info("[INIT] Create new Pool Rent for user id " + poolRentViewModel.getUserId() + " with room " + poolRentViewModel.getRoomId()); return poolRent; }
 
     /**
      * Update Floaties Number
@@ -138,26 +121,19 @@ public class PoolRentService {
         LOGGER.info("[INIT] Update number of floaties to " + updateFloatiesNumDto.getFloatiesNum() + " for pool rent " + updateFloatiesNumDto.getPoolRentId());
 
         PoolRent poolRent = findPoolRentById(updateFloatiesNumDto.getPoolRentId());
-        if(poolRent.getBeginOfActivity().isBefore(LocalDateTime.now()))
-            throw new ReservationException("It's not possible to cancel pool rent reservation");
+        if(poolRent.getBeginOfActivity().isBefore(LocalDateTime.now())) throw new ReservationException("It's not possible to cancel pool rent reservation");
 
         resetMoney(poolRent.getUserId(), new BigDecimal(poolRent.getFloatiesNum()*5.99).setScale(2, RoundingMode.HALF_DOWN));
         confirmData(poolRent.getUserId(), poolRent.getRoomId(), new Money(new BigDecimal(updateFloatiesNumDto.getFloatiesNum()*5.99)));
 
-        poolRent.setFloatiesNum(updateFloatiesNumDto.getFloatiesNum());
-        poolRent.setTotalPrice(new Money(new BigDecimal(poolRent.getFloatiesNum()*5.99+poolRent.getTowelNum()*5.99)));
+        poolRent.setFloatiesNum(updateFloatiesNumDto.getFloatiesNum()); poolRent.setTotalPrice(new Money(new BigDecimal(poolRent.getFloatiesNum()*5.99+poolRent.getTowelNum()*5.99)));
         poolRentRepository.save(poolRent);
 
         LOGGER.info("Create new invoice");
-        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-        invoiceViewModel.setUserId(poolRent.getUserId());
-        invoiceViewModel.setRoomId(poolRent.getRoomId());
-        invoiceViewModel.setPriceOwed(poolRent.getTotalPrice().getAmount());
-        invoiceViewModel.setInvoiceType(InvoiceType.POOL_RENT);
+        InvoiceViewModel invoiceViewModel = new InvoiceViewModel(); invoiceViewModel.setUserId(poolRent.getUserId()); invoiceViewModel.setRoomId(poolRent.getRoomId()); invoiceViewModel.setPriceOwed(poolRent.getTotalPrice().getAmount()); invoiceViewModel.setInvoiceType(InvoiceType.POOL_RENT);
         invoiceClient.createInvoiceActivity(invoiceViewModel);
 
-        LOGGER.info("[END] Update number of floaties to " + updateFloatiesNumDto.getFloatiesNum() + " for pool rent " + updateFloatiesNumDto.getPoolRentId());
-    }
+        LOGGER.info("[END] Update number of floaties to " + updateFloatiesNumDto.getFloatiesNum() + " for pool rent " + updateFloatiesNumDto.getPoolRentId()); }
 
     /**
      * Update Towel Number
@@ -168,26 +144,18 @@ public class PoolRentService {
         LOGGER.info("[INIT] Update number of towels to " + updateTowelNumDto.getTowelNum() + " for pool rent " + updateTowelNumDto.getPoolRentId());
 
         PoolRent poolRent = findPoolRentById(updateTowelNumDto.getPoolRentId());
-        if(poolRent.getBeginOfActivity().isBefore(LocalDateTime.now()))
-            throw new ReservationException("It's not possible to cancel pool rent reservation");
+        if(poolRent.getBeginOfActivity().isBefore(LocalDateTime.now())) throw new ReservationException("It's not possible to cancel pool rent reservation");
 
         resetMoney(poolRent.getUserId(), new BigDecimal(poolRent.getTowelNum()*5.99).setScale(2, RoundingMode.HALF_DOWN));
         confirmData(poolRent.getUserId(), poolRent.getRoomId(), new Money(new BigDecimal(updateTowelNumDto.getTowelNum()*5.99)));
 
-        poolRent.setTowelNum(updateTowelNumDto.getTowelNum());
-        poolRent.setTotalPrice(new Money(new BigDecimal(poolRent.getFloatiesNum()*5.99+poolRent.getTowelNum()*5.99)));
-        poolRentRepository.save(poolRent);
+        poolRent.setTowelNum(updateTowelNumDto.getTowelNum()); poolRent.setTotalPrice(new Money(new BigDecimal(poolRent.getFloatiesNum()*5.99+poolRent.getTowelNum()*5.99))); poolRentRepository.save(poolRent);
 
         LOGGER.info("Create new invoice");
-        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-        invoiceViewModel.setUserId(poolRent.getUserId());
-        invoiceViewModel.setRoomId(poolRent.getRoomId());
-        invoiceViewModel.setPriceOwed(poolRent.getTotalPrice().getAmount());
-        invoiceViewModel.setInvoiceType(InvoiceType.POOL_RENT);
+        InvoiceViewModel invoiceViewModel = new InvoiceViewModel(); invoiceViewModel.setUserId(poolRent.getUserId()); invoiceViewModel.setRoomId(poolRent.getRoomId()); invoiceViewModel.setPriceOwed(poolRent.getTotalPrice().getAmount()); invoiceViewModel.setInvoiceType(InvoiceType.POOL_RENT);
         invoiceClient.createInvoiceActivity(invoiceViewModel);
 
-        LOGGER.info("[END] Update number of towels to " + updateTowelNumDto.getTowelNum() + " for pool rent " + updateTowelNumDto.getPoolRentId());
-    }
+        LOGGER.info("[END] Update number of towels to " + updateTowelNumDto.getTowelNum() + " for pool rent " + updateTowelNumDto.getPoolRentId()); }
 
     /**
      * Cancel Pool Rent
@@ -198,15 +166,9 @@ public class PoolRentService {
         LOGGER.info("[INIT] Cancel Pool Rent with id " + poolRentId);
 
         PoolRent poolRent = findPoolRentById(poolRentId);
-        if(poolRent.getBeginOfActivity().isBefore(LocalDateTime.now()))
-            throw new ReservationException("It's not possible to cancel pool rent reservation");
-        else {
-            resetMoney(poolRent.getUserId(), poolRent.getTotalPrice().getAmount());
-            poolRentRepository.delete(poolRent);
-        }
-
-        LOGGER.info("[END] Cancel Pool Rent with id " + poolRentId);
-    }
+        if(poolRent.getBeginOfActivity().isBefore(LocalDateTime.now())) throw new ReservationException("It's not possible to cancel pool rent reservation");
+        else { resetMoney(poolRent.getUserId(), poolRent.getTotalPrice().getAmount()); poolRentRepository.delete(poolRent); }
+        LOGGER.info("[END] Cancel Pool Rent with id " + poolRentId); }
 
     /**
      * Confirm Data
@@ -223,26 +185,16 @@ public class PoolRentService {
         Basic basic = null;
         Premium premium = null;
 
-        if(basicUsers.size() == 0 && premiumUsers.size() == 0)
-            throw new ReservationException("User id doesn't exist");
-        else if (basicUsers.size() > 0){
-            LOGGER.info("User with id " + userId + " is from type Basic");
-            basic = userClient.findBasicUserById(userId);
-            if(!basic.getRoomId().equals(roomId))
-                throw new ReservationException("Basic User is not associated with that room");
-            checkEnoughBalance(basic.getId(), TypeOfUser.BASIC, amount);
-            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().decreaseAmount(amount.getAmount()));
-        }
-        else if(premiumUsers.size()>0){
-            LOGGER.info("User with id " + userId + " is from type Premium");
-            premium = userClient.findPremiumUserById(userId);
-            if(!premium.getRoomId().equals(roomId))
-                throw new ReservationException("Premium User is not associated with that room");
-            checkEnoughBalance(premium.getId(), TypeOfUser.PREMIUM, amount);
-            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().decreaseAmount(amount.getAmount()));
-        }
-        LOGGER.info("[END] Confirm data from user id " + userId + " with room " + roomId);
-    }
+        if(basicUsers.size() == 0 && premiumUsers.size() == 0) throw new ReservationException("User id doesn't exist");
+
+        else if (basicUsers.size() > 0){ LOGGER.info("User with id " + userId + " is from type Basic"); basic = userClient.findBasicUserById(userId);
+            if(!basic.getRoomId().equals(roomId)) throw new ReservationException("Basic User is not associated with that room"); checkEnoughBalance(basic.getId(), TypeOfUser.BASIC, amount);
+            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().decreaseAmount(amount.getAmount())); }
+
+        else if(premiumUsers.size()>0){ LOGGER.info("User with id " + userId + " is from type Premium"); premium = userClient.findPremiumUserById(userId);
+            if(!premium.getRoomId().equals(roomId)) throw new ReservationException("Premium User is not associated with that room"); checkEnoughBalance(premium.getId(), TypeOfUser.PREMIUM, amount);
+            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().decreaseAmount(amount.getAmount())); }
+        LOGGER.info("[END] Confirm data from user id " + userId + " with room " + roomId); }
 
     /**
      * Check Enough Balance
@@ -253,21 +205,13 @@ public class PoolRentService {
     @HystrixCommand(fallbackMethod = "checkEnoughBalanceFail")
     public void checkEnoughBalance(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.info("[INIT] Check if user " + userId + " has enough balance to make appointment");
-        if (typeOfUser.equals(TypeOfUser.BASIC)) {
-            LOGGER.info("User with id " + userId + " is from type Basic");
-            Basic basic = userClient.findBasicUserById(userId);
-            if (basic.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) {
-                throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation");
-            }
-        } else if (typeOfUser.equals(TypeOfUser.PREMIUM)) {
-            LOGGER.info("User with id " + userId + " is from type Premium");
-            Premium premium = userClient.findPremiumUserById(userId);
-            if (premium.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) {
-                throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation");
-            }
-        }
-        LOGGER.info("[END] Check if user " + userId + " has enough balance to make appointment");
-    }
+        if (typeOfUser.equals(TypeOfUser.BASIC)) { LOGGER.info("User with id " + userId + " is from type Basic"); Basic basic = userClient.findBasicUserById(userId);
+            if (basic.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) { throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation"); } }
+
+        else if (typeOfUser.equals(TypeOfUser.PREMIUM)) { LOGGER.info("User with id " + userId + " is from type Premium"); Premium premium = userClient.findPremiumUserById(userId);
+            if (premium.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) { throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation"); } }
+
+        LOGGER.info("[END] Check if user " + userId + " has enough balance to make appointment"); }
 
     /**
      * Reset Money
@@ -278,24 +222,17 @@ public class PoolRentService {
     public void resetMoney(Long userId, BigDecimal amount){
         LOGGER.info("[INIT] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
         List<Basic> basicUsers = userClient.findAllBasicUser().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
-        List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
-        Basic basic = null;
-        Premium premium = null;
+        List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList()); Basic basic = null; Premium premium = null;
 
-        if(basicUsers.size() == 0 && premiumUsers.size() == 0)
-            throw new ReservationException("User id doesn't exist");
-        else if (basicUsers.size() > 0){
-            LOGGER.info("User with id " + userId + " is from type Basic");
-            basic = userClient.findBasicUserById(userId);
-            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().increaseAmount(amount));
-        }
-        else if(premiumUsers.size()>0){
-            LOGGER.info("User with id " + userId + " is from type Premium");
-            premium = userClient.findPremiumUserById(userId);
-            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().increaseAmount(amount));
-        }
-        LOGGER.info("[END] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
-    }
+        if(basicUsers.size() == 0 && premiumUsers.size() == 0) throw new ReservationException("User id doesn't exist");
+
+        else if (basicUsers.size() > 0){ LOGGER.info("User with id " + userId + " is from type Basic"); basic = userClient.findBasicUserById(userId);
+            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().increaseAmount(amount)); }
+
+        else if(premiumUsers.size()>0){ LOGGER.info("User with id " + userId + " is from type Premium"); premium = userClient.findPremiumUserById(userId);
+            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().increaseAmount(amount)); }
+
+        LOGGER.info("[END] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment"); }
 
     /**
      * Filter Pool Rent By User Id
@@ -304,7 +241,7 @@ public class PoolRentService {
      */
     public List<Object[]> filterPoolRentByUserId(Long userId){
         LOGGER.info("Filter Pool Rent Reservation from user with id " + userId);
-        return poolRentRepository.filterPoolRentByUserId(userId);
+    return poolRentRepository.filterPoolRentByUserId(userId);
     }
 
     /**
@@ -335,6 +272,7 @@ public class PoolRentService {
      */
     public void checkEnoughBalanceFail(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.warn("[WARN] It wasn't possible to check user's balance");
+        throw new ReservationException("It wasn't possible to check if user has enough balance");
     }
 
     /**
@@ -344,7 +282,7 @@ public class PoolRentService {
      */
     public PoolRent createPoolRentFail(PoolRentViewModel poolRentViewModel){
         LOGGER.warn("[WARN] It wasn't possible to make a new Pool Rent");
-        return null;
+        throw new ReservationException("It wasn't possible to create a pool rent");
     }
 
     /**

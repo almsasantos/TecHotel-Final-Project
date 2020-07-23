@@ -22,21 +22,35 @@ public class GlobalHandler {
     @ExceptionHandler(DataNotFoundException.class)
     public void handleDataIdNotFoundException(DataNotFoundException e, HttpServletResponse response) throws IOException{
         response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage());}
-
+    /**
+     * Exception Handler to handle exceptions.
+     * @param e Receives an Exception.
+     * @param response Receives an HTTP Response.
+     * @throws IOException
+     */
     @ExceptionHandler(RoomNotAvailableException.class)
     public void handleRoomNotAvailableException(RoomNotAvailableException e, HttpServletResponse response) throws IOException{
-        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage());
-    }
+        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage()); }
 
+    /**
+     * Exception Handler to handle exceptions.
+     * @param e Receives an Exception.
+     * @param response Receives an HTTP Response.
+     * @throws IOException
+     */
     @ExceptionHandler(NotEnoughBalanceException.class)
     public void handleNotEnoughBalanceException(NotEnoughBalanceException e, HttpServletResponse response) throws IOException{
-        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage());
-    }
+        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage()); }
 
+    /**
+     * Exception Handler to handle exceptions.
+     * @param e Receives an Exception.
+     * @param response Receives an HTTP Response.
+     * @throws IOException
+     */
     @ExceptionHandler(ReservationException.class)
     public void handleReservationException(ReservationException e, HttpServletResponse response) throws IOException{
-        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage());
-    }
+        response.sendError(HttpServletResponse.SC_NOT_FOUND, e.getMessage()); }
 
 
 }

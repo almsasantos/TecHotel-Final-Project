@@ -10,7 +10,7 @@ import java.time.LocalTime;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PoolRentTest {
-    private PoolRent poolRent;
+    PoolRent poolRent;
 
     @BeforeEach
     void setUp() {

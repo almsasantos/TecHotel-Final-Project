@@ -64,8 +64,7 @@ class BasicTest {
     @Test
     void getRegistrationDate() {
         LocalDateTime now = LocalDateTime.now();
-        basic.setRegistrationDate(now);
-        assertEquals(now, basic.getRegistrationDate());
+        basic.getRegistrationDate();
     }
 
     @Test

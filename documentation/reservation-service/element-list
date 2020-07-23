@@ -1,0 +1,16 @@
+com.ironhack.reservationservice
+com.ironhack.reservationservice.client
+com.ironhack.reservationservice.controller.impl
+com.ironhack.reservationservice.controller.interfaces
+com.ironhack.reservationservice.dto
+com.ironhack.reservationservice.exception
+com.ironhack.reservationservice.handler
+com.ironhack.reservationservice.model.classes
+com.ironhack.reservationservice.model.entities
+com.ironhack.reservationservice.model.entities.rooms
+com.ironhack.reservationservice.model.entities.users
+com.ironhack.reservationservice.model.enums
+com.ironhack.reservationservice.model.invoices
+com.ironhack.reservationservice.model.viewmodel
+com.ironhack.reservationservice.repository
+com.ironhack.reservationservice.service

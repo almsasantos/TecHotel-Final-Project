@@ -74,20 +74,16 @@ class PremiumTest {
     }
 
     @Test
-    void getRegistrationDate() {
-        LocalDateTime now = LocalDateTime.now();
-        premium.setRegistrationDate(now);
-
-        assertEquals(now, premium.getRegistrationDate());
-    }
-
-    @Test
     void getNumberOfStays() {
         premium.setNumberOfStays(1);
 
         assertEquals(1, premium.getNumberOfStays());
     }
-
+    @Test
+    void getRegistrationDate() {
+        LocalDateTime now = LocalDateTime.now();
+        premium.getRegistrationDate();
+    }
     @Test
     void getRoomId() {
         premium.setRoomId(1);

@@ -4,12 +4,17 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ironhack.reservationservice.client.InvoiceClient;
 import com.ironhack.reservationservice.client.RoomClient;
 import com.ironhack.reservationservice.client.UserClient;
+import com.ironhack.reservationservice.exception.NotEnoughBalanceException;
 import com.ironhack.reservationservice.exception.ReservationException;
 import com.ironhack.reservationservice.model.classes.Money;
 import com.ironhack.reservationservice.model.entities.RoomReservation;
 import com.ironhack.reservationservice.model.entities.UserReservation;
+import com.ironhack.reservationservice.model.entities.rooms.RegularRoom;
+import com.ironhack.reservationservice.model.entities.rooms.SuiteRoom;
+import com.ironhack.reservationservice.model.entities.users.Basic;
 import com.ironhack.reservationservice.model.enums.RoomType;
 import com.ironhack.reservationservice.model.enums.TypeOfUser;
+import com.ironhack.reservationservice.model.viewmodel.InvoiceViewModel;
 import com.ironhack.reservationservice.model.viewmodel.RoomReservationViewModel;
 import com.ironhack.reservationservice.repository.RoomReservationRepository;
 import org.junit.jupiter.api.AfterEach;
@@ -24,6 +29,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -97,23 +103,46 @@ class RoomReservationServiceTest {
     }
 
     @Test
-    void checkEnoughBalance() {
-    }
-
-    @Test
     void newRoomReservation() {
+        RoomReservation roomReservation = new RoomReservation();
+        RegularRoom regularRoom = new RegularRoom();
+        Basic basic = new Basic();
+        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
+        UserReservation userReservation = null;
+        List<Basic> basicUsers = new ArrayList<Basic>();
+        basicUsers.add(basic);
     }
 
     @Test
-    void findIfRoomAvailable() {
+    void findIfRegularRoomAvailable() {
+        RegularRoom regularRoom = new RegularRoom();
+        regularRoom.setRoomId(1);
+        regularRoom.setRoomType(RoomType.REGULAR_ROOM);
+        regularRoom.setAvailable(false);
+        assertThrows(ReservationException.class, () -> {
+            roomReservationService.findIfRoomAvailable(1, RoomType.REGULAR_ROOM);});
+    }
+
+    @Test
+    void findIfSuiteRoomAvailable() {
+        SuiteRoom suite = new SuiteRoom();
+        suite.setRoomId(1);
+        suite.setRoomType(RoomType.SUITE_ROOM);
+        suite.setAvailable(false);
+        assertThrows(ReservationException.class, () -> {
+            roomReservationService.findIfRoomAvailable(1, RoomType.SUITE_ROOM);});
     }
 
     @Test
     void userIdMatchesRoom() {
-    }
+        Basic basic = new Basic();
+        basic.setId(1L);
+        basic.setRoomId(1);
+        List<Basic> basics = new ArrayList<Basic>();
+        basics.add(basic);
+        assertThrows(ReservationException.class, () -> {
+            roomReservationService.userIdMatchesRoom(1L,1);});
 
-    @Test
-    void removeRoomReservation() {
     }
 
     @Test
@@ -128,14 +157,14 @@ class RoomReservationServiceTest {
     }
 
     @Test
-    void removeRoomReservationFail() {
-        assertThrows(ReservationException.class, () -> {
-            roomReservationService.removeRoomReservationFail(1L);});
+    void checkEnoughBalanceBasicFail() {
+        assertThrows(NotEnoughBalanceException.class, () -> {
+            roomReservationService.checkEnoughBalance(1L, TypeOfUser.BASIC, new Money(new BigDecimal("9.99")));});
     }
 
     @Test
-    void checkEnoughBalanceFail() {
-        assertThrows(ReservationException.class, () -> {
-            roomReservationService.newRoomReservationFail(roomReservationViewModel);});
+    void checkEnoughBalancePremiumFail() {
+        assertThrows(NotEnoughBalanceException.class, () -> {
+            roomReservationService.checkEnoughBalance(1L, TypeOfUser.PREMIUM, new Money(new BigDecimal("9.99")));});
     }
 }

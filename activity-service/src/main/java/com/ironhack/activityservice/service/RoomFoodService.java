@@ -67,20 +67,16 @@ public class RoomFoodService {
      * Find All Room Foods
      * @return a list of RoomFood
      */
-    public List<RoomFood> findAll(){
-        LOGGER.info("Find all Room Food Requests");
-        return roomFoodRepository.findAll();
-    }
+    public List<RoomFood> findAll(){ LOGGER.info("Find all Room Food Requests");
+        return roomFoodRepository.findAll(); }
 
     /**
      * Find RoomFood by id
      * @param roomFoodId receives a Long with roomFoodId
      * @return a RoomFood
      */
-    public RoomFood findRoomFoodById(Long roomFoodId){
-        LOGGER.info("Find Room Food Request with id " + roomFoodId);
-        return roomFoodRepository.findById(roomFoodId).orElseThrow(() -> new DataNotFoundException("Room food request id not found"));
-    }
+    public RoomFood findRoomFoodById(Long roomFoodId){ LOGGER.info("Find Room Food Request with id " + roomFoodId);
+        return roomFoodRepository.findById(roomFoodId).orElseThrow(() -> new DataNotFoundException("Room food request id not found")); }
 
     /**
      * Create new Room Food Request
@@ -88,33 +84,18 @@ public class RoomFoodService {
      * @return a RoomFood
      */
     @HystrixCommand(fallbackMethod = "createRoomFoodRequestFail")
-    public RoomFood createRoomFoodRequest(RoomFoodViewModel roomFoodViewModel){
-        LOGGER.info("[INIT] Create new Room Food Request for user id " + roomFoodViewModel.getUserId() + " in room " + roomFoodViewModel.getRoomId());
+    public RoomFood createRoomFoodRequest(RoomFoodViewModel roomFoodViewModel){ LOGGER.info("[INIT] Create new Room Food Request for user id " + roomFoodViewModel.getUserId() + " in room " + roomFoodViewModel.getRoomId());
 
-        BigDecimal foodPrice = roomFoodViewModel.getFoodMenu().getPrice();
-        BigDecimal drinkPrice = roomFoodViewModel.getDrinkMenu().getPrice();
-        BigDecimal totalPrice = foodPrice.add(drinkPrice);
+        BigDecimal foodPrice = roomFoodViewModel.getFoodMenu().getPrice(); BigDecimal drinkPrice = roomFoodViewModel.getDrinkMenu().getPrice(); BigDecimal totalPrice = foodPrice.add(drinkPrice);
 
         confirmData(roomFoodViewModel.getUserId(), roomFoodViewModel.getRoomId(), new Money(totalPrice));
 
-        RoomFood roomFood = new RoomFood();
-        roomFood.setRoomId(roomFoodViewModel.getRoomId());
-        roomFood.setUserId(roomFoodViewModel.getUserId());
-        roomFood.setDrinkMenu(roomFoodViewModel.getDrinkMenu());
-        roomFood.setFoodMenu(roomFoodViewModel.getFoodMenu());
-        roomFood.setTotalPrice(new Money(totalPrice));
-        roomFoodRepository.save(roomFood);
+        RoomFood roomFood = new RoomFood(roomFoodViewModel.getUserId(), roomFoodViewModel.getRoomId(), roomFoodViewModel.getFoodMenu(), roomFoodViewModel.getDrinkMenu());
+        roomFood.setTotalPrice(new Money(totalPrice)); roomFoodRepository.save(roomFood);
 
-        LOGGER.info("Create new invoice");
-        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-        invoiceViewModel.setUserId(roomFoodViewModel.getUserId());
-        invoiceViewModel.setRoomId(roomFoodViewModel.getRoomId());
-        invoiceViewModel.setPriceOwed(roomFood.getTotalPrice().getAmount());
-        invoiceViewModel.setInvoiceType(InvoiceType.ROOM_FOOD_SERVICE);
-        invoiceClient.createInvoiceActivity(invoiceViewModel);
+        LOGGER.info("Create new invoice"); InvoiceViewModel invoiceViewModel = new InvoiceViewModel(); invoiceViewModel.setUserId(roomFoodViewModel.getUserId()); invoiceViewModel.setRoomId(roomFoodViewModel.getRoomId()); invoiceViewModel.setPriceOwed(roomFood.getTotalPrice().getAmount()); invoiceViewModel.setInvoiceType(InvoiceType.ROOM_FOOD_SERVICE); invoiceClient.createInvoiceActivity(invoiceViewModel);
 
-        LOGGER.info("[END] Create new Room Food Request for user id " + roomFoodViewModel.getUserId() + " in room " + roomFoodViewModel.getRoomId());
-        return roomFood;
+        LOGGER.info("[END] Create new Room Food Request for user id " + roomFoodViewModel.getUserId() + " in room " + roomFoodViewModel.getRoomId());return roomFood;
     }
 
     /**
@@ -126,26 +107,18 @@ public class RoomFoodService {
         LOGGER.info("[INIT] Update Food Menu of Room Food Request with id " + updateRoomFoodMenuDto.getRoomFoodId());
 
         RoomFood roomFood = findRoomFoodById(updateRoomFoodMenuDto.getRoomFoodId());
-        if(roomFood.getDelivered())
-            throw new ReservationException("It's not possible to cancel room food request");
+        if(roomFood.getDelivered()) throw new ReservationException("It's not possible to cancel room food request");
 
         resetMoney(roomFood.getUserId(), roomFood.getFoodMenu().getPrice().setScale(2, RoundingMode.HALF_DOWN));
         confirmData(roomFood.getUserId(), roomFood.getRoomId(), new Money(updateRoomFoodMenuDto.getFoodMenu().getPrice()));
 
-        roomFood.setFoodMenu(updateRoomFoodMenuDto.getFoodMenu());
-        roomFood.setTotalPrice(new Money(roomFood.getDrinkMenu().getPrice()));
-        roomFoodRepository.save(roomFood);
+        roomFood.setFoodMenu(updateRoomFoodMenuDto.getFoodMenu()); roomFood.setTotalPrice(new Money(roomFood.getDrinkMenu().getPrice())); roomFoodRepository.save(roomFood);
 
         LOGGER.info("Create new invoice");
-        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-        invoiceViewModel.setUserId(roomFood.getUserId());
-        invoiceViewModel.setRoomId(roomFood.getRoomId());
-        invoiceViewModel.setPriceOwed(roomFood.getTotalPrice().getAmount());
-        invoiceViewModel.setInvoiceType(InvoiceType.ROOM_FOOD_SERVICE);
+        InvoiceViewModel invoiceViewModel = new InvoiceViewModel(); invoiceViewModel.setUserId(roomFood.getUserId()); invoiceViewModel.setRoomId(roomFood.getRoomId()); invoiceViewModel.setPriceOwed(roomFood.getTotalPrice().getAmount()); invoiceViewModel.setInvoiceType(InvoiceType.ROOM_FOOD_SERVICE);
         invoiceClient.createInvoiceActivity(invoiceViewModel);
 
-        LOGGER.info("[END] Update Food Menu of Room Food Request with id " + updateRoomFoodMenuDto.getRoomFoodId());
-    }
+        LOGGER.info("[END] Update Food Menu of Room Food Request with id " + updateRoomFoodMenuDto.getRoomFoodId()); }
 
     /**
      * Update Drink Menu
@@ -156,22 +129,15 @@ public class RoomFoodService {
         LOGGER.info("[INIT] Update Drink Menu of Room Food Request with id " + updateDrinkMenuDto.getRoomFoodId());
 
         RoomFood roomFood = findRoomFoodById(updateDrinkMenuDto.getRoomFoodId());
-        if(roomFood.getDelivered())
-            throw new ReservationException("It's not possible to cancel room food request");
+        if(roomFood.getDelivered()) throw new ReservationException("It's not possible to cancel room food request");
 
         resetMoney(roomFood.getUserId(), roomFood.getDrinkMenu().getPrice().setScale(2, RoundingMode.HALF_DOWN));
         confirmData(roomFood.getUserId(), roomFood.getRoomId(), new Money(updateDrinkMenuDto.getDrinkMenu().getPrice()));
 
-        roomFood.setDrinkMenu(updateDrinkMenuDto.getDrinkMenu());
-        roomFood.setTotalPrice(new Money(roomFood.getDrinkMenu().getPrice()));
-        roomFoodRepository.save(roomFood);
+        roomFood.setDrinkMenu(updateDrinkMenuDto.getDrinkMenu()); roomFood.setTotalPrice(new Money(roomFood.getDrinkMenu().getPrice())); roomFoodRepository.save(roomFood);
 
         LOGGER.info("Create new invoice");
-        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-        invoiceViewModel.setUserId(roomFood.getUserId());
-        invoiceViewModel.setRoomId(roomFood.getRoomId());
-        invoiceViewModel.setPriceOwed(roomFood.getTotalPrice().getAmount());
-        invoiceViewModel.setInvoiceType(InvoiceType.ROOM_FOOD_SERVICE);
+        InvoiceViewModel invoiceViewModel = new InvoiceViewModel(); invoiceViewModel.setUserId(roomFood.getUserId()); invoiceViewModel.setRoomId(roomFood.getRoomId()); invoiceViewModel.setPriceOwed(roomFood.getTotalPrice().getAmount()); invoiceViewModel.setInvoiceType(InvoiceType.ROOM_FOOD_SERVICE);
         invoiceClient.createInvoiceActivity(invoiceViewModel);
 
         LOGGER.info("[END] Update Drink Menu of Room Food Request with id " + updateDrinkMenuDto.getRoomFoodId());
@@ -181,29 +147,18 @@ public class RoomFoodService {
      * Deliver Room Food
      * @param roomFoodId receives a Long with roomFoodId
      */
-    public void deliverRoomFood(Long roomFoodId){
-        LOGGER.info("Deliver Room Food Service to room " + roomFoodId);
-        RoomFood roomFood = findRoomFoodById(roomFoodId);
-        roomFood.setDelivered(true);
-        roomFoodRepository.save(roomFood);
-    }
+    public void deliverRoomFood(Long roomFoodId){ LOGGER.info("Deliver Room Food Service to room " + roomFoodId);
+        RoomFood roomFood = findRoomFoodById(roomFoodId); roomFood.setDelivered(true); roomFoodRepository.save(roomFood); }
 
     /**
      * Cancel Room Food Request
      * @param roomFoodId receives a Long with roomFoodId
      * @throws ReservationException an Exception
      */
-    public void cancelRoomFoodRequest(Long roomFoodId) throws ReservationException {
-        LOGGER.info("[INIT] Cancel Room Food Request with id " + roomFoodId);
-        RoomFood roomFood = findRoomFoodById(roomFoodId);
-        if(roomFood.getDelivered())
-            throw new ReservationException("It's not possible to cancel room food request");
-        else {
-            resetMoney(roomFood.getUserId(), roomFood.getTotalPrice().getAmount());
-            roomFoodRepository.delete(roomFood);
-        }
-        LOGGER.info("[END] Cancel Room Food Request with id " + roomFoodId);
-    }
+    public void cancelRoomFoodRequest(Long roomFoodId) throws ReservationException { LOGGER.info("[INIT] Cancel Room Food Request with id " + roomFoodId); RoomFood roomFood = findRoomFoodById(roomFoodId);
+        if(roomFood.getDelivered()) throw new ReservationException("It's not possible to cancel room food request");
+        else { resetMoney(roomFood.getUserId(), roomFood.getTotalPrice().getAmount()); roomFoodRepository.delete(roomFood); }
+        LOGGER.info("[END] Cancel Room Food Request with id " + roomFoodId); }
 
     /**
      * Confirm Data
@@ -213,33 +168,20 @@ public class RoomFoodService {
      * @throws ReservationException an Exception
      */
     @HystrixCommand(fallbackMethod = "confirmDataFail")
-    public void confirmData(Long userId, Integer roomId, Money amount) throws ReservationException {
-        LOGGER.info("[INIT] Confirm data from user id " + userId + " with room " + roomId);
+    public void confirmData(Long userId, Integer roomId, Money amount) throws ReservationException { LOGGER.info("[INIT] Confirm data from user id " + userId + " with room " + roomId);
         List<Basic> basicUsers = userClient.findAllBasicUser().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
         List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
-        Basic basic = null;
-        Premium premium = null;
+        Basic basic = null; Premium premium = null;
 
-        if(basicUsers.size() == 0 && premiumUsers.size() == 0)
-            throw new ReservationException("User id doesn't exist");
-        else if (basicUsers.size() > 0){
-            LOGGER.info("User with id " + userId + " is from type Basic");
-            basic = userClient.findBasicUserById(userId);
-            if(!basic.getRoomId().equals(roomId))
-                throw new ReservationException("Basic User is not associated with that room");
-            checkEnoughBalance(basic.getId(), TypeOfUser.BASIC, amount);
-            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().decreaseAmount(amount.getAmount()));
-        }
-        else if(premiumUsers.size()>0){
-            LOGGER.info("User with id " + userId + " is from type Premium");
-            premium = userClient.findPremiumUserById(userId);
-            if(!premium.getRoomId().equals(roomId))
-                throw new ReservationException("Premium User is not associated with that room");
-            checkEnoughBalance(premium.getId(), TypeOfUser.PREMIUM, amount);
-            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().decreaseAmount(amount.getAmount()));
-        }
-        LOGGER.info("[END] Confirm data from user id " + userId + " with room " + roomId);
-    }
+        if(basicUsers.size() == 0 && premiumUsers.size() == 0) throw new ReservationException("User id doesn't exist");
+        else if (basicUsers.size() > 0){ LOGGER.info("User with id " + userId + " is from type Basic"); basic = userClient.findBasicUserById(userId);
+            if(!basic.getRoomId().equals(roomId)) throw new ReservationException("Basic User is not associated with that room");
+            checkEnoughBalance(basic.getId(), TypeOfUser.BASIC, amount); userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().decreaseAmount(amount.getAmount())); }
+
+        else if(premiumUsers.size()>0){ LOGGER.info("User with id " + userId + " is from type Premium"); premium = userClient.findPremiumUserById(userId);
+            if(!premium.getRoomId().equals(roomId)) throw new ReservationException("Premium User is not associated with that room");
+            checkEnoughBalance(premium.getId(), TypeOfUser.PREMIUM, amount); userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().decreaseAmount(amount.getAmount())); }
+        LOGGER.info("[END] Confirm data from user id " + userId + " with room " + roomId); }
 
     /**
      * Check Enough Balance
@@ -248,23 +190,14 @@ public class RoomFoodService {
      * @param price receives a Money with price
      */
     @HystrixCommand(fallbackMethod = "checkEnoughBalanceFail")
-    public void checkEnoughBalance(Long userId, TypeOfUser typeOfUser, Money price) {
-        LOGGER.info("[INIT] Check if user " + userId + " has enough balance to make appointment");
-        if (typeOfUser.equals(TypeOfUser.BASIC)) {
-            LOGGER.info("User with id " + userId + " is from type Basic");
-            Basic basic = userClient.findBasicUserById(userId);
-            if (basic.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) {
-                throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation");
-            }
-        } else if (typeOfUser.equals(TypeOfUser.PREMIUM)) {
-            LOGGER.info("User with id " + userId + " is from type Premium");
-            Premium premium = userClient.findPremiumUserById(userId);
-            if (premium.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) {
-                throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation");
-            }
-        }
-        LOGGER.info("[END] Check if user " + userId + " has enough balance to make appointment");
-    }
+    public void checkEnoughBalance(Long userId, TypeOfUser typeOfUser, Money price) { LOGGER.info("[INIT] Check if user " + userId + " has enough balance to make appointment");
+        if (typeOfUser.equals(TypeOfUser.BASIC)) { LOGGER.info("User with id " + userId + " is from type Basic"); Basic basic = userClient.findBasicUserById(userId);
+            if (basic.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) { throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation"); } }
+
+        else if (typeOfUser.equals(TypeOfUser.PREMIUM)) { LOGGER.info("User with id " + userId + " is from type Premium"); Premium premium = userClient.findPremiumUserById(userId);
+            if (premium.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) { throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation"); } }
+
+        LOGGER.info("[END] Check if user " + userId + " has enough balance to make appointment"); }
 
     /**
      * Reset Money
@@ -275,24 +208,14 @@ public class RoomFoodService {
     public void resetMoney(Long userId, BigDecimal amount){
         LOGGER.info("[INIT] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
         List<Basic> basicUsers = userClient.findAllBasicUser().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
-        List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
-        Basic basic = null;
-        Premium premium = null;
+        List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList()); Basic basic = null; Premium premium = null;
 
-        if(basicUsers.size() == 0 && premiumUsers.size() == 0)
-            throw new ReservationException("User id doesn't exist");
-        else if (basicUsers.size() > 0){
-            LOGGER.info("User with id " + userId + " is from type Basic");
-            basic = userClient.findBasicUserById(userId);
-            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().increaseAmount(amount));
-        }
-        else if(premiumUsers.size()>0){
-            LOGGER.info("User with id " + userId + " is from type Premium");
-            premium = userClient.findPremiumUserById(userId);
-            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().increaseAmount(amount));
-        }
-        LOGGER.info("[END] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
-    }
+        if(basicUsers.size() == 0 && premiumUsers.size() == 0) throw new ReservationException("User id doesn't exist");
+        else if (basicUsers.size() > 0){ LOGGER.info("User with id " + userId + " is from type Basic"); basic = userClient.findBasicUserById(userId);
+            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().increaseAmount(amount)); }
+        else if(premiumUsers.size()>0){ LOGGER.info("User with id " + userId + " is from type Premium"); premium = userClient.findPremiumUserById(userId);
+            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().increaseAmount(amount)); }
+        LOGGER.info("[END] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment"); }
 
     /**
      * Filter Room Food By User Id
@@ -331,6 +254,7 @@ public class RoomFoodService {
      */
     public void checkEnoughBalanceFail(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.warn("[WARN] It wasn't possible to check user's balance");
+        throw new ReservationException("It wasn't possible to check if user has enough balance");
     }
 
     /**
@@ -340,7 +264,7 @@ public class RoomFoodService {
      */
     public RoomFood createRoomFoodRequestFail(RoomFoodViewModel roomFoodViewModel){
         LOGGER.warn("[WARN] It wasn't possible to make a new Room Food Request");
-        return null;
+        throw new ReservationException("It wasn't possible to make a room food request");
     }
 
     /**

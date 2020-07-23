@@ -766,3 +766,565 @@
 2020-07-21 13:34:24,309 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Find all Invoices
 2020-07-21 13:35:03,657 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Find all Invoices
 2020-07-21 13:35:03,657 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Find all Invoices
+2020-07-21 18:14:06,449 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-21 18:14:06,449 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-21 18:16:47,263 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 1 of activity HOTEL_ROOM_RESERVATION
+2020-07-21 18:16:47,263 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 1 of activity HOTEL_ROOM_RESERVATION
+2020-07-21 18:16:47,413 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:16:47,413 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:16:47,414 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 1 is from type Basic
+2020-07-21 18:16:47,414 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 1 is from type Basic
+2020-07-21 18:16:47,471 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 1 of activity HOTEL_ROOM_RESERVATION
+2020-07-21 18:16:47,471 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 1 of activity HOTEL_ROOM_RESERVATION
+2020-07-21 18:17:06,758 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:17:06,758 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:17:06,769 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:17:06,769 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:17:06,769 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 1 is from type Basic
+2020-07-21 18:17:06,769 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 1 is from type Basic
+2020-07-21 18:17:06,798 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:17:06,798 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:51:06,251 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:51:06,251 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:51:06,283 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:51:06,283 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:51:06,283 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 1 is from type Basic
+2020-07-21 18:51:06,283 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 1 is from type Basic
+2020-07-21 18:51:06,318 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:51:06,318 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:51:10,372 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:51:10,372 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:51:10,382 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:51:10,382 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:51:10,382 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 1 is from type Basic
+2020-07-21 18:51:10,382 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 1 is from type Basic
+2020-07-21 18:51:10,406 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:51:10,406 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:52:57,909 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:52:57,909 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:52:57,919 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:52:57,919 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 18:52:57,919 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] User with id 1 is from type Basic
+2020-07-21 18:52:57,919 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] User with id 1 is from type Basic
+2020-07-21 18:52:57,940 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 18:52:57,940 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:16:54,412 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:16:54,412 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:16:54,424 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:16:54,424 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:16:54,425 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] User with id 1 is from type Basic
+2020-07-21 19:16:54,425 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] User with id 1 is from type Basic
+2020-07-21 19:16:54,456 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:16:54,456 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:16:58,049 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:16:58,049 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:16:58,066 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:16:58,066 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:16:58,067 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 1 is from type Basic
+2020-07-21 19:16:58,067 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 1 is from type Basic
+2020-07-21 19:16:58,097 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:16:58,097 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:25:36,554 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:25:36,554 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:25:36,565 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:25:36,565 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:25:36,565 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 1 is from type Basic
+2020-07-21 19:25:36,565 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 1 is from type Basic
+2020-07-21 19:25:36,590 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:25:36,590 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:28:18,974 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:28:18,974 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:28:18,987 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:28:18,987 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:28:18,987 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 1 is from type Basic
+2020-07-21 19:28:18,987 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 1 is from type Basic
+2020-07-21 19:28:19,010 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:28:19,010 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:31:27,064 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:31:27,064 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:31:27,078 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:31:27,078 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:31:27,079 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 1 is from type Basic
+2020-07-21 19:31:27,079 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 1 is from type Basic
+2020-07-21 19:31:27,112 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:31:27,112 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:38:38,306 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 1 of activity ROOM_FOOD_SERVICE
+2020-07-21 19:38:38,306 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 1 of activity ROOM_FOOD_SERVICE
+2020-07-21 19:38:38,316 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:38:38,316 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:38:38,317 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 1 is from type Basic
+2020-07-21 19:38:38,317 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 1 is from type Basic
+2020-07-21 19:38:38,338 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 1 of activity ROOM_FOOD_SERVICE
+2020-07-21 19:38:38,338 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 1 of activity ROOM_FOOD_SERVICE
+2020-07-21 19:38:50,047 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [INIT] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:38:50,047 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [INIT] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:38:50,057 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:38:50,057 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:38:50,057 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] User with id 1 is from type Basic
+2020-07-21 19:38:50,057 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] User with id 1 is from type Basic
+2020-07-21 19:38:50,079 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [END] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:38:50,079 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [END] Create new Invoice for user 1 of activity POOL_RENT
+2020-07-21 19:38:56,755 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:38:56,755 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:38:56,765 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:38:56,765 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 1 exists and has a reservation in the hotel
+2020-07-21 19:38:56,765 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 1 is from type Basic
+2020-07-21 19:38:56,765 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 1 is from type Basic
+2020-07-21 19:38:56,785 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:38:56,785 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 1 of activity MASSAGE_APPOINTMENT
+2020-07-21 19:39:09,750 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Find all Invoices
+2020-07-21 19:39:09,750 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Find all Invoices
+2020-07-21 21:10:32,636 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-21 21:10:32,636 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-21 21:12:38,017 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-21 21:12:38,017 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-21 22:23:48,357 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-21 22:23:48,357 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-21 22:23:48,500 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-21 22:23:48,500 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-21 22:23:48,501 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-21 22:23:48,501 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-21 22:23:48,566 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-21 22:23:48,566 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-21 22:25:00,016 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-21 22:25:00,016 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-21 22:25:00,027 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-21 22:25:00,027 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-21 22:25:00,027 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-21 22:25:00,027 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-21 22:25:00,056 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-21 22:25:00,056 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-21 22:25:06,488 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-21 22:25:06,488 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-21 22:25:06,500 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 2 exists and has a reservation in the hotel
+2020-07-21 22:25:06,500 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 2 exists and has a reservation in the hotel
+2020-07-21 22:25:06,500 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 2 is from type Basic
+2020-07-21 22:25:06,500 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 2 is from type Basic
+2020-07-21 22:25:06,527 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-21 22:25:06,527 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-21 22:25:11,842 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-21 22:25:11,842 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-21 22:25:11,855 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-21 22:25:11,855 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-21 22:25:11,855 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-21 22:25:11,855 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-21 22:25:11,887 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-21 22:25:11,887 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-22 16:04:42,648 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 16:04:42,648 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 16:04:42,824 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:04:42,824 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:04:42,824 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-22 16:04:42,824 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-22 16:04:42,886 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 16:04:42,886 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 16:32:59,230 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:32:59,230 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:32:59,243 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:32:59,243 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:32:59,244 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-22 16:32:59,244 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-22 16:32:59,270 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:32:59,270 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:39:40,670 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-22 16:39:40,670 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-22 16:39:40,682 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:39:40,682 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:39:40,682 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-22 16:39:40,682 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-22 16:39:40,706 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-22 16:39:40,706 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-22 16:40:05,078 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 16:40:05,078 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 16:40:05,098 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:40:05,098 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:40:05,098 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-22 16:40:05,098 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-22 16:40:05,128 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 16:40:05,128 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 16:49:57,436 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 16:49:57,436 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 16:49:57,447 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 3 exists and has a reservation in the hotel
+2020-07-22 16:49:57,447 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 3 exists and has a reservation in the hotel
+2020-07-22 16:49:57,447 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 3 is from type Basic
+2020-07-22 16:49:57,447 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 3 is from type Basic
+2020-07-22 16:49:57,474 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 16:49:57,474 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 16:50:15,672 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 3 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:50:15,672 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 3 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:50:15,683 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 3 exists and has a reservation in the hotel
+2020-07-22 16:50:15,683 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 3 exists and has a reservation in the hotel
+2020-07-22 16:50:15,683 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 3 is from type Basic
+2020-07-22 16:50:15,683 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 3 is from type Basic
+2020-07-22 16:50:15,707 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 3 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:50:15,707 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 3 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:52:15,567 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:52:15,567 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:52:15,581 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:52:15,581 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:52:15,581 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] User with id 2 is from type Basic
+2020-07-22 16:52:15,581 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] User with id 2 is from type Basic
+2020-07-22 16:52:15,603 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:52:15,603 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:56:09,858 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:56:09,858 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:56:09,872 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:56:09,872 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 16:56:09,872 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 2 is from type Basic
+2020-07-22 16:56:09,872 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 2 is from type Basic
+2020-07-22 16:56:09,897 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 16:56:09,897 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 17:27:55,339 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 17:27:55,339 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 17:27:55,508 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 17:27:55,508 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 17:27:55,508 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-22 17:27:55,508 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-22 17:27:55,591 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 17:27:55,591 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-22 17:31:59,514 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 17:31:59,514 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 17:31:59,527 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 17:31:59,527 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 17:31:59,527 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-22 17:31:59,527 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-22 17:31:59,554 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 17:31:59,554 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 17:35:17,071 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 17:35:17,071 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 17:35:17,082 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 17:35:17,082 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 17:35:17,082 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-22 17:35:17,082 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-22 17:35:17,109 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 17:35:17,109 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 17:38:30,528 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Find all Invoices
+2020-07-22 17:38:30,528 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Find all Invoices
+2020-07-22 17:39:10,439 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Find all Invoices
+2020-07-22 17:39:10,439 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Find all Invoices
+2020-07-22 17:52:33,710 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Find all Invoices
+2020-07-22 17:52:33,710 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Find all Invoices
+2020-07-22 17:52:36,321 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-22 17:52:36,321 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-22 17:53:33,208 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Find all Invoices
+2020-07-22 17:53:33,208 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Find all Invoices
+2020-07-22 17:53:37,823 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-22 17:53:37,823 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-22 18:00:43,185 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Find all Invoices
+2020-07-22 18:00:43,185 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Find all Invoices
+2020-07-22 18:05:38,757 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Find all Invoices
+2020-07-22 18:05:38,757 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Find all Invoices
+2020-07-22 18:05:49,038 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Find all Invoices
+2020-07-22 18:05:49,038 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Find all Invoices
+2020-07-22 18:05:54,724 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Find all Invoices
+2020-07-22 18:05:54,724 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Find all Invoices
+2020-07-22 18:06:17,856 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Find all Invoices
+2020-07-22 18:06:17,856 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Find all Invoices
+2020-07-22 18:06:25,518 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-22 18:06:25,518 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-22 18:06:31,994 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Find all Invoices
+2020-07-22 18:06:31,994 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Find all Invoices
+2020-07-22 18:06:54,451 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-22 18:06:54,451 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-22 18:07:55,854 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 18:07:55,854 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 18:07:55,865 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 18:07:55,865 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 18:07:55,865 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-22 18:07:55,865 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-22 18:07:55,889 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 18:07:55,889 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-22 18:08:01,059 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 18:08:01,059 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 18:08:01,090 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 18:08:01,090 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 18:08:01,090 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-22 18:08:01,090 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-22 18:08:01,142 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 18:08:01,142 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-22 18:08:06,854 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-22 18:08:06,854 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-22 18:08:06,887 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 18:08:06,887 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 2 exists and has a reservation in the hotel
+2020-07-22 18:08:06,887 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 2 is from type Basic
+2020-07-22 18:08:06,887 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 2 is from type Basic
+2020-07-22 18:08:06,936 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-22 18:08:06,936 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 09:26:10,581 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-23 09:26:10,581 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Find all Invoices
+2020-07-23 09:28:14,895 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 09:28:14,895 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 09:28:15,050 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:28:15,050 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:28:15,051 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-23 09:28:15,051 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-23 09:28:15,120 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 09:28:15,120 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 09:28:18,754 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:28:18,754 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:28:18,768 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:28:18,768 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:28:18,768 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 2 is from type Basic
+2020-07-23 09:28:18,768 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 2 is from type Basic
+2020-07-23 09:28:18,796 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:28:18,796 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:28:35,499 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 09:28:35,499 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 09:28:35,511 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:28:35,511 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:28:35,511 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-23 09:28:35,511 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 2 is from type Basic
+2020-07-23 09:28:35,538 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 09:28:35,538 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 09:28:49,628 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 09:28:49,628 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 09:28:49,639 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:28:49,639 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:28:49,639 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-23 09:28:49,639 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-23 09:28:49,665 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 09:28:49,665 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 09:53:03,754 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:53:03,754 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:53:03,765 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:53:03,765 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:53:03,766 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 2 is from type Basic
+2020-07-23 09:53:03,766 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 2 is from type Basic
+2020-07-23 09:53:03,789 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:53:03,789 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:54:32,340 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:54:32,340 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:54:32,360 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:54:32,360 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 09:54:32,360 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-23 09:54:32,360 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-23 09:54:32,403 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:54:32,403 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 09:56:55,478 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-23 09:56:55,478 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-23 09:59:23,881 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Find all Invoices
+2020-07-23 09:59:23,881 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Find all Invoices
+2020-07-23 12:53:12,714 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 12:53:12,714 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 12:53:12,725 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:53:12,725 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:53:12,726 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 2 is from type Basic
+2020-07-23 12:53:12,726 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 2 is from type Basic
+2020-07-23 12:53:12,748 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 12:53:12,748 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 12:53:24,896 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 12:53:24,896 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 12:53:24,907 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:53:24,907 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:53:24,907 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 2 is from type Basic
+2020-07-23 12:53:24,907 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 2 is from type Basic
+2020-07-23 12:53:24,933 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 12:53:24,933 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 12:53:30,176 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 12:53:30,176 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 12:53:30,187 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:53:30,187 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:53:30,187 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 2 is from type Basic
+2020-07-23 12:53:30,187 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 2 is from type Basic
+2020-07-23 12:53:30,210 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 12:53:30,210 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 12:53:35,822 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 12:53:35,822 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 12:53:35,838 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:53:35,838 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:53:35,839 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] User with id 2 is from type Basic
+2020-07-23 12:53:35,839 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] User with id 2 is from type Basic
+2020-07-23 12:53:35,865 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 12:53:35,865 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 12:55:11,502 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 12:55:11,502 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 12:55:11,512 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:55:11,512 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 12:55:11,512 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-23 12:55:11,512 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-23 12:55:11,536 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 12:55:11,536 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 13:01:12,371 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 13:01:12,371 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 13:01:12,381 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 13:01:12,381 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 13:01:12,381 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 3 is from type Basic
+2020-07-23 13:01:12,381 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 3 is from type Basic
+2020-07-23 13:01:12,402 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 13:01:12,402 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:12:03,309 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:12:03,309 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:12:03,472 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 15:12:03,472 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 15:12:03,472 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-23 15:12:03,472 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-23 15:12:03,554 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:12:03,554 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:44:10,571 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:44:10,571 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:44:10,585 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 15:44:10,585 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 15:44:10,585 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 3 is from type Basic
+2020-07-23 15:44:10,585 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 3 is from type Basic
+2020-07-23 15:44:10,618 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:44:10,618 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:52:25,481 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 4 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:52:25,481 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 4 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:52:25,491 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 4 exists and has a reservation in the hotel
+2020-07-23 15:52:25,491 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 4 exists and has a reservation in the hotel
+2020-07-23 15:52:25,492 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 4 is from type Basic
+2020-07-23 15:52:25,492 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 4 is from type Basic
+2020-07-23 15:52:25,516 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 4 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:52:25,516 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 4 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 15:52:40,934 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 4 of activity MASSAGE_APPOINTMENT
+2020-07-23 15:52:40,934 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 4 of activity MASSAGE_APPOINTMENT
+2020-07-23 15:52:40,945 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 4 exists and has a reservation in the hotel
+2020-07-23 15:52:40,945 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 4 exists and has a reservation in the hotel
+2020-07-23 15:52:40,945 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 4 is from type Basic
+2020-07-23 15:52:40,945 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 4 is from type Basic
+2020-07-23 15:52:40,969 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 4 of activity MASSAGE_APPOINTMENT
+2020-07-23 15:52:40,969 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 4 of activity MASSAGE_APPOINTMENT
+2020-07-23 15:53:24,903 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 4 of activity POOL_RENT
+2020-07-23 15:53:24,903 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 4 of activity POOL_RENT
+2020-07-23 15:53:24,917 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 4 exists and has a reservation in the hotel
+2020-07-23 15:53:24,917 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 4 exists and has a reservation in the hotel
+2020-07-23 15:53:24,917 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 4 is from type Basic
+2020-07-23 15:53:24,917 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 4 is from type Basic
+2020-07-23 15:53:24,941 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 4 of activity POOL_RENT
+2020-07-23 15:53:24,941 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 4 of activity POOL_RENT
+2020-07-23 15:53:30,012 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 4 of activity ROOM_FOOD_SERVICE
+2020-07-23 15:53:30,012 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 4 of activity ROOM_FOOD_SERVICE
+2020-07-23 15:53:30,023 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 4 exists and has a reservation in the hotel
+2020-07-23 15:53:30,023 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 4 exists and has a reservation in the hotel
+2020-07-23 15:53:30,023 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 4 is from type Basic
+2020-07-23 15:53:30,023 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 4 is from type Basic
+2020-07-23 15:53:30,046 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 4 of activity ROOM_FOOD_SERVICE
+2020-07-23 15:53:30,046 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 4 of activity ROOM_FOOD_SERVICE
+2020-07-23 15:54:03,770 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Find all Invoices
+2020-07-23 15:54:03,770 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Find all Invoices
+2020-07-23 15:55:03,215 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Find all Invoices
+2020-07-23 15:55:03,215 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-2] Find all Invoices
+2020-07-23 16:19:48,394 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Find all Invoices
+2020-07-23 16:19:48,394 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Find all Invoices
+2020-07-23 19:23:03,393 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:23:03,393 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:23:03,544 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:23:03,544 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:23:03,544 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-23 19:23:03,544 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-23 19:23:03,603 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:23:03,603 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:23:32,422 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:23:32,422 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:23:32,434 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:23:32,434 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:23:32,434 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 2 is from type Basic
+2020-07-23 19:23:32,434 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 2 is from type Basic
+2020-07-23 19:23:32,463 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:23:32,463 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:27:17,018 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:27:17,018 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:27:17,028 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:27:17,028 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:27:17,028 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 2 is from type Basic
+2020-07-23 19:27:17,028 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 2 is from type Basic
+2020-07-23 19:27:17,052 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:27:17,052 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:32:23,967 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 19:32:23,967 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 19:32:23,977 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:32:23,977 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:32:23,977 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-23 19:32:23,977 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-23 19:32:24,003 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 19:32:24,003 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 19:36:43,515 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:36:43,515 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:36:43,525 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:36:43,525 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:36:43,525 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-23 19:36:43,525 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] User with id 2 is from type Basic
+2020-07-23 19:36:43,551 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:36:43,551 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:41:04,714 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:41:04,714 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:41:04,724 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:41:04,724 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:41:04,725 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-23 19:41:04,725 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-23 19:41:04,748 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:41:04,748 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:43:33,615 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:43:33,615 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:43:33,632 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:43:33,632 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:43:33,633 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 2 is from type Basic
+2020-07-23 19:43:33,633 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 2 is from type Basic
+2020-07-23 19:43:33,657 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:43:33,657 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 2 of activity MASSAGE_APPOINTMENT
+2020-07-23 19:45:46,048 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 19:45:46,048 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [INIT] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 19:45:46,057 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:45:46,057 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:45:46,057 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] User with id 2 is from type Basic
+2020-07-23 19:45:46,057 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] User with id 2 is from type Basic
+2020-07-23 19:45:46,083 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 19:45:46,083 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-10] [END] Create new Invoice for user 2 of activity POOL_RENT
+2020-07-23 19:48:31,982 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-23 19:48:31,982 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-3] Find all Invoices
+2020-07-23 19:49:16,128 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Find all Invoices
+2020-07-23 19:49:16,128 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Find all Invoices
+2020-07-23 19:50:12,710 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:50:12,710 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:50:12,720 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:50:12,720 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:50:12,720 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-23 19:50:12,720 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] User with id 2 is from type Basic
+2020-07-23 19:50:12,741 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:50:12,741 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-6] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:51:09,169 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:51:09,169 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:51:09,178 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:51:09,178 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:51:09,179 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 2 is from type Basic
+2020-07-23 19:51:09,179 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] User with id 2 is from type Basic
+2020-07-23 19:51:09,203 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:51:09,203 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-8] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:51:51,043 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:51:51,043 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:51:51,054 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:51:51,054 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:51:51,054 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 2 is from type Basic
+2020-07-23 19:51:51,054 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] User with id 2 is from type Basic
+2020-07-23 19:51:51,077 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:51:51,077 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-9] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:53:38,921 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:53:38,921 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [INIT] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:53:38,931 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:53:38,931 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] Make sure user 2 exists and has a reservation in the hotel
+2020-07-23 19:53:38,931 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-23 19:53:38,931 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] User with id 2 is from type Basic
+2020-07-23 19:53:38,953 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 19:53:38,953 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-1] [END] Create new Invoice for user 2 of activity ROOM_FOOD_SERVICE
+2020-07-23 20:02:57,746 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 20:02:57,746 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 20:02:57,755 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 20:02:57,755 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 20:02:57,755 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 3 is from type Basic
+2020-07-23 20:02:57,755 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-4] User with id 3 is from type Basic
+2020-07-23 20:05:00,415 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 20:05:00,415 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 20:05:00,425 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 20:05:00,425 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 20:05:00,425 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 3 is from type Basic
+2020-07-23 20:05:00,425 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] User with id 3 is from type Basic
+2020-07-23 20:05:00,453 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 20:05:00,453 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-5] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 20:05:31,080 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 20:05:31,080 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [INIT] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 20:05:31,090 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 20:05:31,090 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] Make sure user 3 exists and has a reservation in the hotel
+2020-07-23 20:05:31,090 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 3 is from type Basic
+2020-07-23 20:05:31,090 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] User with id 3 is from type Basic
+2020-07-23 20:05:31,126 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION
+2020-07-23 20:05:31,126 INFO c.i.i.s.InvoiceService [http-nio-8085-exec-7] [END] Create new Invoice for user 3 of activity HOTEL_ROOM_RESERVATION

@@ -46,10 +46,10 @@ public class Massage extends Activity {
      * @param roomId receives a Integer with roomId
      * @param massageType receives a MassageType with massageType
      */
-    public Massage(Long userId, Integer roomId, MassageType massageType) {
+    public Massage(Long userId, Integer roomId, MassageType massageType, LocalDateTime beginOfActivity) {
         super(userId, roomId);
         this.massageType = massageType;
-        this.beginOfActivity = LocalDateTime.now();
+        this.beginOfActivity = beginOfActivity;
         this.duration = LocalTime.of(1, 00);
         this.endOfActivity = beginOfActivity.plus(Duration.ofHours(duration.getHour()));
     }

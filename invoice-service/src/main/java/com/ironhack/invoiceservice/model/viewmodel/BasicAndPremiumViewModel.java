@@ -1,5 +1,7 @@
 package com.ironhack.invoiceservice.model.viewmodel;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -10,46 +12,58 @@ public class BasicAndPremiumViewModel {
     /**
      * Attribute name from type String
      */
+    @NotNull(message = "Name cannot be null")
     private String name;
     /**
      * Attribute username from type String
      */
+    @NotNull(message = "Username cannot be null")
     private String username;
     /**
      * Attribute password from type String
      */
+    @NotNull(message = "Password cannot be null")
     private String password;
     /**
      * Attribute phoneNumber from type String
      */
+    @NotNull(message = "Phone Number cannot be null")
     private String phoneNumber;
     /**
      * Attribute email from type String
      */
+    @NotNull(message = "Email cannot be null")
     private String email;
     /**
      * Attribute birthDate from type LocalDate
      */
+    @NotNull(message = "Birth Date cannot be null")
     private LocalDate birthDate;
     /**
      * Attribute country from type String
      */
+    @NotNull(message = "Country cannot be null")
     private String country;
     /**
      * Attribute city from type String
      */
+    @NotNull(message = "City cannot be null")
     private String city;
     /**
      * Attribute street from type String
      */
+    @NotNull(message = "Street cannot be null")
     private String street;
     /**
      * Attribute postalCode from type String
      */
+    @NotNull(message = "Postal Code cannot be null")
     private String postalCode;
     /**
      * Attribute balance from type BigDecimal
      */
+    @NotNull(message = "Balance cannot be null")
+    @Min(value = 0, message = "Balance must be more or equal to zero")
     private BigDecimal balance;
 
     /**

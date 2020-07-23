@@ -12,6 +12,11 @@ import javax.validation.Valid;
 
 @FeignClient(name = "invoice-service")
 public interface InvoiceClient {
+    /**
+     * Create Invoice based on activity
+     * @param invoiceViewModel receives an Invoice View Model
+     * @return an Invoice created
+     */
     @PostMapping("/invoices-activity")
     @ResponseStatus(HttpStatus.CREATED)
     public Invoice createInvoiceActivity(@RequestBody @Valid InvoiceViewModel invoiceViewModel);

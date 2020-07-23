@@ -21,6 +21,7 @@ public class PoolRent extends Activity {
         this.floatiesNum = floatiesNum;
         this.towelNum = towelNum;
         this.beginOfActivity = LocalDateTime.now();
+        this.duration = LocalTime.of(1, 00);
         this.endOfActivity = beginOfActivity.plus(Duration.ofHours(duration.getHour()));
     }
 

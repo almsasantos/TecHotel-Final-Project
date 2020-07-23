@@ -12,6 +12,10 @@ import java.util.List;
 
 @FeignClient(name = "room-service")
 public interface RoomClient {
+    /**
+     * Find All Regular Rooms
+     * @return a list of RegularRoom
+     */
     @GetMapping("/regular-rooms")
     @ResponseStatus(HttpStatus.OK)
     public List<RegularRoom> findAllRegularRooms();
@@ -24,7 +28,10 @@ public interface RoomClient {
     @GetMapping("/regular-rooms/{id}")
     @ResponseStatus(HttpStatus.OK)
     public RegularRoom findRegularRoomById(@PathVariable("id") Integer roomId);
-
+    /**
+     * Find All Suites
+     * @return a list of SuiteRoom
+     */
     @GetMapping("/suites")
     @ResponseStatus(HttpStatus.OK)
     public List<SuiteRoom> findAllSuites();

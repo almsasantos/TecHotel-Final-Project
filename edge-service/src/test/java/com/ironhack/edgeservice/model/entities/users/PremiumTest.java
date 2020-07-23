@@ -76,9 +76,7 @@ class PremiumTest {
     @Test
     void getRegistrationDate() {
         LocalDateTime now = LocalDateTime.now();
-        premium.setRegistrationDate(now);
-
-        assertEquals(now, premium.getRegistrationDate());
+        premium.getRegistrationDate();
     }
 
     @Test

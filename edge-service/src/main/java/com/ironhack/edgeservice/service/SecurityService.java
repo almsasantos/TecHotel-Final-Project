@@ -86,8 +86,7 @@ public class SecurityService {
     @HystrixCommand(fallbackMethod = "SecurityMicroserviceFail", ignoreExceptions = ResponseStatusException.class)
     public List<UserDto> viewAllBasicUsers(String authorizationHeader) {
         isUser(authorizationHeader);
-        return securityClient.viewAllBasicUsers();
-    }
+        return securityClient.viewAllBasicUsers(); }
 
     /**
      * Get all Premium Users
@@ -97,8 +96,7 @@ public class SecurityService {
     @HystrixCommand(fallbackMethod = "SecurityMicroserviceFail", ignoreExceptions = ResponseStatusException.class)
     public List<UserDto> viewAllPremiumUsers(String authorizationHeader) {
         isAdmin(authorizationHeader);
-        return securityClient.viewAllPremiumUsers();
-    }
+        return securityClient.viewAllPremiumUsers(); }
 
     /**
      * Create Basic User
@@ -135,8 +133,7 @@ public class SecurityService {
      */
     public UserDto SecurityMicroserviceFail(UserDto user, String authorizationHeader) {
         LOGGER.warn("[WARN] - Hystrix send failure for Security Microservice");
-        throw new SecurityMicroserviceFail("Failure in Security Microservice");
-    }
+        throw new SecurityMicroserviceFail("Failure in Security Microservice"); }
 
     /**
      * Hystrix Fallback method when User Microservice fails
@@ -145,7 +142,6 @@ public class SecurityService {
      */
     public List<UserDto> SecurityMicroserviceFail(String authorizationHeader) {
         LOGGER.warn("[WARN] - Hystrix send failure for Security Microservice");
-        throw new SecurityMicroserviceFail("Failure in Security Microservice");
-    }
+        throw new SecurityMicroserviceFail("Failure in Security Microservice"); }
 
 }

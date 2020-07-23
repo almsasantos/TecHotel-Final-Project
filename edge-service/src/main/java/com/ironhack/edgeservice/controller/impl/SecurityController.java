@@ -1,16 +1,20 @@
 package com.ironhack.edgeservice.controller.impl;
 
+import com.ironhack.edgeservice.controller.interfaces.ISecurityController;
 import com.ironhack.edgeservice.dto.UserDto;
 import com.ironhack.edgeservice.model.entities.security.UserSecurity;
 import com.ironhack.edgeservice.service.SecurityService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Api(tags = "Security Controller")
 @RestController
-public class SecurityController {
+@RequestMapping("/")
+public class SecurityController implements ISecurityController {
 
     @Autowired
     private SecurityService securityService;
@@ -23,8 +27,7 @@ public class SecurityController {
     @GetMapping("/users/is-admin")
     @ResponseStatus(HttpStatus.OK)
     public boolean isAdmin(@RequestHeader(value = "Authorization") String authorizationHeader){
-        return securityService.admin(authorizationHeader);
-    }
+        return securityService.admin(authorizationHeader); }
 
     /**
      * Get all Basic Users
@@ -33,8 +36,7 @@ public class SecurityController {
     @GetMapping("/users/basic-users")
     @ResponseStatus(HttpStatus.OK)
     public List<UserDto> viewAllBasicUsers(@RequestHeader(value = "Authorization") String authorizationHeader){
-        return securityService.viewAllBasicUsers(authorizationHeader);
-    }
+        return securityService.viewAllBasicUsers(authorizationHeader); }
 
     /**
      * Get all Premium Users
@@ -43,8 +45,7 @@ public class SecurityController {
     @GetMapping("/users/premium-users")
     @ResponseStatus(HttpStatus.OK)
     public List<UserDto> viewAllPremiumUsers(@RequestHeader(value = "Authorization") String authorizationHeader){
-        return securityService.viewAllPremiumUsers(authorizationHeader);
-    }
+        return securityService.viewAllPremiumUsers(authorizationHeader); }
 
     /**
      * Create Basic User
@@ -81,6 +82,5 @@ public class SecurityController {
     @GetMapping("/users/login")
     @ResponseStatus(HttpStatus.OK)
     public boolean login(@RequestHeader(value = "Authorization") String authorizationHeader){
-        return securityService.login(authorizationHeader);
-    }
+        return securityService.login(authorizationHeader); }
 }

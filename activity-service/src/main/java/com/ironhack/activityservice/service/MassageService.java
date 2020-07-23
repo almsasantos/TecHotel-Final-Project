@@ -92,22 +92,17 @@ public class MassageService {
     public void changeMassageType(UpdateMassageTypeDto changeMassageTypeDto){
         LOGGER.info("[INIT] Change Massage type for " + changeMassageTypeDto.getMassageType() + " in appointment " + changeMassageTypeDto.getMassageId());
         Massage massage = findMassageById(changeMassageTypeDto.getMassageId());
+
         resetMoney(massage.getUserId(), massage.getMassageType().getPrice().setScale(2, RoundingMode.HALF_DOWN));
         confirmData(massage.getUserId(), massage.getRoomId(), new Money(changeMassageTypeDto.getMassageType().getPrice()));
-        massage.setMassageType(changeMassageTypeDto.getMassageType());
-        massage.setTotalPrice(new Money(massage.getMassageType().getPrice()));
+        massage.setMassageType(changeMassageTypeDto.getMassageType()); massage.setTotalPrice(new Money(massage.getMassageType().getPrice()));
 
         LOGGER.info("Create new invoice");
-        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-        invoiceViewModel.setUserId(massage.getUserId());
-        invoiceViewModel.setRoomId(massage.getRoomId());
-        invoiceViewModel.setPriceOwed(massage.getTotalPrice().getAmount());
-        invoiceViewModel.setInvoiceType(InvoiceType.MASSAGE_APPOINTMENT);
+        InvoiceViewModel invoiceViewModel = new InvoiceViewModel(); invoiceViewModel.setUserId(massage.getUserId()); invoiceViewModel.setRoomId(massage.getRoomId());invoiceViewModel.setPriceOwed(massage.getTotalPrice().getAmount());invoiceViewModel.setInvoiceType(InvoiceType.MASSAGE_APPOINTMENT);
         invoiceClient.createInvoiceActivity(invoiceViewModel);
 
         LOGGER.info("[END] Change Massage type for " + changeMassageTypeDto.getMassageType() + " in appointment " + changeMassageTypeDto.getMassageId());
-        massageRepository.save(massage);
-    }
+        massageRepository.save(massage); }
 
     /**
      * Create Massage Appointment
@@ -119,25 +114,18 @@ public class MassageService {
         LOGGER.info("[INIT] Create new Massage Appointment for user id " + massageViewModel.getUserId() + " with room " + massageViewModel.getRoomId());
 
         confirmData(massageViewModel.getUserId(), massageViewModel.getRoomId(), new Money(massageViewModel.getMassageType().getPrice()));
-        Massage massage = new Massage();
-        massage.setMassageType(massageViewModel.getMassageType());
-        massage.setRoomId(massageViewModel.getRoomId());
-        massage.setUserId(massageViewModel.getUserId());
-        massage.setTotalPrice(new Money(massageViewModel.getMassageType().getPrice()));
-        massage.setEndOfActivity(massage.getBeginOfActivity().plus(Duration.ofHours(LocalTime.of(1, 00).getHour())));
-        massageRepository.save(massage);
+
+        Massage massage;
+        if(massageViewModel.getBeginOfActivity()== null){ massage = new Massage(massageViewModel.getUserId(), massageViewModel.getRoomId(), massageViewModel.getMassageType(), LocalDateTime.now()); }
+        else {massage = new Massage(massageViewModel.getUserId(), massageViewModel.getRoomId(), massageViewModel.getMassageType(), massageViewModel.getBeginOfActivity()); }
+        massage.setTotalPrice(new Money(massageViewModel.getMassageType().getPrice())); massage.setEndOfActivity(massage.getBeginOfActivity().plus(Duration.ofHours(LocalTime.of(1, 00).getHour())));
 
         LOGGER.info("Create new invoice");
-        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-        invoiceViewModel.setUserId(massage.getUserId());
-        invoiceViewModel.setRoomId(massage.getRoomId());
-        invoiceViewModel.setPriceOwed(massage.getTotalPrice().getAmount());
-        invoiceViewModel.setInvoiceType(InvoiceType.MASSAGE_APPOINTMENT);
+        InvoiceViewModel invoiceViewModel = new InvoiceViewModel(); invoiceViewModel.setUserId(massage.getUserId()); invoiceViewModel.setRoomId(massage.getRoomId()); invoiceViewModel.setPriceOwed(massage.getTotalPrice().getAmount()); invoiceViewModel.setInvoiceType(InvoiceType.MASSAGE_APPOINTMENT);
         invoiceClient.createInvoiceActivity(invoiceViewModel);
 
         LOGGER.info("[END] Create new Massage Appointment for user id " + massageViewModel.getUserId() + " with room " + massageViewModel.getRoomId());
-        return massage;
-    }
+        return massageRepository.save(massage); }
 
     /**
      * Cancel Massage Appointment
@@ -147,14 +135,10 @@ public class MassageService {
     public void cancelMassageAppointment(Long massageId) throws ReservationException{
         LOGGER.info("[INIT] Cancel Massage Appointment with id " + massageId);
         Massage massage = findMassageById(massageId);
-        if(massage.getBeginOfActivity().isBefore(LocalDateTime.now()))
-            throw new ReservationException("It's not possible to cancel massage reservation");
-        else {
-            resetMoney(massage.getUserId(), massage.getMassageType().getPrice().setScale(2, RoundingMode.HALF_DOWN));
-            massageRepository.delete(massage);
-        }
-        LOGGER.info("[END] Cancel Massage Appointment with id " + massageId);
-    }
+        if(massage.getBeginOfActivity().isBefore(LocalDateTime.now())) throw new ReservationException("It's not possible to cancel massage reservation");
+        else { resetMoney(massage.getUserId(), massage.getMassageType().getPrice().setScale(2, RoundingMode.HALF_DOWN)); massageRepository.delete(massage); }
+
+        LOGGER.info("[END] Cancel Massage Appointment with id " + massageId); }
 
     /**
      * Confirm data
@@ -168,29 +152,19 @@ public class MassageService {
         LOGGER.info("[INIT] Confirm data from user id " + userId + " with room " + roomId);
         List<Basic> basicUsers = userClient.findAllBasicUser().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
         List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
-        Basic basic = null;
-        Premium premium = null;
+        Basic basic = null; Premium premium = null;
 
-        if(basicUsers.size() == 0 && premiumUsers.size() == 0)
-            throw new ReservationException("User id doesn't exist");
-        else if (basicUsers.size() > 0){
-            LOGGER.info("User with id " + userId + " is from type Basic");
-            basic = userClient.findBasicUserById(userId);
-            if(!basic.getRoomId().equals(roomId))
-                throw new ReservationException("Basic User is not associated with that room");
-            checkEnoughBalance(basic.getId(), TypeOfUser.BASIC, amount);
-            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().decreaseAmount(amount.getAmount()));
-        }
-        else if(premiumUsers.size()>0){
-            LOGGER.info("User with id " + userId + " is from type Premium");
-            premium = userClient.findPremiumUserById(userId);
-            if(!premium.getRoomId().equals(roomId))
-                throw new ReservationException("Premium User is not associated with that room");
-            checkEnoughBalance(premium.getId(), TypeOfUser.PREMIUM, amount);
-            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().decreaseAmount(amount.getAmount()));
-        }
-        LOGGER.info("[END] Confirm data from user id " + userId + " with room " + roomId);
-    }
+        if(basicUsers.size() == 0 && premiumUsers.size() == 0) throw new ReservationException("User id doesn't exist");
+
+        else if (basicUsers.size() > 0){ LOGGER.info("User with id " + userId + " is from type Basic"); basic = userClient.findBasicUserById(userId);
+            if(!basic.getRoomId().equals(roomId)) throw new ReservationException("Basic User is not associated with that room"); checkEnoughBalance(basic.getId(), TypeOfUser.BASIC, amount);
+            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().decreaseAmount(amount.getAmount())); }
+
+        else if(premiumUsers.size()>0){ LOGGER.info("User with id " + userId + " is from type Premium"); premium = userClient.findPremiumUserById(userId);
+            if(!premium.getRoomId().equals(roomId)) throw new ReservationException("Premium User is not associated with that room"); checkEnoughBalance(premium.getId(), TypeOfUser.PREMIUM, amount);
+            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().decreaseAmount(amount.getAmount())); }
+
+        LOGGER.info("[END] Confirm data from user id " + userId + " with room " + roomId); }
 
     /**
      * Check Enough Balance
@@ -199,23 +173,14 @@ public class MassageService {
      * @param price receives a Money with price
      */
     @HystrixCommand(fallbackMethod = "checkEnoughBalanceFail")
-    public void checkEnoughBalance(Long userId, TypeOfUser typeOfUser, Money price) {
-        LOGGER.info("[INIT] Check if user " + userId + " has enough balance to make appointment");
-        if (typeOfUser.equals(TypeOfUser.BASIC)) {
-            LOGGER.info("User with id " + userId + " is from type Basic");
-            Basic basic = userClient.findBasicUserById(userId);
-            if (basic.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) {
-                throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation");
-            }
-        } else if (typeOfUser.equals(TypeOfUser.PREMIUM)) {
-            LOGGER.info("User with id " + userId + " is from type Premium");
-            Premium premium = userClient.findPremiumUserById(userId);
-            if (premium.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) {
-                throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation");
-            }
-        }
-        LOGGER.info("[END] Check if user " + userId + " has enough balance to make appointment");
-    }
+    public void checkEnoughBalance(Long userId, TypeOfUser typeOfUser, Money price) { LOGGER.info("[INIT] Check if user " + userId + " has enough balance to make appointment");
+        if (typeOfUser.equals(TypeOfUser.BASIC)) { LOGGER.info("User with id " + userId + " is from type Basic"); Basic basic = userClient.findBasicUserById(userId);
+            if (basic.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) { throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation"); } }
+
+        else if (typeOfUser.equals(TypeOfUser.PREMIUM)) { LOGGER.info("User with id " + userId + " is from type Premium"); Premium premium = userClient.findPremiumUserById(userId);
+            if (premium.getBankAccount().getBalance().getAmount().compareTo(price.getAmount()) == -1) { throw new NotEnoughBalanceException("User doesn't have enough balance to do reservation"); } }
+
+        LOGGER.info("[END] Check if user " + userId + " has enough balance to make appointment"); }
 
     /**
      * Reset Money
@@ -223,27 +188,18 @@ public class MassageService {
      * @param amount receives an Money with amount
      */
     @HystrixCommand(fallbackMethod = "resetMoneyFail")
-    public void resetMoney(Long userId, BigDecimal amount){
-        LOGGER.info("[INIT] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
+    public void resetMoney(Long userId, BigDecimal amount){ LOGGER.info("[INIT] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
         List<Basic> basicUsers = userClient.findAllBasicUser().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
-        List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList());
-        Basic basic = null;
-        Premium premium = null;
+        List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(userId)).collect(Collectors.toList()); Basic basic = null; Premium premium = null;
 
-        if(basicUsers.size() == 0 && premiumUsers.size() == 0)
-            throw new ReservationException("User id doesn't exist");
-        else if (basicUsers.size() > 0){
-            LOGGER.info("User with id " + userId + " is from type Basic");
-            basic = userClient.findBasicUserById(userId);
-            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().increaseAmount(amount));
-        }
-        else if(premiumUsers.size()>0){
-            LOGGER.info("User with id " + userId + " is from type Premium");
-            premium = userClient.findPremiumUserById(userId);
-            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().increaseAmount(amount));
-        }
-        LOGGER.info("[END] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment");
-    }
+        if(basicUsers.size() == 0 && premiumUsers.size() == 0) throw new ReservationException("User id doesn't exist");
+
+        else if (basicUsers.size() > 0){ LOGGER.info("User with id " + userId + " is from type Basic"); basic = userClient.findBasicUserById(userId);
+            userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().increaseAmount(amount)); }
+
+        else if(premiumUsers.size()>0){ LOGGER.info("User with id " + userId + " is from type Premium"); premium = userClient.findPremiumUserById(userId);
+            userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().increaseAmount(amount)); }
+        LOGGER.info("[END] Reset balance of user " + userId + " with a total amount of " + amount + " after canceling appointment"); }
 
     /**
      * Filter Massage By User Id
@@ -282,6 +238,7 @@ public class MassageService {
      */
     public void checkEnoughBalanceFail(Long userId, TypeOfUser typeOfUser, Money price) {
         LOGGER.warn("[WARN] It wasn't possible to check user's balance");
+        throw new ReservationException("It wasn't possible to check if user has enough balance");
     }
 
     /**
@@ -291,7 +248,7 @@ public class MassageService {
      */
     public Massage createMassageAppointmentFail(MassageViewModel massageViewModel){
         LOGGER.warn("[WARN] It wasn't possible to make a new Massage appointment");
-        return null;
+        throw new ReservationException("It wasn't possible to create a massage appointment");
     }
 
     /**
@@ -302,6 +259,7 @@ public class MassageService {
      */
     public void updateUserMassageFail(Massage massage, Invoice invoice, Long userId){
         LOGGER.warn("[WARN] It wasn't possible to update user with new Massage information");
+        throw new ReservationException("It wasn't possible to update massage");
     }
 
     /**

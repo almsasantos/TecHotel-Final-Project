@@ -16,18 +16,32 @@ public class InvoiceController implements IInvoiceController {
     @Autowired
     private InvoiceService invoiceService;
 
+    /**
+     * Find All Invoices
+     * @return a list of invoices
+     */
     @GetMapping("/invoices")
     @ResponseStatus(HttpStatus.OK)
     public List<Invoice> findAllInvoices(){
         return invoiceService.findAll();
     }
 
+    /**
+     * Create a Final Invoice
+     * @param userId receives a Long with userId
+     * @return an Invoice
+     */
     @PostMapping("/invoices-final/{id}")
     @ResponseStatus(HttpStatus.CREATED)
     public Invoice createFinalInvoice(@PathVariable("id") Long userId){
         return invoiceService.createFinalInvoice(userId);
     }
 
+    /**
+     * Create Invoice based on activity
+     * @param invoiceViewModel receives an Invoice View Model
+     * @return an Invoice created
+     */
     @PostMapping("/invoices-activity")
     @ResponseStatus(HttpStatus.CREATED)
     public Invoice createInvoiceActivity(@RequestBody @Valid InvoiceViewModel invoiceViewModel) {

@@ -5,6 +5,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDateTime;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MassageViewModelTest {
@@ -39,5 +41,13 @@ class MassageViewModelTest {
         massageViewModel.setMassageType(MassageType.COUPLES);
 
         assertEquals(MassageType.COUPLES, massageViewModel.getMassageType());
+    }
+
+    @Test
+    void getBeginOfActivity() {
+        LocalDateTime now = LocalDateTime.now();
+        massageViewModel.setBeginOfActivity(now);
+
+        assertEquals(now, massageViewModel.getBeginOfActivity());
     }
 }

@@ -1,5 +1,8 @@
 package com.ironhack.activityservice.model.viewModel;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
 /**
  * Pool Rent View Model
  */
@@ -7,18 +10,26 @@ public class PoolRentViewModel {
     /**
      * Attribute userId of type Long
      */
+    @NotNull(message = "User id cannot be null")
+    @Min(value = 1 , message = "User id cannot be less than one")
     private Long userId;
     /**
      * Attribute roomId of type Integer
      */
+    @NotNull(message = "Room id cannot be null")
+    @Min(value = 1 , message = "Room id cannot be less than one")
     private Integer roomId;
     /**
      * Attribute floatiesNum of type Integer
      */
+    @NotNull(message = "Number of floaties cannot be null")
+    @Min(value = 0 , message = "Number of floaties cannot be less than zero")
     private Integer floatiesNum;
     /**
      * Attribute towelNum of type Integer
      */
+    @NotNull(message = "Number of towels cannot be null")
+    @Min(value = 0 , message = "Number of towels cannot be less than zero")
     private Integer towelNum;
 
     /**

@@ -1286,3 +1286,1007 @@
 2020-07-21 13:08:17,663 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 1 is from type Basic
 2020-07-21 13:08:17,749 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 1 and room 1
 2020-07-21 13:08:17,749 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 1 and room 1
+2020-07-21 18:15:02,861 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 1 and room 1
+2020-07-21 18:15:02,861 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 1 and room 1
+2020-07-21 18:15:02,863 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-21 18:15:02,863 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-21 18:15:03,042 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 1 is from type Basic
+2020-07-21 18:15:03,042 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 1 is from type Basic
+2020-07-21 18:15:03,086 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:15:03,086 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:15:30,779 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] Find all Room Reservations
+2020-07-21 18:15:30,779 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] Find all Room Reservations
+2020-07-21 18:15:45,802 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:15:45,802 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:15:45,803 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-21 18:15:45,803 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-21 18:15:45,816 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 1 is from type Basic
+2020-07-21 18:15:45,816 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 1 is from type Basic
+2020-07-21 18:15:45,832 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:15:45,832 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:16:17,437 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:16:17,437 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:16:17,437 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-21 18:16:17,437 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-21 18:16:17,464 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 1 is from type Basic
+2020-07-21 18:16:17,464 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 1 is from type Basic
+2020-07-21 18:16:17,485 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:16:17,485 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:16:23,199 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:16:23,199 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:16:23,199 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Initialize need variables
+2020-07-21 18:16:23,199 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Initialize need variables
+2020-07-21 18:16:23,211 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] User with id 1 is from type Basic
+2020-07-21 18:16:23,211 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] User with id 1 is from type Basic
+2020-07-21 18:16:23,226 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:16:23,226 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:16:24,136 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:16:24,136 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:16:24,136 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Initialize need variables
+2020-07-21 18:16:24,136 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Initialize need variables
+2020-07-21 18:16:24,148 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] User with id 1 is from type Basic
+2020-07-21 18:16:24,148 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] User with id 1 is from type Basic
+2020-07-21 18:16:24,165 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:16:24,165 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:16:24,985 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:16:24,985 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] [INIT] Make new Room Reservation for user 1 and room 11
+2020-07-21 18:16:24,986 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] Initialize need variables
+2020-07-21 18:16:24,986 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] Initialize need variables
+2020-07-21 18:16:24,997 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] User with id 1 is from type Basic
+2020-07-21 18:16:24,997 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] User with id 1 is from type Basic
+2020-07-21 18:16:25,030 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:16:25,030 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 18:16:46,906 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [INIT] Make new Room Reservation for user 1 and room 1
+2020-07-21 18:16:46,906 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [INIT] Make new Room Reservation for user 1 and room 1
+2020-07-21 18:16:46,906 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] Initialize need variables
+2020-07-21 18:16:46,906 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] Initialize need variables
+2020-07-21 18:16:46,919 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] User with id 1 is from type Basic
+2020-07-21 18:16:46,919 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] User with id 1 is from type Basic
+2020-07-21 18:16:47,077 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [INIT] Check if room 1 is available
+2020-07-21 18:16:47,077 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [INIT] Check if room 1 is available
+2020-07-21 18:16:47,083 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [END] Check if room 1 is available
+2020-07-21 18:16:47,083 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [END] Check if room 1 is available
+2020-07-21 18:16:47,103 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-21 18:16:47,103 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-21 18:16:47,109 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [END] Check if user 1 has enough balance to make appointment
+2020-07-21 18:16:47,109 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [END] Check if user 1 has enough balance to make appointment
+2020-07-21 18:16:47,462 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 1 is from type Basic
+2020-07-21 18:16:47,462 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 1 is from type Basic
+2020-07-21 18:16:47,507 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [END] Make new Room Reservation for user 1 and room 1
+2020-07-21 18:16:47,507 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-7] [END] Make new Room Reservation for user 1 and room 1
+2020-07-21 18:16:52,299 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] Find all Room Reservations
+2020-07-21 18:16:52,299 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] Find all Room Reservations
+2020-07-21 18:17:06,791 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] User with id 1 is from type Basic
+2020-07-21 18:17:06,791 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] User with id 1 is from type Basic
+2020-07-21 18:51:06,311 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 1 is from type Basic
+2020-07-21 18:51:06,311 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 1 is from type Basic
+2020-07-21 18:51:10,400 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 1 is from type Basic
+2020-07-21 18:51:10,400 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 1 is from type Basic
+2020-07-21 18:52:57,934 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-7] User with id 1 is from type Basic
+2020-07-21 18:52:57,934 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-7] User with id 1 is from type Basic
+2020-07-21 19:16:54,445 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 1 is from type Basic
+2020-07-21 19:16:54,445 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 1 is from type Basic
+2020-07-21 19:16:58,091 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 1 is from type Basic
+2020-07-21 19:16:58,091 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 1 is from type Basic
+2020-07-21 19:25:36,584 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 1 is from type Basic
+2020-07-21 19:25:36,584 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 1 is from type Basic
+2020-07-21 19:28:19,004 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 1 is from type Basic
+2020-07-21 19:28:19,004 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 1 is from type Basic
+2020-07-21 19:31:27,106 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] User with id 1 is from type Basic
+2020-07-21 19:31:27,106 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] User with id 1 is from type Basic
+2020-07-21 19:38:38,333 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 1 is from type Basic
+2020-07-21 19:38:38,333 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 1 is from type Basic
+2020-07-21 19:38:50,074 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 1 is from type Basic
+2020-07-21 19:38:50,074 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 1 is from type Basic
+2020-07-21 19:38:56,780 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 1 is from type Basic
+2020-07-21 19:38:56,780 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 1 is from type Basic
+2020-07-21 21:41:27,637 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 1 and room 1
+2020-07-21 21:41:27,637 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 1 and room 1
+2020-07-21 21:41:27,647 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-21 21:41:27,647 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-21 21:41:28,736 WARN c.i.r.s.RoomReservationService [HystrixTimer-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 21:41:28,736 WARN c.i.r.s.RoomReservationService [HystrixTimer-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-21 21:42:36,724 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] Find all Room Reservations
+2020-07-21 21:42:36,724 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] Find all Room Reservations
+2020-07-21 21:42:54,491 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-21 21:42:54,491 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-21 22:23:47,785 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-21 22:23:47,785 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-21 22:23:47,790 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-21 22:23:47,790 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-21 22:23:47,959 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-21 22:23:47,959 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-21 22:23:48,120 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if room 1 is available
+2020-07-21 22:23:48,120 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if room 1 is available
+2020-07-21 22:23:48,128 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Check if room 1 is available
+2020-07-21 22:23:48,128 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Check if room 1 is available
+2020-07-21 22:23:48,147 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 2 has enough balance to make appointment
+2020-07-21 22:23:48,147 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 2 has enough balance to make appointment
+2020-07-21 22:23:48,154 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Check if user 2 has enough balance to make appointment
+2020-07-21 22:23:48,154 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Check if user 2 has enough balance to make appointment
+2020-07-21 22:23:48,551 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-21 22:23:48,551 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-21 22:23:48,703 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 1
+2020-07-21 22:23:48,703 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 1
+2020-07-21 22:25:00,049 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-21 22:25:00,049 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-21 22:25:06,520 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-21 22:25:06,520 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-21 22:25:11,877 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] User with id 2 is from type Basic
+2020-07-21 22:25:11,877 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] User with id 2 is from type Basic
+2020-07-22 00:05:24,563 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 00:05:24,563 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 00:05:34,214 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 10.726 seconds (JVM running for 14.882)
+2020-07-22 00:05:34,214 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 10.726 seconds (JVM running for 14.882)
+2020-07-22 00:05:34,629 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 00:05:34,629 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 00:05:34,660 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 00:05:34,660 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 00:05:34,704 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 00:05:34,704 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 00:05:34,980 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 00:05:34,980 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 00:05:35,042 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 00:05:35,042 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 00:05:35,079 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 00:05:35,079 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:01:55,411 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:01:55,411 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:02:02,697 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:02:02,697 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:02:07,171 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 12.6 seconds (JVM running for 14.795)
+2020-07-22 10:02:07,171 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 12.6 seconds (JVM running for 14.795)
+2020-07-22 10:02:07,786 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:02:07,786 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:02:07,828 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:02:07,828 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:02:07,866 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:02:07,866 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:02:08,174 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:02:08,174 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:02:08,269 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:02:08,269 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:02:08,332 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:02:08,332 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:02:18,149 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 17.266 seconds (JVM running for 22.077)
+2020-07-22 10:02:18,149 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 17.266 seconds (JVM running for 22.077)
+2020-07-22 10:02:18,785 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:02:18,785 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:02:18,846 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:02:18,846 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:02:18,897 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:02:18,897 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:02:19,251 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:02:19,251 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:02:19,353 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:02:19,353 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:02:19,420 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:02:19,420 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:04:13,790 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:04:13,790 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:04:17,946 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.594 seconds (JVM running for 5.996)
+2020-07-22 10:04:17,946 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.594 seconds (JVM running for 5.996)
+2020-07-22 10:04:18,071 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:04:18,071 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:04:45,407 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:04:45,407 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:04:49,105 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.19 seconds (JVM running for 5.554)
+2020-07-22 10:04:49,105 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.19 seconds (JVM running for 5.554)
+2020-07-22 10:04:49,366 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:04:49,366 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:04:49,375 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:04:49,375 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:08:27,716 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:08:27,716 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:08:34,505 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.62 seconds (JVM running for 10.546)
+2020-07-22 10:08:34,505 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.62 seconds (JVM running for 10.546)
+2020-07-22 10:08:34,850 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:08:34,850 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:08:34,876 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:08:34,876 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:08:34,916 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:08:34,916 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:08:35,116 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:08:35,116 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:08:35,445 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:08:35,445 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:08:35,459 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:08:35,459 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:08:35,499 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:08:35,499 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:09:42,132 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:09:42,132 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:09:46,151 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.595 seconds (JVM running for 6.196)
+2020-07-22 10:09:46,151 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.595 seconds (JVM running for 6.196)
+2020-07-22 10:09:46,407 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:09:46,407 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:09:46,419 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:09:46,419 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:09:53,550 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:09:53,550 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:10:06,559 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:10:06,559 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:10:13,131 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.335 seconds (JVM running for 10.219)
+2020-07-22 10:10:13,131 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.335 seconds (JVM running for 10.219)
+2020-07-22 10:10:13,628 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:10:13,628 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:10:13,646 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:10:13,646 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:10:13,765 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:10:13,765 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:10:13,798 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:10:13,798 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:10:13,837 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:10:13,837 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:10:14,042 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:10:14,042 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:10:14,075 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:10:14,075 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:10:14,076 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:10:14,076 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:10:14,149 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:10:14,149 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:11:13,248 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:11:13,248 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:11:17,369 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.674 seconds (JVM running for 6.168)
+2020-07-22 10:11:17,369 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.674 seconds (JVM running for 6.168)
+2020-07-22 10:11:17,699 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:11:17,699 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:11:17,711 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:11:17,711 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:11:17,808 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:11:17,808 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:11:17,831 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:11:17,831 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:11:17,859 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:11:17,859 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:11:17,975 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:11:17,975 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:11:17,998 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:11:17,998 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:11:18,000 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:11:18,000 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:11:18,054 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:11:18,054 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:12:22,150 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:12:22,150 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:12:26,051 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.442 seconds (JVM running for 6.2)
+2020-07-22 10:12:26,051 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.442 seconds (JVM running for 6.2)
+2020-07-22 10:12:26,365 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:12:26,365 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:12:26,376 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:12:26,376 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:12:26,484 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:12:26,484 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:12:26,510 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:12:26,510 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:12:26,536 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:12:26,536 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:12:26,651 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:12:26,651 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:12:26,677 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:12:26,677 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:12:26,678 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:12:26,678 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:12:26,723 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:12:26,723 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:12:40,347 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:12:40,347 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:12:44,208 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.327 seconds (JVM running for 5.798)
+2020-07-22 10:12:44,208 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.327 seconds (JVM running for 5.798)
+2020-07-22 10:12:44,687 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:12:44,687 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:12:44,710 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:12:44,710 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:12:44,798 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:12:44,798 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:12:44,819 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:12:44,819 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:12:44,840 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:12:44,840 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:12:44,966 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:12:44,966 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:12:44,988 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:12:44,988 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Check if user 1 has enough balance to make appointment
+2020-07-22 10:12:44,990 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:12:44,990 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:12:45,043 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:12:45,043 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:13:14,756 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:13:14,756 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:13:21,876 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 8.051 seconds (JVM running for 10.906)
+2020-07-22 10:13:21,876 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 8.051 seconds (JVM running for 10.906)
+2020-07-22 10:13:22,501 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:13:22,501 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:13:22,517 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:13:22,517 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:13:22,637 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:13:22,637 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:13:22,673 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:13:22,673 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:13:22,709 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:13:22,709 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:13:22,895 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:13:22,895 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:13:22,935 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if user 1 has enough balance to make appointment
+2020-07-22 10:13:22,935 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if user 1 has enough balance to make appointment
+2020-07-22 10:13:22,937 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:13:22,937 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:13:22,992 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:13:22,992 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:17:28,970 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:17:28,970 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:17:33,426 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.977 seconds (JVM running for 6.398)
+2020-07-22 10:17:33,426 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.977 seconds (JVM running for 6.398)
+2020-07-22 10:17:33,688 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 1 is available
+2020-07-22 10:17:33,688 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 1 is available
+2020-07-22 10:17:33,698 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:17:33,698 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:18:29,327 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:18:29,327 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:18:35,706 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.179 seconds (JVM running for 10.312)
+2020-07-22 10:18:35,706 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.179 seconds (JVM running for 10.312)
+2020-07-22 10:18:36,156 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:18:36,156 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:18:36,175 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:18:36,175 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:18:36,226 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 10:18:36,226 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 10:18:36,228 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:18:36,228 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:18:36,305 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:18:36,305 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:18:36,343 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:18:36,343 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:18:36,375 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:18:36,375 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:18:36,559 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 10:18:36,559 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 10:18:36,561 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:18:36,561 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:18:36,594 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:18:36,594 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:18:36,626 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 10:18:36,626 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 10:18:36,628 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:18:36,628 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:18:36,687 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:18:36,687 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:21:13,653 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:21:13,653 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:21:17,752 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.526 seconds (JVM running for 5.722)
+2020-07-22 10:21:17,752 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.526 seconds (JVM running for 5.722)
+2020-07-22 10:22:23,885 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:22:23,885 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:22:27,738 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.373 seconds (JVM running for 5.867)
+2020-07-22 10:22:27,738 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 4.373 seconds (JVM running for 5.867)
+2020-07-22 10:22:36,261 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:22:36,261 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:22:59,744 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:22:59,744 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:23:05,553 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 6.497 seconds (JVM running for 8.981)
+2020-07-22 10:23:05,553 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 6.497 seconds (JVM running for 8.981)
+2020-07-22 10:23:06,024 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:23:06,024 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:23:06,040 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:23:06,040 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:23:06,092 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 10:23:06,092 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 10:23:06,094 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:23:06,094 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:23:06,166 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:23:06,166 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to remove Room Reservation
+2020-07-22 10:23:06,187 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:23:06,187 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:23:06,214 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:23:06,214 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:23:06,388 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 10:23:06,388 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 10:23:06,389 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:23:06,389 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:23:06,416 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:23:06,416 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:23:06,442 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 10:23:06,442 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 10:23:06,443 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:23:06,443 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:23:06,491 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:23:06,491 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:25:00,814 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:25:00,814 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:25:07,145 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.159 seconds (JVM running for 9.833)
+2020-07-22 10:25:07,145 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.159 seconds (JVM running for 9.833)
+2020-07-22 10:25:07,651 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:25:07,651 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:25:07,667 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:25:07,667 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:25:07,729 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 10:25:07,729 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 10:25:07,731 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:07,731 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:07,812 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:25:07,812 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:25:07,853 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:25:07,853 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:25:08,032 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 10:25:08,032 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 10:25:08,034 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:08,034 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:08,062 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:08,062 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:08,098 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 10:25:08,098 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 10:25:08,101 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:25:08,101 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:25:08,127 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:25:08,127 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:25:44,953 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:25:44,953 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 10:25:51,708 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.625 seconds (JVM running for 10.206)
+2020-07-22 10:25:51,708 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.625 seconds (JVM running for 10.206)
+2020-07-22 10:25:52,167 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:25:52,167 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 10:25:52,184 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:25:52,184 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:25:52,234 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 10:25:52,234 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 10:25:52,236 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:52,236 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:52,309 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:25:52,309 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 10:25:52,340 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:25:52,340 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 10:25:52,547 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 10:25:52,547 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 10:25:52,548 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:52,548 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:52,575 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:52,575 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 10:25:52,608 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 10:25:52,608 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 10:25:52,609 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:25:52,609 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 10:25:52,636 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 10:25:52,636 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 11:19:59,286 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 11:19:59,286 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 11:20:05,340 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 6.794 seconds (JVM running for 9.347)
+2020-07-22 11:20:05,340 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 6.794 seconds (JVM running for 9.347)
+2020-07-22 11:20:05,845 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 11:20:05,845 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 11:20:05,860 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 11:20:05,860 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 11:20:05,905 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 11:20:05,905 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 11:20:05,906 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 11:20:05,906 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 11:20:05,992 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 11:20:05,992 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 11:20:06,019 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 11:20:06,019 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 11:20:06,212 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 11:20:06,212 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 11:20:06,213 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 11:20:06,213 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 11:20:06,245 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 11:20:06,245 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 11:20:06,276 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 11:20:06,276 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 11:20:06,278 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 11:20:06,278 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 11:20:06,317 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 11:20:06,317 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 15:58:42,499 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] Find all Room Reservations
+2020-07-22 15:58:42,499 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] Find all Room Reservations
+2020-07-22 15:59:39,426 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] Find all Room Reservations
+2020-07-22 15:59:39,426 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] Find all Room Reservations
+2020-07-22 16:04:42,140 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-22 16:04:42,140 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-22 16:04:42,141 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-22 16:04:42,141 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-22 16:04:42,279 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-22 16:04:42,279 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-22 16:04:42,434 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 1 is available
+2020-07-22 16:04:42,434 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 1 is available
+2020-07-22 16:04:42,459 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-22 16:04:42,459 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-22 16:04:42,872 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-22 16:04:42,872 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-22 16:04:43,037 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 1
+2020-07-22 16:04:43,037 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 1
+2020-07-22 16:04:48,136 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] Find all Room Reservations
+2020-07-22 16:04:48,136 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] Find all Room Reservations
+2020-07-22 16:32:36,326 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-22 16:32:36,326 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-22 16:32:36,328 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-22 16:32:36,328 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-22 16:32:36,351 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 2 is from type Basic
+2020-07-22 16:32:36,351 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 2 is from type Basic
+2020-07-22 16:32:36,379 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 16:32:36,379 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 16:32:36,399 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 16:32:36,399 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 16:32:42,709 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] Find all Room Reservations
+2020-07-22 16:32:42,709 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] Find all Room Reservations
+2020-07-22 16:32:59,262 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] User with id 2 is from type Basic
+2020-07-22 16:32:59,262 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] User with id 2 is from type Basic
+2020-07-22 16:39:40,699 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-22 16:39:40,699 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-22 16:40:05,122 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-22 16:40:05,122 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-22 16:49:57,343 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 3 and room 11
+2020-07-22 16:49:57,343 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 3 and room 11
+2020-07-22 16:49:57,344 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-22 16:49:57,344 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-22 16:49:57,357 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 3 is from type Basic
+2020-07-22 16:49:57,357 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 3 is from type Basic
+2020-07-22 16:49:57,379 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 11 is available
+2020-07-22 16:49:57,379 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 11 is available
+2020-07-22 16:49:57,396 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if user 3 has enough balance to make appointment
+2020-07-22 16:49:57,396 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if user 3 has enough balance to make appointment
+2020-07-22 16:49:57,468 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 3 is from type Basic
+2020-07-22 16:49:57,468 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 3 is from type Basic
+2020-07-22 16:49:57,493 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [END] Make new Room Reservation for user 3 and room 11
+2020-07-22 16:49:57,493 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [END] Make new Room Reservation for user 3 and room 11
+2020-07-22 16:50:15,701 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 3 is from type Basic
+2020-07-22 16:50:15,701 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 3 is from type Basic
+2020-07-22 16:52:15,597 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-22 16:52:15,597 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-22 16:56:09,891 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-22 16:56:09,891 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-22 17:27:54,825 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 11
+2020-07-22 17:27:54,825 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 11
+2020-07-22 17:27:54,827 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-22 17:27:54,827 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-22 17:27:54,974 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-22 17:27:54,974 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-22 17:27:55,127 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 11 is available
+2020-07-22 17:27:55,127 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 11 is available
+2020-07-22 17:27:55,150 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-22 17:27:55,150 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-22 17:27:55,558 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-22 17:27:55,558 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-22 17:27:55,674 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 11
+2020-07-22 17:27:55,674 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 11
+2020-07-22 17:28:03,633 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-22 17:28:03,633 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-22 17:31:59,546 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] User with id 2 is from type Basic
+2020-07-22 17:31:59,546 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] User with id 2 is from type Basic
+2020-07-22 17:35:17,102 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-22 17:35:17,102 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-22 18:07:55,883 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-22 18:07:55,883 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-22 18:08:01,133 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-22 18:08:01,133 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-22 18:08:06,926 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] User with id 2 is from type Basic
+2020-07-22 18:08:06,926 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] User with id 2 is from type Basic
+2020-07-22 22:18:50,537 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 22:18:50,537 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 22:18:57,452 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.671 seconds (JVM running for 10.497)
+2020-07-22 22:18:57,452 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.671 seconds (JVM running for 10.497)
+2020-07-22 22:18:57,893 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 22:18:57,893 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 22:18:57,906 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 22:18:57,906 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 22:18:57,952 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 22:18:57,952 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 22:18:57,953 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:18:57,953 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:18:58,046 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 22:18:58,046 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 22:18:58,074 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 22:18:58,074 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 22:18:58,297 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 22:18:58,297 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 22:18:58,299 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:18:58,299 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:18:58,333 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:18:58,333 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:18:58,362 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 22:18:58,362 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 22:18:58,363 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 22:18:58,363 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 22:18:58,388 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 22:18:58,388 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 22:19:59,118 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 22:19:59,118 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-22 22:20:07,783 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 9.73 seconds (JVM running for 13.011)
+2020-07-22 22:20:07,783 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 9.73 seconds (JVM running for 13.011)
+2020-07-22 22:20:08,448 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 22:20:08,448 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-22 22:20:08,466 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 22:20:08,466 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-22 22:20:08,547 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 22:20:08,547 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-22 22:20:08,550 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:20:08,550 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:20:08,643 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 22:20:08,643 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-22 22:20:08,679 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 22:20:08,679 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-22 22:20:08,961 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 22:20:08,961 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-22 22:20:08,963 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:20:08,963 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:20:09,003 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:20:09,003 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-22 22:20:09,047 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 22:20:09,047 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-22 22:20:09,049 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 22:20:09,049 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-22 22:20:09,079 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-22 22:20:09,079 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-23 09:28:14,427 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-23 09:28:14,427 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-23 09:28:14,429 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 09:28:14,429 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 09:28:14,569 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-23 09:28:14,569 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-23 09:28:14,723 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 1 is available
+2020-07-23 09:28:14,723 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 1 is available
+2020-07-23 09:28:14,747 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-23 09:28:14,747 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-23 09:28:15,104 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 09:28:15,104 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 09:28:15,161 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 1
+2020-07-23 09:28:15,161 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 1
+2020-07-23 09:28:18,790 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] User with id 2 is from type Basic
+2020-07-23 09:28:18,790 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] User with id 2 is from type Basic
+2020-07-23 09:28:35,531 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-23 09:28:35,531 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-23 09:28:49,658 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-23 09:28:49,658 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-23 09:53:03,782 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-23 09:53:03,782 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-23 09:54:32,392 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-23 09:54:32,392 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-23 12:45:56,454 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-23 12:45:56,454 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-23 12:45:56,455 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-23 12:45:56,455 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-23 12:45:56,497 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 2 is from type Basic
+2020-07-23 12:45:56,497 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 2 is from type Basic
+2020-07-23 12:45:56,527 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-23 12:45:56,527 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-23 12:45:56,542 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 12:45:56,542 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 12:46:10,563 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 12:46:10,563 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 12:50:42,253 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] Find all Room Reservations
+2020-07-23 12:50:42,253 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] Find all Room Reservations
+2020-07-23 12:53:12,572 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 2 and room 4
+2020-07-23 12:53:12,572 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 2 and room 4
+2020-07-23 12:53:12,574 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-23 12:53:12,574 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-23 12:53:12,598 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 2 is from type Basic
+2020-07-23 12:53:12,598 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 2 is from type Basic
+2020-07-23 12:53:12,618 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 4 is available
+2020-07-23 12:53:12,618 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 4 is available
+2020-07-23 12:53:12,660 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if user 2 has enough balance to make appointment
+2020-07-23 12:53:12,660 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if user 2 has enough balance to make appointment
+2020-07-23 12:53:12,742 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-23 12:53:12,742 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-23 12:53:12,773 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [END] Make new Room Reservation for user 2 and room 4
+2020-07-23 12:53:12,773 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [END] Make new Room Reservation for user 2 and room 4
+2020-07-23 12:53:24,927 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 2 is from type Basic
+2020-07-23 12:53:24,927 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 2 is from type Basic
+2020-07-23 12:53:30,204 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-23 12:53:30,204 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-23 12:53:35,858 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 12:53:35,858 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 12:55:11,530 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-23 12:55:11,530 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-23 12:59:48,522 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] Find all Room Reservations
+2020-07-23 12:59:48,522 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] Find all Room Reservations
+2020-07-23 13:00:17,350 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] Find all Room Reservations
+2020-07-23 13:00:17,350 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] Find all Room Reservations
+2020-07-23 13:00:37,894 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-7] Find all Room Reservations
+2020-07-23 13:00:37,894 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-7] Find all Room Reservations
+2020-07-23 13:01:12,287 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [INIT] Make new Room Reservation for user 3 and room 3
+2020-07-23 13:01:12,287 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [INIT] Make new Room Reservation for user 3 and room 3
+2020-07-23 13:01:12,287 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Initialize need variables
+2020-07-23 13:01:12,287 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Initialize need variables
+2020-07-23 13:01:12,297 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] User with id 3 is from type Basic
+2020-07-23 13:01:12,297 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] User with id 3 is from type Basic
+2020-07-23 13:01:12,313 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if room 3 is available
+2020-07-23 13:01:12,313 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if room 3 is available
+2020-07-23 13:01:12,331 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 3 has enough balance to make appointment
+2020-07-23 13:01:12,331 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 3 has enough balance to make appointment
+2020-07-23 13:01:12,397 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 3 is from type Basic
+2020-07-23 13:01:12,397 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 3 is from type Basic
+2020-07-23 13:01:12,405 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [END] Make new Room Reservation for user 3 and room 3
+2020-07-23 13:01:12,405 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [END] Make new Room Reservation for user 3 and room 3
+2020-07-23 13:01:57,510 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [INIT] Make new Room Reservation for user 3 and room 19
+2020-07-23 13:01:57,510 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [INIT] Make new Room Reservation for user 3 and room 19
+2020-07-23 13:01:57,510 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Initialize need variables
+2020-07-23 13:01:57,510 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Initialize need variables
+2020-07-23 13:01:57,519 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] User with id 3 is from type Basic
+2020-07-23 13:01:57,519 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] User with id 3 is from type Basic
+2020-07-23 13:01:57,540 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Check if room 19 is available
+2020-07-23 13:01:57,540 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Check if room 19 is available
+2020-07-23 13:01:57,558 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Check if user 3 has enough balance to make appointment
+2020-07-23 13:01:57,558 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Check if user 3 has enough balance to make appointment
+2020-07-23 13:01:57,637 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 13:01:57,637 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 13:06:37,350 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] [INIT] Make new Room Reservation for user 4 and room 17
+2020-07-23 13:06:37,350 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] [INIT] Make new Room Reservation for user 4 and room 17
+2020-07-23 13:06:37,351 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] Initialize need variables
+2020-07-23 13:06:37,351 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] Initialize need variables
+2020-07-23 13:06:37,375 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] User with id 4 is from type Basic
+2020-07-23 13:06:37,375 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] User with id 4 is from type Basic
+2020-07-23 13:06:37,390 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] Check if room 17 is available
+2020-07-23 13:06:37,390 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] Check if room 17 is available
+2020-07-23 13:06:37,407 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] Check if user 4 has enough balance to make appointment
+2020-07-23 13:06:37,407 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] Check if user 4 has enough balance to make appointment
+2020-07-23 13:06:37,447 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 13:06:37,447 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-6] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 15:12:02,692 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-23 15:12:02,692 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 1
+2020-07-23 15:12:02,694 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 15:12:02,694 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 15:12:02,834 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-23 15:12:02,834 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-23 15:12:02,982 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 1 is available
+2020-07-23 15:12:02,982 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 1 is available
+2020-07-23 15:12:03,013 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-23 15:12:03,013 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-23 15:12:03,526 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 15:12:03,526 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 15:12:03,640 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 1
+2020-07-23 15:12:03,640 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 2 and room 1
+2020-07-23 15:12:03,686 WARN c.i.r.s.RoomReservationService [HystrixTimer-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 15:12:03,686 WARN c.i.r.s.RoomReservationService [HystrixTimer-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 15:12:16,562 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 15:12:16,562 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 15:36:41,079 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 3 and room 1
+2020-07-23 15:36:41,079 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 3 and room 1
+2020-07-23 15:36:41,081 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-23 15:36:41,081 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-23 15:36:41,091 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 3 is from type Basic
+2020-07-23 15:36:41,091 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 3 is from type Basic
+2020-07-23 15:36:41,110 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-23 15:36:41,110 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-23 15:36:41,121 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 15:36:41,121 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 15:44:02,056 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 3 and room 1
+2020-07-23 15:44:02,056 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 3 and room 1
+2020-07-23 15:44:02,058 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-23 15:44:02,058 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-23 15:44:02,079 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 3 is from type Basic
+2020-07-23 15:44:02,079 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 3 is from type Basic
+2020-07-23 15:44:02,106 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-23 15:44:02,106 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-23 15:44:02,115 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 15:44:02,115 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 15:44:10,438 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [INIT] Make new Room Reservation for user 3 and room 2
+2020-07-23 15:44:10,438 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [INIT] Make new Room Reservation for user 3 and room 2
+2020-07-23 15:44:10,438 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Initialize need variables
+2020-07-23 15:44:10,438 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Initialize need variables
+2020-07-23 15:44:10,451 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] User with id 3 is from type Basic
+2020-07-23 15:44:10,451 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] User with id 3 is from type Basic
+2020-07-23 15:44:10,469 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if room 2 is available
+2020-07-23 15:44:10,469 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if room 2 is available
+2020-07-23 15:44:10,514 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 3 has enough balance to make appointment
+2020-07-23 15:44:10,514 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 3 has enough balance to make appointment
+2020-07-23 15:44:10,610 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 3 is from type Basic
+2020-07-23 15:44:10,610 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 3 is from type Basic
+2020-07-23 15:44:10,634 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [END] Make new Room Reservation for user 3 and room 2
+2020-07-23 15:44:10,634 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [END] Make new Room Reservation for user 3 and room 2
+2020-07-23 15:52:25,399 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [INIT] Make new Room Reservation for user 4 and room 4
+2020-07-23 15:52:25,399 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [INIT] Make new Room Reservation for user 4 and room 4
+2020-07-23 15:52:25,401 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Initialize need variables
+2020-07-23 15:52:25,401 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Initialize need variables
+2020-07-23 15:52:25,412 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] User with id 4 is from type Basic
+2020-07-23 15:52:25,412 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] User with id 4 is from type Basic
+2020-07-23 15:52:25,429 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Check if room 4 is available
+2020-07-23 15:52:25,429 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Check if room 4 is available
+2020-07-23 15:52:25,444 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Check if user 4 has enough balance to make appointment
+2020-07-23 15:52:25,444 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] Check if user 4 has enough balance to make appointment
+2020-07-23 15:52:25,510 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 4 is from type Basic
+2020-07-23 15:52:25,510 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 4 is from type Basic
+2020-07-23 15:52:25,518 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [END] Make new Room Reservation for user 4 and room 4
+2020-07-23 15:52:25,518 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-5] [END] Make new Room Reservation for user 4 and room 4
+2020-07-23 15:52:40,963 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 4 is from type Basic
+2020-07-23 15:52:40,963 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 4 is from type Basic
+2020-07-23 15:53:24,935 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] User with id 4 is from type Basic
+2020-07-23 15:53:24,935 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] User with id 4 is from type Basic
+2020-07-23 15:53:30,040 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 4 is from type Basic
+2020-07-23 15:53:30,040 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 4 is from type Basic
+2020-07-23 17:12:06,534 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-23 17:12:06,534 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-23 17:12:12,969 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.303 seconds (JVM running for 10.129)
+2020-07-23 17:12:12,969 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.303 seconds (JVM running for 10.129)
+2020-07-23 17:12:13,430 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-23 17:12:13,430 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-23 17:12:13,446 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-23 17:12:13,446 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-23 17:12:13,492 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-23 17:12:13,492 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-23 17:12:13,494 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:12:13,494 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:12:13,562 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 17:12:13,562 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 17:12:13,591 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-23 17:12:13,591 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-23 17:12:13,791 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-23 17:12:13,791 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-23 17:12:13,793 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:12:13,793 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:12:13,819 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:12:13,819 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:12:13,846 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-23 17:12:13,846 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-23 17:12:13,848 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-23 17:12:13,848 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-23 17:12:13,879 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-23 17:12:13,879 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-23 17:14:35,872 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-23 17:14:35,872 INFO c.i.r.s.RoomReservationServiceTest [main] No active profile set, falling back to default profiles: default
+2020-07-23 17:14:42,859 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.914 seconds (JVM running for 10.977)
+2020-07-23 17:14:42,859 INFO c.i.r.s.RoomReservationServiceTest [main] Started RoomReservationServiceTest in 7.914 seconds (JVM running for 10.977)
+2020-07-23 17:14:43,322 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-23 17:14:43,322 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 1 has enough balance to make appointment
+2020-07-23 17:14:43,339 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-23 17:14:43,339 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to check user's balance
+2020-07-23 17:14:43,389 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-23 17:14:43,389 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 1 is available
+2020-07-23 17:14:43,391 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:14:43,391 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:14:43,469 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 17:14:43,469 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 17:14:43,501 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-23 17:14:43,501 INFO c.i.r.s.RoomReservationService [main] Find all Room Reservations
+2020-07-23 17:14:43,726 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-23 17:14:43,726 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 1 is available
+2020-07-23 17:14:43,728 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:14:43,728 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:14:43,764 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:14:43,764 WARN c.i.r.s.RoomReservationService [main] [WARN] It wasn't possible to check room's availability
+2020-07-23 17:14:43,792 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-23 17:14:43,792 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 1 has enough balance to make appointment
+2020-07-23 17:14:43,794 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-23 17:14:43,794 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to check user's balance
+2020-07-23 17:14:43,823 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-23 17:14:43,823 INFO c.i.r.s.RoomReservationService [main] Find Room Reservation with id 1
+2020-07-23 19:21:18,892 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 19
+2020-07-23 19:21:18,892 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 2 and room 19
+2020-07-23 19:21:18,894 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 19:21:18,894 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 19:21:19,033 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-23 19:21:19,033 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 2 is from type Basic
+2020-07-23 19:21:19,203 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 19 is available
+2020-07-23 19:21:19,203 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 19 is available
+2020-07-23 19:21:19,225 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-23 19:21:19,225 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 2 has enough balance to make appointment
+2020-07-23 19:21:19,543 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 19:21:19,543 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 19:21:35,265 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] Find all Room Reservations
+2020-07-23 19:21:35,265 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] Find all Room Reservations
+2020-07-23 19:21:55,778 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 19:21:55,778 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 19:22:05,402 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] Find all Room Reservations
+2020-07-23 19:22:05,402 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] Find all Room Reservations
+2020-07-23 19:22:29,148 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 2 and room 18
+2020-07-23 19:22:29,148 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [INIT] Make new Room Reservation for user 2 and room 18
+2020-07-23 19:22:29,148 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-23 19:22:29,148 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Initialize need variables
+2020-07-23 19:22:29,162 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 2 is from type Basic
+2020-07-23 19:22:29,162 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] User with id 2 is from type Basic
+2020-07-23 19:22:29,181 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 18 is available
+2020-07-23 19:22:29,181 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if room 18 is available
+2020-07-23 19:22:29,200 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if user 2 has enough balance to make appointment
+2020-07-23 19:22:29,200 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] Check if user 2 has enough balance to make appointment
+2020-07-23 19:22:29,245 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 19:22:29,245 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-2] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 19:22:32,670 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] Find all Room Reservations
+2020-07-23 19:22:32,670 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] Find all Room Reservations
+2020-07-23 19:23:03,596 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-7] User with id 2 is from type Basic
+2020-07-23 19:23:03,596 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-7] User with id 2 is from type Basic
+2020-07-23 19:23:32,456 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-23 19:23:32,456 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-23 19:27:17,046 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] User with id 2 is from type Basic
+2020-07-23 19:27:17,046 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] User with id 2 is from type Basic
+2020-07-23 19:32:23,995 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] User with id 2 is from type Basic
+2020-07-23 19:32:23,995 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] User with id 2 is from type Basic
+2020-07-23 19:36:43,543 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-23 19:36:43,543 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] User with id 2 is from type Basic
+2020-07-23 19:38:29,498 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 2 and room 17
+2020-07-23 19:38:29,498 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [INIT] Make new Room Reservation for user 2 and room 17
+2020-07-23 19:38:29,498 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-23 19:38:29,498 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Initialize need variables
+2020-07-23 19:38:29,509 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 2 is from type Basic
+2020-07-23 19:38:29,509 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] User with id 2 is from type Basic
+2020-07-23 19:38:29,525 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 17 is available
+2020-07-23 19:38:29,525 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if room 17 is available
+2020-07-23 19:38:29,543 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if user 2 has enough balance to make appointment
+2020-07-23 19:38:29,543 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] Check if user 2 has enough balance to make appointment
+2020-07-23 19:38:29,586 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 19:38:29,586 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-3] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 19:38:32,953 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] Find all Room Reservations
+2020-07-23 19:38:32,953 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] Find all Room Reservations
+2020-07-23 19:41:04,741 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-23 19:41:04,741 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-23 19:43:33,651 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 19:43:33,651 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 19:45:46,076 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-23 19:45:46,076 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 2 is from type Basic
+2020-07-23 19:47:28,837 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] Find all Room Reservations
+2020-07-23 19:47:28,837 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-6] Find all Room Reservations
+2020-07-23 19:50:12,736 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-23 19:50:12,736 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-8] User with id 2 is from type Basic
+2020-07-23 19:51:09,197 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 2 is from type Basic
+2020-07-23 19:51:09,197 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] User with id 2 is from type Basic
+2020-07-23 19:51:51,071 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-23 19:51:51,071 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-10] User with id 2 is from type Basic
+2020-07-23 19:53:38,947 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 19:53:38,947 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 2 is from type Basic
+2020-07-23 19:56:02,844 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] Find Room Reservation with id 1
+2020-07-23 19:56:02,844 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] Find Room Reservation with id 1
+2020-07-23 19:59:43,717 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [INIT] Make new Room Reservation for user 3 and room 16
+2020-07-23 19:59:43,717 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [INIT] Make new Room Reservation for user 3 and room 16
+2020-07-23 19:59:43,717 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Initialize need variables
+2020-07-23 19:59:43,717 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Initialize need variables
+2020-07-23 19:59:43,731 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] User with id 3 is from type Basic
+2020-07-23 19:59:43,731 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] User with id 3 is from type Basic
+2020-07-23 19:59:43,756 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if room 16 is available
+2020-07-23 19:59:43,756 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if room 16 is available
+2020-07-23 19:59:43,776 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 3 has enough balance to make appointment
+2020-07-23 19:59:43,776 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] Check if user 3 has enough balance to make appointment
+2020-07-23 19:59:43,833 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 19:59:43,833 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-4] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 20:01:19,463 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] Find all Room Reservations
+2020-07-23 20:01:19,463 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-9] Find all Room Reservations
+2020-07-23 20:01:23,153 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] Find all Room Reservations
+2020-07-23 20:01:23,153 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] Find all Room Reservations
+2020-07-23 20:02:57,471 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 3 and room 12
+2020-07-23 20:02:57,471 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 3 and room 12
+2020-07-23 20:02:57,472 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 20:02:57,472 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 20:02:57,604 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 3 is from type Basic
+2020-07-23 20:02:57,604 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 3 is from type Basic
+2020-07-23 20:02:57,656 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 12 is available
+2020-07-23 20:02:57,656 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 12 is available
+2020-07-23 20:02:57,671 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 3 has enough balance to make appointment
+2020-07-23 20:02:57,671 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 3 has enough balance to make appointment
+2020-07-23 20:02:57,773 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 20:02:57,773 WARN c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [WARN] It wasn't possible to make a new Room Reservation
+2020-07-23 20:03:01,559 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 20:03:01,559 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 20:03:43,447 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] Find all Room Reservations
+2020-07-23 20:03:43,447 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] Find all Room Reservations
+2020-07-23 20:03:48,907 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] Find all Room Reservations
+2020-07-23 20:03:48,907 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-5] Find all Room Reservations
+2020-07-23 20:04:55,595 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] Find all Room Reservations
+2020-07-23 20:04:55,595 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-1] Find all Room Reservations
+2020-07-23 20:05:00,140 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 3 and room 11
+2020-07-23 20:05:00,140 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 3 and room 11
+2020-07-23 20:05:00,140 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 20:05:00,140 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 20:05:00,268 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 3 is from type Basic
+2020-07-23 20:05:00,268 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 3 is from type Basic
+2020-07-23 20:05:00,316 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 11 is available
+2020-07-23 20:05:00,316 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 11 is available
+2020-07-23 20:05:00,343 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 3 has enough balance to make appointment
+2020-07-23 20:05:00,343 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 3 has enough balance to make appointment
+2020-07-23 20:05:00,444 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 3 is from type Basic
+2020-07-23 20:05:00,444 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] User with id 3 is from type Basic
+2020-07-23 20:05:00,462 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 3 and room 11
+2020-07-23 20:05:00,462 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 3 and room 11
+2020-07-23 20:05:30,791 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 3 and room 10
+2020-07-23 20:05:30,791 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [INIT] Make new Room Reservation for user 3 and room 10
+2020-07-23 20:05:30,793 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 20:05:30,793 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Initialize need variables
+2020-07-23 20:05:30,921 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 3 is from type Basic
+2020-07-23 20:05:30,921 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] User with id 3 is from type Basic
+2020-07-23 20:05:30,967 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 10 is available
+2020-07-23 20:05:30,967 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if room 10 is available
+2020-07-23 20:05:30,983 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 3 has enough balance to make appointment
+2020-07-23 20:05:30,983 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] Check if user 3 has enough balance to make appointment
+2020-07-23 20:05:31,112 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 3 is from type Basic
+2020-07-23 20:05:31,112 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-2] User with id 3 is from type Basic
+2020-07-23 20:05:31,130 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 3 and room 10
+2020-07-23 20:05:31,130 INFO c.i.r.s.RoomReservationService [hystrix-RoomReservationService-1] [END] Make new Room Reservation for user 3 and room 10
+2020-07-23 20:05:34,365 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 20:05:34,365 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-3] Find all Room Reservations
+2020-07-23 20:05:42,564 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] Find Room Reservation with id 1
+2020-07-23 20:05:42,564 INFO c.i.r.s.RoomReservationService [http-nio-8086-exec-4] Find Room Reservation with id 1

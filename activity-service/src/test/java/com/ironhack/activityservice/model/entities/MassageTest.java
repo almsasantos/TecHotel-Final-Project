@@ -18,7 +18,7 @@ class MassageTest {
     @BeforeEach
     void setUp() {
         massage = new Massage();
-        massage = new Massage(1L, 2, MassageType.AROMATHERAPY);
+        massage = new Massage(1L, 2, MassageType.AROMATHERAPY, LocalDateTime.now());
     }
 
     @AfterEach
