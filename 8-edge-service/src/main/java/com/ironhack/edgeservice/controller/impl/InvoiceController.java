@@ -47,4 +47,10 @@ public class InvoiceController implements IInvoiceController {
     public Invoice createInvoiceActivity(@RequestBody @Valid InvoiceViewModel invoiceViewModel, @RequestHeader(value = "Authorization") String authorizationHeader){
         return invoiceService.createInvoiceActivity(invoiceViewModel, authorizationHeader);
     }
+
+    @GetMapping("/invoices/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Invoice> findInvoiceByUserId(@PathVariable("userId") Long userId,  @RequestHeader(value = "Authorization") String authorizationHeader){
+        return invoiceService.findInvoiceByUserId(userId, authorizationHeader);
+    }
 }

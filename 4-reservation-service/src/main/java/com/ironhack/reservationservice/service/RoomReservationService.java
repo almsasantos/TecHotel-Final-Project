@@ -148,15 +148,15 @@ public class RoomReservationService {
             if (regularRoom.getAvailable().equals(false)) throw new RoomNotAvailableException("Regular room is not available");
 
             else if (userReservation.getTypeOfUser().equals(TypeOfUser.BASIC)) {
-                userClient.updateBasicRoomId(basic.getId(), regularRoom.getRoomId());
                 checkEnoughBalance(basic.getId(), TypeOfUser.BASIC, roomReservation.getTotalPrice());
+                userClient.updateBasicRoomId(basic.getId(), regularRoom.getRoomId());
                 userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().getAmount().subtract(roomReservation.getTotalPrice().getAmount()));
                 userClient.updateBasicNumberOfStays(basic.getId(), basic.getNumberOfStays() + 1);
                 invoiceViewModel.setUserId(basic.getId()); }
 
             else if (userReservation.getTypeOfUser().equals(TypeOfUser.PREMIUM)) {
-                userClient.updatePremiumRoomId(premium.getId(), regularRoom.getRoomId());
                 checkEnoughBalance(premium.getId(), TypeOfUser.PREMIUM, roomReservation.getTotalPrice());
+                userClient.updatePremiumRoomId(premium.getId(), regularRoom.getRoomId());
                 userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().getAmount().subtract(roomReservation.getTotalPrice().getAmount()));
                 userClient.updatePremiumNumberOfStays(premium.getId(), premium.getNumberOfStays() + 1);
                 invoiceViewModel.setUserId(premium.getId()); }
@@ -174,14 +174,14 @@ public class RoomReservationService {
             if (suiteRoom.getAvailable().equals(false)) { throw new RoomNotAvailableException("Suite room is not available"); }
 
             else if (userReservation.getTypeOfUser().equals(TypeOfUser.BASIC)) {
-                userClient.updateBasicRoomId(basic.getId(), suiteRoom.getRoomId());
                 checkEnoughBalance(basic.getId(), TypeOfUser.BASIC, new Money(roomReservation.getTotalPrice().getAmount().add(roomReservation.getTotalPrice().getAmount().multiply(new BigDecimal("0.2")))));
+                userClient.updateBasicRoomId(basic.getId(), suiteRoom.getRoomId());
                 userClient.updateBasicBalance(basic.getId(), basic.getBankAccount().getBalance().getAmount().subtract(roomReservation.getTotalPrice().getAmount()));
                 userClient.updateBasicNumberOfStays(basic.getId(), basic.getNumberOfStays() + 1); }
 
             else if (userReservation.getTypeOfUser().equals(TypeOfUser.PREMIUM)) {
-                userClient.updatePremiumRoomId(premium.getId(), suiteRoom.getRoomId());
                 checkEnoughBalance(premium.getId(), TypeOfUser.PREMIUM, roomReservation.getTotalPrice());
+                userClient.updatePremiumRoomId(premium.getId(), suiteRoom.getRoomId());
                 userClient.updatePremiumBalance(premium.getId(), premium.getBankAccount().getBalance().getAmount().subtract(roomReservation.getTotalPrice().getAmount()));
                 userClient.updatePremiumNumberOfStays(premium.getId(), premium.getNumberOfStays() + 1); }
             roomReservation.setRoomId(suiteRoom.getRoomId());

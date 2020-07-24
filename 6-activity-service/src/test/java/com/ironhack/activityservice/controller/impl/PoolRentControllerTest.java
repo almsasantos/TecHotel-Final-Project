@@ -20,6 +20,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,7 +60,7 @@ class PoolRentControllerTest {
     @BeforeEach
     void setUp() {
         mockMvc =  MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
-        poolRent = new PoolRent(1L, 2, 1, 1);
+        poolRent = new PoolRent(1L, 2, 1, 1, LocalDateTime.now());
         poolRentList.add(poolRent);
     }
 
@@ -85,7 +86,7 @@ class PoolRentControllerTest {
 
     @Test
     void filterPoolRentByUserId() throws Exception {
-        when(poolRentController.filterPoolRentByUserId(1L)).thenReturn(list);
+        when(poolRentController.filterPoolRentByUserId(1L)).thenReturn(poolRentList);
         mockMvc.perform(get("/activities/pool-rents/filter/"+1L)
                 .header("Authorization","admin"))
                 .andExpect(status().is2xxSuccessful());

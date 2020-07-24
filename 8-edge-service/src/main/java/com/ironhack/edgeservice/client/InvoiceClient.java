@@ -37,4 +37,8 @@ public interface InvoiceClient {
     @PostMapping("/invoices-activity")
     @ResponseStatus(HttpStatus.CREATED)
     public Invoice createInvoiceActivity(@RequestBody @Valid InvoiceViewModel invoiceViewModel);
+
+    @GetMapping("/invoices/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Invoice> findInvoiceByUserId(@PathVariable("userId") Long userId);
 }

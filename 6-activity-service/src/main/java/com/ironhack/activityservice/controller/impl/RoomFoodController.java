@@ -47,7 +47,7 @@ public class RoomFoodController implements IRoomFoodController {
      */
     @GetMapping("/activities/room-food-services/filter/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Object[]> filterRoomFoodByUserId(@PathVariable("userId") Long userId){
+    public List<RoomFood> filterRoomFoodByUserId(@PathVariable("userId") Long userId){
         return roomFoodService.filterRoomFoodByUserId(userId);
     }
 

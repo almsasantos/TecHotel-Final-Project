@@ -51,5 +51,5 @@ public interface IPoolRentController {
      * @param userId receives a Long with userId
      * @returnq list of objects
      */
-    public List<Object[]> filterPoolRentByUserId(Long userId);
+    public List<PoolRent> filterPoolRentByUserId(Long userId);
 }

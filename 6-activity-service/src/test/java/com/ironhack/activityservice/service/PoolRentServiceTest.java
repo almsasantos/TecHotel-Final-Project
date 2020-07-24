@@ -28,6 +28,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,7 +71,7 @@ class PoolRentServiceTest {
     @BeforeEach
     void setUp() {
         mockMvc =  MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
-        poolRent = new PoolRent(1L, 2, 1, 1);
+        poolRent = new PoolRent(1L, 2, 1, 1, LocalDateTime.now());
         poolRent.setActivityId(1L);
         poolRentRepository.save(poolRent);
         poolRentList.add(poolRent);
@@ -99,7 +100,7 @@ class PoolRentServiceTest {
         poolRentViewModel.setRoomId(1);
         poolRentViewModel.setTowelNum(3);
         poolRentViewModel.setUserId(1L);
-        PoolRent poolRent1 = new PoolRent(1L, 1, 3, 3);
+        PoolRent poolRent1 = new PoolRent(1L, 1, 3, 3, LocalDateTime.now());
 
         assertEquals(null, poolRentService.createPoolRent(poolRentViewModel));
     }

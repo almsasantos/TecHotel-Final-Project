@@ -30,4 +30,6 @@ public interface IInvoiceController {
      * @return an Invoice created
      */
     public Invoice createInvoiceActivity(@RequestBody @Valid InvoiceViewModel invoiceViewModel, @RequestHeader(value = "Authorization") String authorizationHeader);
+
+    public List<Invoice> findInvoiceByUserId(@PathVariable("userId") Long userId,  @RequestHeader(value = "Authorization") String authorizationHeader);
 }

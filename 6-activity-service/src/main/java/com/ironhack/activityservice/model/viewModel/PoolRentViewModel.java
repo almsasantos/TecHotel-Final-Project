@@ -2,6 +2,7 @@ package com.ironhack.activityservice.model.viewModel;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import java.time.LocalDateTime;
 
 /**
  * Pool Rent View Model
@@ -31,6 +32,8 @@ public class PoolRentViewModel {
     @NotNull(message = "Number of towels cannot be null")
     @Min(value = 0 , message = "Number of towels cannot be less than zero")
     private Integer towelNum;
+
+    private LocalDateTime beginOfActivity;
 
     /**
      * Getter of userId
@@ -94,5 +97,13 @@ public class PoolRentViewModel {
      */
     public void setTowelNum(Integer towelNum) {
         this.towelNum = towelNum;
+    }
+
+    public LocalDateTime getBeginOfActivity() {
+        return beginOfActivity;
+    }
+
+    public void setBeginOfActivity(LocalDateTime beginOfActivity) {
+        this.beginOfActivity = beginOfActivity;
     }
 }

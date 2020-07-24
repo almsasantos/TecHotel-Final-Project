@@ -51,7 +51,7 @@ public class ActivityController implements IActivityController {
      */
     @GetMapping("/activities/massages/filter/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Object[]> filterMassageByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader){
+    public List<Massage> filterMassageByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader){
         return activityService.filterMassageByUserId(userId, authorizationHeader); }
 
     /**
@@ -110,7 +110,7 @@ public class ActivityController implements IActivityController {
      */
     @GetMapping("/activities/room-food-services/filter/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Object[]> filterRoomFoodByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader){
+    public List<RoomFood> filterRoomFoodByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader){
         return activityService.filterRoomFoodByUserId(userId, authorizationHeader); }
 
     /**
@@ -187,7 +187,7 @@ public class ActivityController implements IActivityController {
      */
     @GetMapping("/activities/pool-rents/filter/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Object[]> filterPoolRentByUserId(@PathVariable("userId") Long userId,  @RequestHeader(value = "Authorization") String authorizationHeader){
+    public List<PoolRent> filterPoolRentByUserId(@PathVariable("userId") Long userId,  @RequestHeader(value = "Authorization") String authorizationHeader){
         return activityService.filterPoolRentByUserId(userId, authorizationHeader);
     }
     /**

@@ -26,4 +26,6 @@ public interface IInvoiceController {
      * @return an Invoice created
      */
     public Invoice createInvoiceActivity(@RequestBody @Valid InvoiceViewModel invoiceViewModel);
+
+    public List<Invoice> findInvoiceByUserId(@PathVariable("userId") Long userId);
 }

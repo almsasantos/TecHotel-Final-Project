@@ -18,8 +18,7 @@ public interface PoolRentRepository extends JpaRepository<PoolRent, Long> {
      * @param userId receives a Long with userId
      * @return a list of object
      */
-    @Query(value = "SELECT activity_id, room_id, floaties_num, towel_num, balance, currency, begin_of_activity, duration, " +
-            "end_of_activity FROM pool_rents WHERE user_id = :userId", nativeQuery = true)
-    public List<Object[]> filterPoolRentByUserId(@Param("userId") Long userId);
+    @Query(value = "SELECT * FROM pool_rents WHERE user_id = :userId", nativeQuery = true)
+    public List<PoolRent> filterPoolRentByUserId(@Param("userId") Long userId);
 
 }

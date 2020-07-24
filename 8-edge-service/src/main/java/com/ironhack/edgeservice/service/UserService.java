@@ -261,12 +261,10 @@ public class UserService {
 
     // --- FallBack Methods ---
     public List<Basic> findAllBasicUserFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find all Basic Users");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find all Basic Users"); return null; }
 
     public Basic findBasicUserByIdFail(Long basicId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find Basic User with id " + basicId);
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find Basic User with id " + basicId); return null; }
 
     public Basic createBasicUserFail(BasicAndPremiumViewModel basicAndPremiumViewModel){
         LOGGER.warn("[WARN] It wasn't possible to create new Basic User");
@@ -285,12 +283,10 @@ public class UserService {
         LOGGER.warn("[WARN] It wasn't possible to delete User with id " + userId); }
 
     public List<Premium> findAllPremiumUsersFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find all Premium Users");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find all Premium Users"); return null; }
 
     public Premium findPremiumUserByIdFail(Long premiumId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find Premium User with id " + premiumId);
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find Premium User with id " + premiumId); return null; }
 
     public Premium createPremiumUserFail(BasicAndPremiumViewModel basicAndPremiumViewModel){
         LOGGER.warn("[WARN] It wasn't possible to create new Premium User");
@@ -301,15 +297,12 @@ public class UserService {
         return null; }
 
     public List<Admin> findAllAdminFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find All Admin Users");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find All Admin Users"); return null; }
 
     public Admin findAdminByIdFail(Long adminId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find Admin by id");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find Admin by id"); return null; }
 
     public Long findByUsernameFail(String username){
-        LOGGER.warn("[WARN] It wasn't possible to username");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to username"); return null; }
 
 }

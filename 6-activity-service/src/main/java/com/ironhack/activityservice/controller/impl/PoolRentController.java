@@ -52,7 +52,7 @@ public class PoolRentController implements IPoolRentController {
      */
     @GetMapping("/activities/pool-rents/filter/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Object[]> filterPoolRentByUserId(@PathVariable("userId") Long userId){
+    public List<PoolRent> filterPoolRentByUserId(@PathVariable("userId") Long userId){
         return poolRentService.filterPoolRentByUserId(userId);
     }
 

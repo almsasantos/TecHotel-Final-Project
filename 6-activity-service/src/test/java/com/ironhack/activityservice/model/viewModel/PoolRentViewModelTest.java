@@ -4,6 +4,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDateTime;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PoolRentViewModelTest {
@@ -45,5 +47,13 @@ class PoolRentViewModelTest {
         poolRentViewModel.setTowelNum(1);
 
         assertEquals(1, poolRentViewModel.getTowelNum());
+    }
+
+    @Test
+    void getBeginOfActivity() {
+        LocalDateTime now = LocalDateTime.now();
+        poolRentViewModel.setBeginOfActivity(now);
+
+        assertEquals(now, poolRentViewModel.getBeginOfActivity());
     }
 }

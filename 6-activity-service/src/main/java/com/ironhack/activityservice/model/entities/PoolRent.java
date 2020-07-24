@@ -25,11 +25,11 @@ public class PoolRent extends Activity {
         this.duration = LocalTime.of(1, 00);
     }
 
-    public PoolRent(Long userId, Integer roomId, Integer floatiesNum, Integer towelNum) {
+    public PoolRent(Long userId, Integer roomId, Integer floatiesNum, Integer towelNum, LocalDateTime beginOfActivity) {
         super(userId, roomId);
         this.floatiesNum = floatiesNum;
         this.towelNum = towelNum;
-        this.beginOfActivity = LocalDateTime.now();
+        this.beginOfActivity = beginOfActivity;
         this.duration = LocalTime.of(1, 00);
         this.endOfActivity = beginOfActivity.plus(Duration.ofHours(duration.getHour())); }
 

@@ -89,9 +89,11 @@ public class MassageService {
      * @param changeMassageTypeDto receives an UpdateMassageTypeDto
      */
     @HystrixCommand(fallbackMethod = "changeMassageTypeFail")
-    public void changeMassageType(UpdateMassageTypeDto changeMassageTypeDto){
+    public void changeMassageType(UpdateMassageTypeDto changeMassageTypeDto) throws ReservationException{
         LOGGER.info("[INIT] Change Massage type for " + changeMassageTypeDto.getMassageType() + " in appointment " + changeMassageTypeDto.getMassageId());
         Massage massage = findMassageById(changeMassageTypeDto.getMassageId());
+
+        if(massage.getBeginOfActivity().isBefore(LocalDateTime.now())) throw new ReservationException("The appointment hour is already passed");
 
         resetMoney(massage.getUserId(), massage.getMassageType().getPrice().setScale(2, RoundingMode.HALF_DOWN));
         confirmData(massage.getUserId(), massage.getRoomId(), new Money(changeMassageTypeDto.getMassageType().getPrice()));
@@ -206,7 +208,7 @@ public class MassageService {
      * @param userId receives an Long with userId
      * @return a list of object
      */
-    public List<Object[]> filterMassageByUserId(Long userId){
+    public List<Massage> filterMassageByUserId(Long userId){
         LOGGER.info("Filter Massage Reservation from user with id " + userId);
         return massageRepository.filterMassageByUserId(userId);
     }

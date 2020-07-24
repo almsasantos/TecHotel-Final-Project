@@ -76,31 +76,22 @@ public class InvoiceService {
     public String checkInformation(InvoiceViewModel invoiceViewModel){
         List<Basic> basicUsers = userClient.findAllBasicUser().stream().filter(user -> user.getId().equals(invoiceViewModel.getUserId())).collect(Collectors.toList());
         List<Premium> premiumUsers = userClient.findAllPremiumUsers().stream().filter(user -> user.getId().equals(invoiceViewModel.getUserId())).collect(Collectors.toList());
-        Basic basic = null;
-        Premium premium = null;
-        List<RegularRoom> regularRooms = null;
-        List<SuiteRoom> suiteRooms = null;
+        Basic basic = null; Premium premium = null; List<RegularRoom> regularRooms = null; List<SuiteRoom> suiteRooms = null;
 
         LOGGER.info("Make sure user " + invoiceViewModel.getUserId() + " exists and has a reservation in the hotel");
-        if (basicUsers.size() == 0 && premiumUsers.size() == 0)
-            throw new DataNotFoundException("User id doesn't exist");
+        if (basicUsers.size() == 0 && premiumUsers.size() == 0) throw new DataNotFoundException("User id doesn't exist");
 
-        else if (basicUsers.size() > 0) {
-            LOGGER.info("User with id " + invoiceViewModel.getUserId() + " is from type Basic");
+        else if (basicUsers.size() > 0) { LOGGER.info("User with id " + invoiceViewModel.getUserId() + " is from type Basic");
             basic = userClient.findBasicUserById(invoiceViewModel.getUserId());
             reservationClient.userIdMatchesRoom(basic.getId(), invoiceViewModel.getRoomId());
             return basic.getName();
         }
 
-        else if (premiumUsers.size() > 0) {
-            LOGGER.info("User with id " + invoiceViewModel.getUserId() + " is from type Premium");
+        else if (premiumUsers.size() > 0) { LOGGER.info("User with id " + invoiceViewModel.getUserId() + " is from type Premium");
             premium = userClient.findPremiumUserById(invoiceViewModel.getUserId());
-            if (premium.getRoomId() == 0 && premium.getRoomId().equals(null))
-                throw new DataNotFoundException("Premium user hasn't reservation on going");
+            if (premium.getRoomId() == 0 && premium.getRoomId().equals(null)) throw new DataNotFoundException("Premium user hasn't reservation on going");
             reservationClient.userIdMatchesRoom(premium.getId(), invoiceViewModel.getRoomId());
-            return premium.getName();
-        }
-
+            return premium.getName(); }
         return null;
     }
 
@@ -129,20 +120,16 @@ public class InvoiceService {
         List<SuiteRoom> suiteRooms = null;
 
         LOGGER.info("Make sure user " + userId + " exists and has a reservation in the hotel");
-        if (basicUsers.size() == 0 && premiumUsers.size() == 0)
-            throw new DataNotFoundException("User id doesn't exist");
+        if (basicUsers.size() == 0 && premiumUsers.size() == 0) throw new DataNotFoundException("User id doesn't exist");
 
         else if (basicUsers.size() > 0) {
             LOGGER.info("User with id " + userId + " is from type Basic");
             basic = userClient.findBasicUserById(userId);
-            if (basic.getRoomId() == 0 && basic.getRoomId().equals(null))
-                throw new DataNotFoundException("Basic user hasn't reservation on going");
+            if (basic.getRoomId() == 0 && basic.getRoomId().equals(null)) throw new DataNotFoundException("Basic user hasn't reservation on going");
 
-            if (!basic.getRoomId().equals(userId))
-                throw new DataNotFoundException("Basic user room doesn't match invoice's room id provided");
+            if (!basic.getRoomId().equals(userId)) throw new DataNotFoundException("Basic user room doesn't match invoice's room id provided");
 
-            if (!basic.getName().equals(userId))
-                throw new DataNotFoundException("Basic user name doesn't match invoice's name provided");
+            if (!basic.getName().equals(userId)) throw new DataNotFoundException("Basic user name doesn't match invoice's name provided");
 
             Basic finalBasic = basic;
             regularRooms = roomClient.findAllRegularRooms().stream().filter(regularRoom -> regularRoom.getRoomId().equals(finalBasic.getRoomId())).collect(Collectors.toList());
@@ -152,14 +139,11 @@ public class InvoiceService {
         else {
             LOGGER.info("User with id " + userId + " is from type Premium");
             premium = userClient.findPremiumUserById(userId);
-            if (premium.getRoomId() == 0 && premium.getRoomId().equals(null))
-                throw new DataNotFoundException("Premium user hasn't reservation on going");
+            if (premium.getRoomId() == 0 && premium.getRoomId().equals(null)) throw new DataNotFoundException("Premium user hasn't reservation on going");
 
-            if (!premium.getRoomId().equals(userId))
-                throw new DataNotFoundException("Premium user room doesn't match invoice's room id provided");
+            if (!premium.getRoomId().equals(userId)) throw new DataNotFoundException("Premium user room doesn't match invoice's room id provided");
 
-            if(!premium.getName().equals(userId))
-                throw new DataNotFoundException("Premium user name doesn't match invoice's name provided");
+            if(!premium.getName().equals(userId)) throw new DataNotFoundException("Premium user name doesn't match invoice's name provided");
 
             Premium finalPremium = premium;
             regularRooms = roomClient.findAllRegularRooms().stream().filter(regularRoom -> regularRoom.getRoomId().equals(finalPremium.getRoomId())).collect(Collectors.toList());
@@ -183,21 +167,21 @@ public class InvoiceService {
 
         LOGGER.info("Set total price of Stay in new Invoice");
         Invoice invoice = new Invoice();
-        if(basic != null){
-            invoice.setUserId(basic.getId());
-            invoice.setName(basic.getName());
-            invoice.setPriceOwed(finalPrice);
-            invoice.setRoomId(basic.getRoomId());
-        }
-        else if (premium != null){
-            invoice.setUserId(premium.getId());
-            invoice.setName(premium.getName());
-            invoice.setPriceOwed(finalPrice);
-            invoice.setRoomId(premium.getRoomId());
-        }
+        if(basic != null){ invoice.setUserId(basic.getId()); invoice.setName(basic.getName()); invoice.setPriceOwed(finalPrice); invoice.setRoomId(basic.getRoomId()); }
+        else if (premium != null){ invoice.setUserId(premium.getId()); invoice.setName(premium.getName()); invoice.setPriceOwed(finalPrice); invoice.setRoomId(premium.getRoomId()); }
 
         invoice.setInvoiceType(InvoiceType.END_OF_STAY_AT_THE_HOTEL);
         LOGGER.info("[END] Create new Invoice for user " + userId + " of end of stay");
         return invoiceRepository.save(invoice);
     }
+
+    public List<Invoice> findInvoiceByUserId(Long userId){
+        LOGGER.info("Find Invoices by User Id " + userId);
+        List<Invoice> invoices = new ArrayList<Invoice>();
+        invoiceRepository.findAll().stream().filter(invoice -> invoice.getUserId().equals(userId))
+                .forEach(invoice -> {invoice.getInvoiceId(); invoice.getName(); invoice.getRoomId(); invoice.getPriceOwed(); invoices.add(invoice);});
+
+        return invoices;
+    }
+
 }

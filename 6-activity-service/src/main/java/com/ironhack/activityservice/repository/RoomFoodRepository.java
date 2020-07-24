@@ -19,7 +19,6 @@ public interface RoomFoodRepository extends JpaRepository<RoomFood, Long> {
      * @return a list of object
      */
 
-    @Query(value = "SELECT activity_id, room_id, drink_menu, food_menu, delivered," +
-            " balance, currency FROM room_food_services WHERE user_id = :userId", nativeQuery = true)
-    public List<Object[]> filterRoomFoodByUserId(@Param("userId") Long userId);
+    @Query(value = "SELECT * FROM room_food_services WHERE user_id = :userId", nativeQuery = true)
+    public List<RoomFood> filterRoomFoodByUserId(@Param("userId") Long userId);
 }

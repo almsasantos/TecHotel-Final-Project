@@ -47,4 +47,10 @@ public class InvoiceController implements IInvoiceController {
     public Invoice createInvoiceActivity(@RequestBody @Valid InvoiceViewModel invoiceViewModel) {
         return invoiceService.createInvoiceActivity(invoiceViewModel);
     }
+
+    @GetMapping("/invoices/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Invoice> findInvoiceByUserId(@PathVariable("userId") Long userId){
+        return invoiceService.findInvoiceByUserId(userId);
+    }
 }

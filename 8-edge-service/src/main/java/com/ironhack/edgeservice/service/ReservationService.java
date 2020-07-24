@@ -78,18 +78,14 @@ public class ReservationService {
         return reservationClient.userIdMatchesRoom(userId, roomId); }
 
     public List<RoomReservation> findAllRoomReservationsFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find all Room Reservations");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find all Room Reservations"); return null; }
 
     public RoomReservation findRoomReservationByIdFail(Long roomReservationId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find Room Reservation with id " + roomReservationId);
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find Room Reservation with id " + roomReservationId); return null; }
 
     public RoomReservation newRoomReservationFail(RoomReservationViewModel roomReservationViewModel, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to create new Room Reservation");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to create new Room Reservation"); return null; }
 
     public Boolean userIdMatchesRoomFail(Long userId, Integer roomId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to check if user " + userId + " was in room " + roomId);
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to check if user " + userId + " was in room " + roomId); return null; }
 }

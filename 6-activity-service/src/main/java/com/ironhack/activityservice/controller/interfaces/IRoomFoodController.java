@@ -49,7 +49,6 @@ public interface IRoomFoodController {
     /**
      * Cancel Room Food Request
      * @param roomFoodId receives a Long with roomFoodId
-     * @throws ReservationException an Exception
      */
     public void removeRoomFoodRequest(Long roomFoodId);
 
@@ -58,5 +57,5 @@ public interface IRoomFoodController {
      * @param userId receives a Long with userId
      * @return a list of objects
      */
-    public List<Object[]> filterRoomFoodByUserId(Long userId);
+    public List<RoomFood> filterRoomFoodByUserId(Long userId);
 }

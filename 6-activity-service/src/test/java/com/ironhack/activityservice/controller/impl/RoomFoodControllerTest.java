@@ -86,7 +86,7 @@ class RoomFoodControllerTest {
 
     @Test
     void filterRoomFoodByUserId() throws Exception {
-        when(roomFoodController.filterRoomFoodByUserId(1L)).thenReturn(list);
+        when(roomFoodController.filterRoomFoodByUserId(1L)).thenReturn(roomFoodList);
         mockMvc.perform(get("/activities/room-food-services/filter/"+1L)
                 .header("Authorization","admin"))
                 .andExpect(status().is2xxSuccessful());

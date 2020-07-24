@@ -100,8 +100,10 @@ public class PoolRentService {
         confirmData(poolRentViewModel.getUserId(), poolRentViewModel.getRoomId(), new Money(totalPrice));
 
         PoolRent poolRent = new PoolRent(); poolRent.setTowelNum(poolRentViewModel.getTowelNum());
-        if(poolRentViewModel.getFloatiesNum().equals(null)){ poolRent.setFloatiesNum(0); }
-        if(poolRentViewModel.getTowelNum().equals(null)){ poolRent.setTowelNum(0); }
+        if(poolRentViewModel.getFloatiesNum()==null){ poolRent.setFloatiesNum(0); }
+        if(poolRentViewModel.getTowelNum()==null){ poolRent.setTowelNum(0); }
+        if(poolRentViewModel.getBeginOfActivity()==null){ poolRent.setBeginOfActivity(LocalDateTime.now()); }
+        else { poolRent.setBeginOfActivity(poolRentViewModel.getBeginOfActivity()); }
 
         poolRent.setFloatiesNum(poolRentViewModel.getFloatiesNum()); poolRent.setRoomId(poolRentViewModel.getRoomId()); poolRent.setUserId(poolRentViewModel.getUserId()); poolRent.setTotalPrice(new Money(totalPrice));
         poolRent.setEndOfActivity(poolRent.getBeginOfActivity().plus(Duration.ofHours(LocalTime.of(1, 00).getHour()))); poolRentRepository.save(poolRent);
@@ -239,7 +241,7 @@ public class PoolRentService {
      * @param userId receives a Long with userId
      * @returnq list of objects
      */
-    public List<Object[]> filterPoolRentByUserId(Long userId){
+    public List<PoolRent> filterPoolRentByUserId(Long userId){
         LOGGER.info("Filter Pool Rent Reservation from user with id " + userId);
     return poolRentRepository.filterPoolRentByUserId(userId);
     }

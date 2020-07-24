@@ -54,15 +54,22 @@ public class InvoiceService {
         securityService.isUser(authorizationHeader);
         return invoiceClient.createInvoiceActivity(invoiceViewModel); }
 
+    @HystrixCommand(fallbackMethod = "findInvoiceByUserIdFail", ignoreExceptions = ResponseStatusException.class)
+    public List<Invoice> findInvoiceByUserId(Long userId, String authorizationHeader){
+        LOGGER.info("Find Invoices By User Id");
+        securityService.isUser(authorizationHeader);
+        return invoiceClient.findInvoiceByUserId(userId);
+    }
+
     public List<Invoice> findAllInvoicesFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find all Invoices");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find all Invoices"); return null; }
 
     public Invoice createFinalInvoiceFail(Long userId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to create new Invoice from End of Stay");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to create new Invoice from End of Stay"); return null; }
 
     public Invoice createInvoiceActivityFail(InvoiceViewModel invoiceViewModel, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to create new Invoice from Activity");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to create new Invoice from Activity"); return null; }
+
+    public List<Invoice> findInvoiceByUserIdFail(Long userId, String authorizationHeader){
+        LOGGER.warn("[WARN] It wasn't possible to find Invoices By for user Id " + userId); return null; }
 }

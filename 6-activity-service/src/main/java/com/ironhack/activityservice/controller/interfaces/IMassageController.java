@@ -47,5 +47,5 @@ public interface IMassageController {
      * @param userId receives an Long with userId
      * @return a list of object
      */
-    public List<Object[]> filterMassageByUserId(Long userId);
+    public List<Massage> filterMassageByUserId(Long userId);
 }

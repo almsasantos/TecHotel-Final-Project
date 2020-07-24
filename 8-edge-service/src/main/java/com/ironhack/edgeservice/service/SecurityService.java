@@ -33,22 +33,15 @@ public class SecurityService {
     private SecurityClient securityClient;
 
     public boolean login(String authorizationHeader) {
-        try {
-            isUser(authorizationHeader);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
-    }
+        try { isUser(authorizationHeader);
+            return true; }
+        catch (Exception e) { return false; } }
 
     public boolean admin(String authorizationHeader) {
-        try {
-            isAdmin(authorizationHeader);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
-    }
+        try { isAdmin(authorizationHeader);
+            return true; }
+        catch (Exception e) {
+            return false; } }
 
     /**
      * Is User
@@ -60,23 +53,16 @@ public class SecurityService {
                 throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
         } catch (Exception e) {
             LOGGER.warn("[WARN] - Hystrix send failure for Security Microservice");
-            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
-        }
-    }
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED); } }
 
     /**
      * Is Admin
      * @param authorizationHeader Authorization header
      */
     private void isAdmin(String authorizationHeader) {
-        try {
-            if (!securityClient.isAdmin(authorizationHeader))
-                throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
-        } catch (Exception e) {
-            LOGGER.warn("[WARN] - Hystrix send failure for Security Microservice");
-            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
-        }
-    }
+        try { if (!securityClient.isAdmin(authorizationHeader)) throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
+        } catch (Exception e) { LOGGER.warn("[WARN] - Hystrix send failure for Security Microservice");
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED); } }
 
     /**
      * Get all Basic Users
@@ -103,6 +89,7 @@ public class SecurityService {
      * @param basic User basic
      * @return User
      */
+    @HystrixCommand(fallbackMethod = "createUserFail")
     public UserSecurity createBasicUser(@RequestBody UserSecurity basic){
         return securityClient.createBasicUser(basic);
     }
@@ -112,6 +99,7 @@ public class SecurityService {
      * @param premium User premium
      * @return User
      */
+    @HystrixCommand(fallbackMethod = "createUserFail")
     public UserSecurity createPremiumUser(@RequestBody UserSecurity premium){
         return securityClient.createPremiumUser(premium);
     }
@@ -121,6 +109,7 @@ public class SecurityService {
      * @param admin User admin
      * @return User
      */
+    @HystrixCommand(fallbackMethod = "createUserFail")
     public UserSecurity createAdminUser(@RequestBody UserSecurity admin){
         return securityClient.createAdminUser(admin);
     }
@@ -143,5 +132,9 @@ public class SecurityService {
     public List<UserDto> SecurityMicroserviceFail(String authorizationHeader) {
         LOGGER.warn("[WARN] - Hystrix send failure for Security Microservice");
         throw new SecurityMicroserviceFail("Failure in Security Microservice"); }
+
+    public UserSecurity createUserFail(@RequestBody UserSecurity user){
+        LOGGER.warn("[WARN] - Hystrix send failure for Security Microservice, It wasn't possible to crea a new user"); return null;
+    }
 
 }

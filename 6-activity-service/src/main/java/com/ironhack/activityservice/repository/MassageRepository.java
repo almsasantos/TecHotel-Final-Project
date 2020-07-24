@@ -18,7 +18,6 @@ public interface MassageRepository extends JpaRepository<Massage, Long> {
      * @param userId receives a Long with userId
      * @return a list of object
      */
-    @Query(value = "SELECT activity_id, room_id, massage_type, balance, currency, begin_of_activity, duration, " +
-            "end_of_activity FROM massages_appointments WHERE user_id = :userId", nativeQuery = true)
-    public List<Object[]> filterMassageByUserId(@Param("userId") Long userId);
+    @Query(value = "SELECT * FROM massages_appointments WHERE user_id = :userId", nativeQuery = true)
+    public List<Massage> filterMassageByUserId(@Param("userId") Long userId);
 }

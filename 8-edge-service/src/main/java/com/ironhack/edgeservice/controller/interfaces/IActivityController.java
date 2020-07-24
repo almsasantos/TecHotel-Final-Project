@@ -35,7 +35,7 @@ public interface IActivityController {
      * @param userId receives an Long with userId
      * @return a list of object
      */
-    public List<Object[]> filterMassageByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader);
+    public List<Massage> filterMassageByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader);
     /**
      * Create Massage Appointment
      * @param massageViewModel receives a Massage View Model
@@ -71,7 +71,7 @@ public interface IActivityController {
      * @param userId receives a Long with userId
      * @return a list of objects
      */
-    public List<Object[]> filterRoomFoodByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader);
+    public List<RoomFood> filterRoomFoodByUserId(@PathVariable("userId") Long userId, @RequestHeader(value = "Authorization") String authorizationHeader);
     /**
      * Create new Room Food Request
      * @param roomFoodViewModel receives a RoomFoodViewModel
@@ -117,7 +117,7 @@ public interface IActivityController {
      * @param userId receives a Long with userId
      * @returnq list of objects
      */
-    public List<Object[]> filterPoolRentByUserId(@PathVariable("userId") Long userId,  @RequestHeader(value = "Authorization") String authorizationHeader);
+    public List<PoolRent> filterPoolRentByUserId(@PathVariable("userId") Long userId,  @RequestHeader(value = "Authorization") String authorizationHeader);
     /**
      * Create Pool Rent
      * @param poolRentViewModel receives a PoolRentViewModel

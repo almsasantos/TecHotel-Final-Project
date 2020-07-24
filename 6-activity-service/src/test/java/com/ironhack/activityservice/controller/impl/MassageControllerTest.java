@@ -87,7 +87,7 @@ class MassageControllerTest {
 
     @Test
     void filterMassageByUserId() throws Exception {
-        when(massageController.filterMassageByUserId(1L)).thenReturn(list);
+        when(massageController.filterMassageByUserId(1L)).thenReturn(massageList);
         mockMvc.perform(get("/activities/massages/filter/"+1L)
                 .header("Authorization","admin"))
                 .andExpect(status().is2xxSuccessful());

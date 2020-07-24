@@ -222,7 +222,7 @@ public class RoomFoodService {
      * @param userId receives a Long with userId
      * @return a list of objects
      */
-    public List<Object[]> filterRoomFoodByUserId(@Param("userId") Long userId){
+    public List<RoomFood> filterRoomFoodByUserId(@Param("userId") Long userId){
         return roomFoodRepository.filterRoomFoodByUserId(userId);
     }
 

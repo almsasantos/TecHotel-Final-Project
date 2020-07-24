@@ -111,7 +111,7 @@ class ActivityControllerTest {
 
     @Test
     void filterMassageByUserId() throws Exception {
-        when(activityClient.filterMassageByUserId(1L)).thenReturn(list);
+        when(activityClient.filterMassageByUserId(1L)).thenReturn(massageList);
         mockMvc.perform(get("/activities/massages/filter/"+1L)
                 .header("Authorization","admin"))
                 .andExpect(status().is4xxClientError());
@@ -166,7 +166,7 @@ class ActivityControllerTest {
 
     @Test
     void filterRoomFoodByUserId() throws Exception  {
-        when(activityClient.filterRoomFoodByUserId(1L)).thenReturn(list);
+        when(activityClient.filterRoomFoodByUserId(1L)).thenReturn(roomFoodList);
         mockMvc.perform(get("/activities/room-food-services/filter/"+1L)
                 .header("Authorization","admin"))
                 .andExpect(status().is4xxClientError());
@@ -240,7 +240,7 @@ class ActivityControllerTest {
 
     @Test
     void filterPoolRentByUserId() throws Exception {
-        when(activityClient.filterPoolRentByUserId(1L)).thenReturn(list);
+        when(activityClient.filterPoolRentByUserId(1L)).thenReturn(poolRentList);
         mockMvc.perform(get("/activities/pool-rents/filter/"+1L)
                 .header("Authorization","admin"))
                 .andExpect(status().is4xxClientError());

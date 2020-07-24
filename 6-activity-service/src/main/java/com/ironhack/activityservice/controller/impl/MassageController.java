@@ -51,7 +51,7 @@ public class MassageController implements IMassageController {
      */
     @GetMapping("/activities/massages/filter/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Object[]> filterMassageByUserId(@PathVariable("userId") Long userId){
+    public List<Massage> filterMassageByUserId(@PathVariable("userId") Long userId){
         return massageService.filterMassageByUserId(userId);
     }
 

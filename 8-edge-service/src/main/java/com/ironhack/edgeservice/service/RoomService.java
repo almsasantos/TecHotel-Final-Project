@@ -124,30 +124,24 @@ public class RoomService {
 
     // --- FallBack Methods ---
     public List<RegularRoom> findAllRegularRoomsFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find All Hotel Regular Rooms");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find All Hotel Regular Rooms"); return null; }
 
     public RegularRoom findRegularRoomByIdFail(Integer roomId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find Hotel Regular Room by id");
-        return null;}
+        LOGGER.warn("[WARN] It wasn't possible to find Hotel Regular Room by id"); return null;}
 
     public void updateRoomAvailabilityFail(Integer roomId, Boolean availability, String authorizationHeader){
         LOGGER.warn("[WARN] It wasn't possible to update availability of Room " + roomId); }
 
     public RegularRoom createRoomFail(RegularRoom regularRoom, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to create a new Hotel Regular Room");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to create a new Hotel Regular Room"); return null; }
 
     public List<SuiteRoom> findAllSuitesFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find All Hotel Suite Rooms");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find All Hotel Suite Rooms"); return null; }
 
     public SuiteRoom findSuiteByIdFail(Integer roomId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find Suite Regular Room by id");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find Suite Regular Room by id"); return null; }
 
     public SuiteRoom createSuiteFail(SuiteRoom suite, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to create a new Hotel Suite Room");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to create a new Hotel Suite Room"); return null; }
 
 }

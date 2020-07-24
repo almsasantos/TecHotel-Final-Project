@@ -43,7 +43,7 @@ public interface ActivityClient {
      */
     @GetMapping("/activities/massages/filter/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Object[]> filterMassageByUserId(@PathVariable("userId") Long userId);
+    public List<Massage> filterMassageByUserId(@PathVariable("userId") Long userId);
     /**
      * Create Massage Appointment
      * @param massageViewModel receives a Massage View Model
@@ -91,7 +91,7 @@ public interface ActivityClient {
      */
     @GetMapping("/activities/room-food-services/filter/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Object[]> filterRoomFoodByUserId(@PathVariable("userId") Long userId);
+    public List<RoomFood> filterRoomFoodByUserId(@PathVariable("userId") Long userId);
     /**
      * Create new Room Food Request
      * @param roomFoodViewModel receives a RoomFoodViewModel
@@ -153,7 +153,7 @@ public interface ActivityClient {
      */
     @GetMapping("/activities/pool-rents/filter/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public List<Object[]> filterPoolRentByUserId(@PathVariable("userId") Long userId);
+    public List<PoolRent> filterPoolRentByUserId(@PathVariable("userId") Long userId);
     /**
      * Create Pool Rent
      * @param poolRentViewModel receives a PoolRentViewModel

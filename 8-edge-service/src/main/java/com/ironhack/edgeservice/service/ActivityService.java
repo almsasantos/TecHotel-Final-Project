@@ -15,7 +15,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
@@ -80,8 +79,8 @@ public class ActivityService {
      * @param userId receives an Long with userId
      * @return a list of object
      */
-    @HystrixCommand(fallbackMethod = "filterByUserIdFail", ignoreExceptions = ResponseStatusException.class)
-    public List<Object[]> filterMassageByUserId(Long userId, String authorizationHeader){
+    @HystrixCommand(fallbackMethod = "filterMassageByUserIdFail", ignoreExceptions = ResponseStatusException.class)
+    public List<Massage> filterMassageByUserId(Long userId, String authorizationHeader){
         LOGGER.info("Filter Massage Reservation from user with id " + userId);
         securityService.isUser(authorizationHeader);
         return activityClient.filterMassageByUserId(userId); }
@@ -145,7 +144,7 @@ public class ActivityService {
      * @return a list of objects
      */
     @HystrixCommand(fallbackMethod = "filterByUserIdFail", ignoreExceptions = ResponseStatusException.class)
-    public List<Object[]> filterRoomFoodByUserId(Long userId, String authorizationHeader){
+    public List<RoomFood> filterRoomFoodByUserId(Long userId, String authorizationHeader){
         LOGGER.info("Filter Room Food Request from user with id " + userId);
         securityService.isUser(authorizationHeader);
         return activityClient.filterRoomFoodByUserId(userId); }
@@ -242,8 +241,8 @@ public class ActivityService {
      * @param userId receives a Long with userId
      * @returnq list of objects
      */
-    @HystrixCommand(fallbackMethod = "filterByUserIdFail", ignoreExceptions = ResponseStatusException.class)
-    public List<Object[]> filterPoolRentByUserId(@PathVariable("userId") Long userId,  String authorizationHeader){
+    @HystrixCommand(fallbackMethod = "filterPoolRentByUserIdFail", ignoreExceptions = ResponseStatusException.class)
+    public List<PoolRent> filterPoolRentByUserId(Long userId,  String authorizationHeader){
         LOGGER.info("Filter Pool Rent Request from user with id " + userId);
         securityService.isUser(authorizationHeader);
         return activityClient.filterPoolRentByUserId(userId); }
@@ -292,16 +291,13 @@ public class ActivityService {
 
     // --- FALLBACK METHODS MASSAGE ---
     public List<Massage> findAllMassagesFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find all Massages");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find all Massages"); return null; }
 
     public Massage findMassageByIdFail(Long massageId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find Massage with id " + massageId);
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find Massage with id " + massageId); return null; }
 
     public List<Object[]> filterByUserIdFail(Long userId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to filter activity by user");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to filter activity by user"); return null; }
 
     public Massage createMassageAppointmentFail(MassageViewModel massageViewModel, String authorizationHeader){
         LOGGER.warn("[WARN] It wasn't possible to make a new Massage Appointment");
@@ -313,16 +309,13 @@ public class ActivityService {
 
     // --- FALLBACK METHODS ROOM FOOD ---
     public List<RoomFood> findAllRoomFoodFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find all Room Food Requests");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find all Room Food Requests"); return null; }
 
     public RoomFood findRoomFoodByIdFail(Long roomFoodId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find Room Food Request with id " + roomFoodId);
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find Room Food Request with id " + roomFoodId); return null; }
 
     public RoomFood createRoomFoodRequestFail(RoomFoodViewModel roomFoodViewModel, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to make a new Room Food Request");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to make a new Room Food Request"); return null; }
 
     public void deliverRoomFoodFail(Long roomFoodId, String authorizationHeader){
         LOGGER.warn("[WARN] It wasn't possible to deliver Room Food Request " + roomFoodId); }
@@ -335,16 +328,13 @@ public class ActivityService {
 
     // --- FALLBACK METHODS POOL RENT ---
     public List<PoolRent> findAllPoolRentsFail(String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find all Pool Rents");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find all Pool Rents"); return null; }
 
     public PoolRent findPoolRentByIdFail(Long poolRentId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to find Pool Rent with id " + poolRentId);
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to find Pool Rent with id " + poolRentId); return null; }
 
     public PoolRent createPoolRentFail(PoolRentViewModel poolRentViewModel, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to make a new Pool Rent");
-        return null; }
+        LOGGER.warn("[WARN] It wasn't possible to make a new Pool Rent"); return null; }
 
     public void updateFloatiesNumFail(UpdateFloatiesNumDto updateFloatiesNumDto, String authorizationHeader){
         LOGGER.warn("[WARN] It wasn't possible to update Pool Rent " + updateFloatiesNumDto.getPoolRentId() + " with " + updateFloatiesNumDto.getFloatiesNum() + " number of floaties"); }
@@ -352,6 +342,9 @@ public class ActivityService {
     public void updateTowelNumFail(UpdateTowelNumDto updateTowelNumDto, String authorizationHeader){
         LOGGER.warn("[WARN] It wasn't possible to update Pool Rent " + updateTowelNumDto.getPoolRentId() + " with " + updateTowelNumDto.getTowelNum() + " number of towels"); }
 
-    public void deleteRequestFail(Long activityId, String authorizationHeader){
-        LOGGER.warn("[WARN] It wasn't possible to cancel activity"); }
+    public void deleteRequestFail(Long activityId, String authorizationHeader){ LOGGER.warn("[WARN] It wasn't possible to cancel activity"); }
+
+    public List<Massage> filterMassageByUserIdFail(Long userId, String authorizationHeader){ LOGGER.warn("[WARN] It wasn't possible to filter massage by user id " + userId); return null; }
+
+    public List<PoolRent> filterPoolRentByUserIdFail(Long userId,  String authorizationHeader){ LOGGER.warn("[WARN] It wasn't possible to pool rent by user id " + userId); return null; }
 }

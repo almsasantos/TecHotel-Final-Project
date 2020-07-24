@@ -97,4 +97,12 @@ class InvoiceControllerTest {
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().is4xxClientError());
     }
+
+    @Test
+    void findInvoiceByUserId() throws Exception {
+        when(invoiceClient.findInvoiceByUserId(1L)).thenReturn(invoiceList);
+        mockMvc.perform(get("/invoices/"+1L)
+                .header("Authorization","admin"))
+                .andExpect(status().is4xxClientError());
+    }
 }
